@@ -1,7 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import { Router } from '@reach/router'
+import { Router, LocationProvider, createHistory } from '@reach/router'
 import { Hero, HeroBody, Section, Title, SubTitle } from '@brightleaf/elements'
+import createHashSource from 'hash-source'
 import './app.scss'
+
+const source = createHashSource()
+const history = createHistory(source)
 
 const About = React.lazy(() => import('../features/about'))
 const Home = React.lazy(() => import('../features/home'))
@@ -18,13 +22,15 @@ export default class App extends Component {
           </HeroBody>
         </Hero>
         <Section>
-          <React.Suspense fallback={<div>Loading</div>}>
-            <Router>
-              <Home path="/" />
-              <About path="/about" />
-              <Contact path="/contact" />
-            </Router>
-          </React.Suspense>
+          <LocationProvider history={history}>
+            <React.Suspense fallback={<div>Loading</div>}>
+              <Router>
+                <Home path="/" />
+                <About path="/about" />
+                <Contact path="/contact" />
+              </Router>
+            </React.Suspense>
+          </LocationProvider>
         </Section>
       </Fragment>
     )

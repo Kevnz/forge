@@ -15,6 +15,7 @@
     "@brightleaf/elements": "^0.14.0",
     "@brightleaf/react-hooks": "^1.1.0",
     "@reach/router": "^1.2.1",
+    "hash-source": "^1.0.4",
     "isom": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
