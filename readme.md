@@ -1,15 +1,3 @@
-# My Custom App
+# Forge awesome web things
 
-```
-- docker
-- src
--- server
---- models
---- public
---- routes
--- ui
---- core
---- features
-
-```
-
+Playground to build and try things
