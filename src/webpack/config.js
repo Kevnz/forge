@@ -35,14 +35,7 @@ module.exports = {
   resolve: {
     extensions: ['*', '.mjs', '.js', '.jsx'],
     modules: ['node_modules', 'src'],
-    alias: {
-      '_variables.sass': path.resolve(
-        __dirname,
-        '../',
-        'ui',
-        '_variables.sass'
-      ),
-    },
+    alias: {},
   },
   output: {
     path: path.join(__dirname, '/dist'),
