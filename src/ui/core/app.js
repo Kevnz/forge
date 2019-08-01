@@ -17,7 +17,15 @@ export default class App extends Component {
       <Fragment>
         <Hero isPrimary isBold>
           <HeroBody>
-            <Title>Forge</Title>
+            <Title>
+              <img
+                className="flame-log"
+                src="/flames.png"
+                alt="Forged in fire"
+
+              />
+              Forge
+            </Title>
             <SubTitle>Web App Development</SubTitle>
           </HeroBody>
         </Hero>
