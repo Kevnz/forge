@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, TextArea, TextBox } from 'react-form-elements'
+import { Form, TextArea, TextBox, Hidden } from 'react-form-elements'
 import { Button, Section, Title } from '@brightleaf/elements'
 import { usePost } from '@brightleaf/react-hooks/lib/use-post'
 const encode = data => {
@@ -18,10 +18,10 @@ const ContactForm = () => {
       <Title>Contact</Title>
 
       <Form
+        name="contact"
         onSubmit={values => {
           postData(
             encode({
-              'form-name': 'contact',
               ...values,
             })
           )
@@ -51,6 +51,7 @@ const ContactForm = () => {
           labelClassName="label"
           inputClassName="textarea"
         />
+        <Hidden name="form-name" initialValue="contact" />
 
         <Button isPrimary>Send</Button>
       </Form>
