@@ -20,11 +20,24 @@ const ContactForm = () => {
       <Form
         name="contact"
         onSubmit={values => {
+          /*
           postData(
             encode({
               ...values,
             })
           )
+          */
+          fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode(values),
+          })
+            .then(() => {
+              console.log('worked?')
+            })
+            .catch(error => {
+              console.error('post error', error)
+            })
         }}
       >
         <TextBox
