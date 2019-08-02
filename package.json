@@ -12,8 +12,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@brightleaf/elements": "^0.20.1",
-    "@brightleaf/react-hooks": "^1.4.0",
+    "@brightleaf/elements": "^0.21.0",
+    "@brightleaf/react-hooks": "^1.5.0",
     "@reach/router": "^1.2.1",
     "hash-source": "^1.0.4",
     "isom": "^1.0.0",
