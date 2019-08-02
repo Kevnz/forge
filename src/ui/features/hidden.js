@@ -9,10 +9,10 @@ const encode = data => {
 }
 
 const ContactForm = () => {
-  const { data, error, loading, postData } = usePost('/', {
+  const { error, loading, complete, postData } = usePost('/', {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
   })
-  console.info({ data, error, loading })
+  console.info({ error, loading, complete })
   return (
     <Section>
       <Title>Contact</Title>
