@@ -10,6 +10,7 @@ const history = createHistory(source)
 const About = React.lazy(() => import('../features/about'))
 const Home = React.lazy(() => import('../features/home'))
 const Contact = React.lazy(() => import('../features/contact'))
+const Hidden = React.lazy(() => import('../features/hidden'))
 
 export default class App extends Component {
   render() {
@@ -22,7 +23,6 @@ export default class App extends Component {
                 className="flame-log"
                 src="/flames.png"
                 alt="Forged in fire"
-
               />
               Forge
             </Title>
@@ -36,6 +36,7 @@ export default class App extends Component {
                 <Home path="/" />
                 <About path="/about" />
                 <Contact path="/contact" />
+                <Hidden path="/hidden/contact" />
               </Router>
             </React.Suspense>
           </LocationProvider>
