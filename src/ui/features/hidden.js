@@ -17,7 +17,12 @@ const ContactForm = () => {
     <Section>
       <Title>Contact</Title>
 
-      <Form name="contact" onSubmit={postData}>
+      <Form
+        name="contact"
+        onSubmit={values => {
+          postData(encode(values))
+        }}
+      >
         <TextBox
           name="userName"
           label="Your Name"
