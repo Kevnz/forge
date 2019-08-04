@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Router, LocationProvider, createHistory } from '@reach/router'
 import { Hero, HeroBody, Section, Title, SubTitle } from '@brightleaf/elements'
 import createHashSource from 'hash-source'
+import { NavMenu } from '../components/menu'
 import './app.scss'
 
 const source = createHashSource()
@@ -29,6 +30,7 @@ export default class App extends Component {
             <SubTitle>Web App Development</SubTitle>
           </HeroBody>
         </Hero>
+        <NavMenu />
         <Section>
           <LocationProvider history={history}>
             <React.Suspense fallback={<div>Loading</div>}>
