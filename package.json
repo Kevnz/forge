@@ -1,6 +1,6 @@
 {
   "name": "forge",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "test": "jest --config=jest.config.js --detectOpenHandles --forceExit",
@@ -12,9 +12,10 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@brightleaf/elements": "^0.21.0",
-    "@brightleaf/react-hooks": "^1.5.0",
+    "@brightleaf/elements": "^0.22.1",
+    "@brightleaf/react-hooks": "^1.5.1",
     "@reach/router": "^1.2.1",
+    "classnames": "^2.2.6",
     "hash-source": "^1.0.4",
     "isom": "^1.0.0",
     "react": "^16.8.6",
@@ -50,7 +51,7 @@
     "react-testing-library": "^8.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.39.0",
+    "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   }
