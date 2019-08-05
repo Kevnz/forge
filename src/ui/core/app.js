@@ -1,6 +1,14 @@
 import React, { Component, Fragment } from 'react'
 import { Router, LocationProvider, createHistory } from '@reach/router'
-import { Hero, HeroBody, Section, Title, SubTitle } from '@brightleaf/elements'
+import {
+  Hero,
+  HeroBody,
+  Section,
+  Title,
+  SubTitle,
+  NavBar,
+  NavBarBrand,
+} from '@brightleaf/elements'
 import createHashSource from 'hash-source'
 import { NavMenu } from '../components/menu'
 import './app.scss'
@@ -17,19 +25,15 @@ export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <Hero isPrimary isBold>
-          <HeroBody>
-            <Title>
-              <img
-                className="flame-log"
-                src="/flames.png"
-                alt="Forged in fire"
-              />
-              Forge
-            </Title>
-            <SubTitle>Web App Development</SubTitle>
-          </HeroBody>
-        </Hero>
+        <NavBar isPrimary isFixedTop>
+          <NavBarBrand
+            src="/flames.png"
+            href="https://brightleaf.dev"
+            target="navbarBasicExample"
+            width="32"
+            height="32"
+          />
+        </NavBar>
         <NavMenu />
         <Section>
           <LocationProvider history={history}>
