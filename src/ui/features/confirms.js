@@ -1,14 +1,8 @@
 import React, { useRef } from 'react'
 import { TextArea, TextBox, Hidden, Form } from 'react-form-elements'
-import { Button, Section, Title } from '@brightleaf/elements'
+import { Section, Title } from '@brightleaf/elements'
 
-import Confirm from '../components/confirm'
-
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+import ConfirmButton from '../components/confirm'
 
 const ContactForm = () => {
   const formRef = useRef()
@@ -49,7 +43,7 @@ const ContactForm = () => {
         />
         <Hidden name="form-name" initialValue="contact" />
 
-        <Confirm
+        <ConfirmButton
           question="Are you sure you want to send the message?"
           onConfirm={e => {
             console.log('confirm button click')
@@ -58,13 +52,14 @@ const ContactForm = () => {
           }}
           onCancel={() => {
             console.log('cancelled')
+            formRef.current.reset()
           }}
         >
           Send
-        </Confirm>
+        </ConfirmButton>
       </Form>
     </Section>
   )
 }
-console.log('rende')
+
 export default ContactForm
