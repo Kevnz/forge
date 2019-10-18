@@ -19,6 +19,7 @@ const history = createHistory(source)
 const About = React.lazy(() => import('../features/about'))
 const Home = React.lazy(() => import('../features/home'))
 const Contact = React.lazy(() => import('../features/contact'))
+const Confirm = React.lazy(() => import('../features/confirms'))
 const Hidden = React.lazy(() => import('../features/hidden'))
 
 export default class App extends Component {
@@ -43,6 +44,7 @@ export default class App extends Component {
                 <About path="/about" />
                 <Contact path="/contact" />
                 <Hidden path="/hidden/contact" />
+                <Confirm path="/confirm" />
               </Router>
             </React.Suspense>
           </LocationProvider>
