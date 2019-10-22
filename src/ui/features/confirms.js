@@ -1,9 +1,7 @@
 import React, { useRef } from 'react'
 import { TextArea, TextBox, Hidden, Form } from 'react-form-elements'
-import { Section, Title } from '@brightleaf/elements'
-
-import ConfirmButton from '../components/confirm'
-
+import { Section, Title, ConfirmButton } from '@brightleaf/elements'
+console.log('ConfirmButton', ConfirmButton)
 const ContactForm = () => {
   const formRef = useRef()
   return (
