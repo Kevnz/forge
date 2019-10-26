@@ -34,9 +34,9 @@ const useStatsGet = pkg => {
   }, [pkg])
 
   let downs = [0, 0, 0, 0, 0, 0]
-  let totalDownloads = 0
+  let totalDownloads = 'Loading'
   if (data && data.breakdown) {
-    data.breakdown.pop()
+    // data.breakdown.pop()
     downs = data.breakdown.map(ds => ds.downloads)
     totalDownloads = data.totals.downloads
   }
