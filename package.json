@@ -20,7 +20,8 @@
     "isom": "^1.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-form-elements": "^4.13.2"
+    "react-form-elements": "^4.13.2",
+    "react-sparklines": "^1.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
