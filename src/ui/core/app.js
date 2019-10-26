@@ -86,7 +86,9 @@ export default class App extends Component {
                   </UpLink>
                 </MenuListItem>
               </MenuList>
-              <MenuLabel>Documentation</MenuLabel>
+              <MenuLabel>
+                <Icon fas icon="book" /> Documentation
+              </MenuLabel>
               <MenuList className="menu-list">
                 <MenuListItem>
                   <a href="https://brightleaf.dev/elements">
