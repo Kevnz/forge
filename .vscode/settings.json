@@ -5,9 +5,9 @@
     "editor.formatOnSave": false
   },
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#f02020",
-    "titleBar.inactiveBackground": "#f02020AA",
-    "titleBar.activeForeground": "#ffffff",
+    "titleBar.activeBackground": "#33373f",
+    "titleBar.inactiveBackground": "#33373fAA",
+    "titleBar.activeForeground": "#f02020dd",
     "titleBar.inactiveForeground": "#FFFFFFCC",
     "titleBar.border": "#33373f",
     "activityBar.foreground": "#f02020",
@@ -15,7 +15,10 @@
     "activityBarBadge.foreground": "#fff",
     "tab.activeBorder": "#f02020",
     "tab.activeBorderTop": "#f02020",
-    "tab.activeBackground": "#42464d"
+    "tab.activeBackground": "#42464d",
+    "statusBar.background": "#33373f",
+    "statusBar.border": "#f02020",
+    "statusBar.foreground": "#f02020"
   },
   "vsicons.presets.jsOfficial": true,
   "vsicons.presets.jsonOfficial": true,
