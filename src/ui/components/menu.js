@@ -13,10 +13,7 @@ export const NavMenu = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <NavigationView
-
-    >
-
+    <NavigationView>
       <Menu>
         <MenuLabel>General</MenuLabel>
         <MenuList className="menu-list">
