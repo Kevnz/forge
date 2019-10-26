@@ -89,24 +89,24 @@ export default class App extends Component {
               <MenuLabel>Documentation</MenuLabel>
               <MenuList className="menu-list">
                 <MenuListItem>
-                  <UpLink to="/layouts">
-                    <Icon fas icon="warehouse" /> Layout
-                  </UpLink>
+                  <a href="https://brightleaf.dev/elements">
+                    <Icon fas icon="lightbulb" /> Brightleaf Elements
+                  </a>
                 </MenuListItem>
                 <MenuListItem>
-                  <UpLink to="/forms">
-                    <Icon fab icon="wpforms" /> Forms
-                  </UpLink>
+                  <a href="https://brightleaf.dev/hooks">
+                    <Icon fas icon="sun" /> React Hooks
+                  </a>
                 </MenuListItem>
                 <MenuListItem>
-                  <UpLink to="/elements">
-                    <Icon fas icon="cube" /> Elements
-                  </UpLink>
+                  <a href="https://kevinisom.info/react-form-elements">
+                    <Icon fas icon="cubes" /> Form Elements
+                  </a>
                 </MenuListItem>
                 <MenuListItem>
-                  <UpLink to="/components">
-                    <Icon fas icon="cubes" /> Components
-                  </UpLink>
+                  <a href="https://github.com/kevnz/">
+                    <Icon fab icon="github" /> GitHub
+                  </a>
                 </MenuListItem>
               </MenuList>
             </Menu>
