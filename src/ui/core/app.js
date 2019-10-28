@@ -34,6 +34,9 @@ const Contact = React.lazy(() => import('../features/contact'))
 const Confirm = React.lazy(() => import('../features/confirms'))
 const Hidden = React.lazy(() => import('../features/hidden'))
 const Stats = React.lazy(() => import('../features/stats'))
+const Tracking = React.lazy(() => import('../features/tracking'))
+
+console.log('Tracking', Tracking)
 
 const UpLink = props => {
   return (
@@ -85,6 +88,11 @@ export default class App extends Component {
                     <Icon fas icon="chart-line" /> NPM Stats
                   </UpLink>
                 </MenuListItem>
+                <MenuListItem>
+                  <UpLink to="/tracking">
+                    <Icon fas icon="chart-line" /> NPM Stats2
+                  </UpLink>
+                </MenuListItem>
               </MenuList>
               <MenuLabel>
                 <Icon fas icon="book" /> Documentation
@@ -133,6 +141,7 @@ export default class App extends Component {
                 <Hidden path="/hidden/contact" />
                 <Confirm path="/confirm" />
                 <Stats path="/stats" />
+                <Tracking path="/tracking" />
               </Router>
             </React.Suspense>
           </Section>
