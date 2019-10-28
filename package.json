@@ -21,7 +21,9 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-form-elements": "^4.13.2",
-    "react-sparklines": "^1.7.0"
+    "react-sparklines": "^1.7.0",
+    "recharts": "^1.8.5",
+    "victory": "^33.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
