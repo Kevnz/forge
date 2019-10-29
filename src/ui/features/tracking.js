@@ -10,12 +10,6 @@ import {
   Content,
   Title,
   SubTitle,
-  useToggle,
-  Modal,
-  ModalCard,
-  ModalCardBody,
-  ModalCardFoot,
-  ModalCardHead,
 } from '@brightleaf/elements'
 
 import {
@@ -159,13 +153,31 @@ const StatsPage = () => {
     lokiTotals,
     diarTotals,
   ]
-  console.log(pie)
+  const totalPie = pie.reduce(
+    (accumulator, current) => accumulator + current.downloads,
+    0
+  )
+  console.log(totalPie)
   return (
     <>
-      <br />
+      <Hero>
+        <HeroBody>
+          <Title>@kev_nz</Title>
+          <SubTitle>The past month</SubTitle>
+        </HeroBody>
+      </Hero>
       <Columns>
         <Column>
-          <PieChart width={600} height={600}>
+          <PieChart
+            width={600}
+            height={600}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 30,
+              bottom: 5,
+            }}
+          >
             <Pie
               dataKey="downloads"
               isAnimationActive={false}
@@ -184,6 +196,7 @@ const StatsPage = () => {
             <Tooltip />
           </PieChart>
         </Column>
+        <Column>Downloads: {totalPie}</Column>
       </Columns>
       <Columns>
         <Column is="12">
@@ -194,7 +207,7 @@ const StatsPage = () => {
             margin={{
               top: 5,
               right: 30,
-              left: 20,
+              left: 30,
               bottom: 5,
             }}
           >
