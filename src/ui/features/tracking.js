@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Button,
   Container,
@@ -10,6 +10,9 @@ import {
   Content,
   Title,
   SubTitle,
+  TabItem,
+  TabList,
+  Tabs,
 } from '@brightleaf/elements'
 
 import {
@@ -47,41 +50,43 @@ const COLORS = [
   '#387d32',
   '#74d600',
 ]
-const useStatsGet = (pkg, color) => {
-  const { data, getUrl } = useGet(
-    `https://kev-pi.herokuapp.com/api/package/monthly?pkg=${pkg}`
-  )
-  useEffect(() => {
-    getUrl()
-  }, [pkg])
 
-  let downs = [
-    {
-      downloads: 0,
-      date: '2019-09-27',
-    },
-  ]
-  let totals = { name: pkg, downloads: 0 }
-  if (data && data.breakdown) {
-    // data.breakdown.pop()
-    downs = data.breakdown.map(down => {
-      // downloads	101
-      // start	2019-09-26
-      // end	2019-09-26
-      // package	back-off
-
-      return {
-        date: down.end,
-        [`${pkg}-downloads`]: down.downloads,
-        name: pkg,
-      }
-    })
-    totals = { name: pkg, downloads: data.totals.downloads, color }
-  }
-  // name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
-  return [downs, totals]
-}
 const StatsPage = () => {
+  const [duration, setDuration] = useState('monthly')
+  const useStatsGet = (pkg, color) => {
+    const { data, getUrl } = useGet(
+      `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}`
+    )
+    useEffect(() => {
+      getUrl()
+    }, [pkg, duration])
+
+    let downs = [
+      {
+        downloads: 0,
+        date: '2019-09-27',
+      },
+    ]
+    let totals = { name: pkg, downloads: 0 }
+    if (data && data.breakdown) {
+      // data.breakdown.pop()
+      downs = data.breakdown.map(down => {
+        // downloads	101
+        // start	2019-09-26
+        // end	2019-09-26
+        // package	back-off
+
+        return {
+          date: down.end,
+          [`${pkg}-downloads`]: down.downloads,
+          name: pkg,
+        }
+      })
+      totals = { name: pkg, downloads: data.totals.downloads, color }
+    }
+    // name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
+    return [downs, totals]
+  }
   useTitle('downloaded packages')
   const [elements, elementsTotal] = useStatsGet(
     '@brightleaf/elements',
@@ -163,9 +168,35 @@ const StatsPage = () => {
       <Hero>
         <HeroBody>
           <Title>@kev_nz</Title>
-          <SubTitle>The past month</SubTitle>
+          <SubTitle>NPM Stats</SubTitle>
         </HeroBody>
       </Hero>
+      <Tabs isToggle isToggleRounded>
+        <TabList>
+          <TabItem isActive={duration === 'monthly'}>
+            <a
+              href="#"
+              onClick={e => {
+                e.preventDefault()
+                setDuration('monthly')
+              }}
+            >
+              Montly
+            </a>
+          </TabItem>
+          <TabItem isActive={duration === 'weekly'}>
+            <a
+              href="#"
+              onClick={e => {
+                e.preventDefault()
+                setDuration('weekly')
+              }}
+            >
+              Weekly
+            </a>
+          </TabItem>
+        </TabList>
+      </Tabs>
       <Columns>
         <Column>
           <PieChart
