@@ -27,6 +27,8 @@ import {
   Pie,
   Sector,
   Cell,
+  BarChart,
+  Bar,
 } from 'recharts'
 
 import { useTitle, useGet } from '@brightleaf/react-hooks'
@@ -83,6 +85,16 @@ const StatsPage = () => {
         }
       })
       totals = { name: pkg, downloads: data.totals.downloads, color }
+    }
+    if (data && data.downloads) {
+      downs = [
+        {
+          date: data.end,
+          [`${pkg}-downloads`]: data.downloads,
+          name: pkg,
+        },
+      ]
+      totals = { name: pkg, downloads: data.downloads, color }
     }
     // name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
     return [downs, totals]
@@ -162,7 +174,7 @@ const StatsPage = () => {
     (accumulator, current) => accumulator + current.downloads,
     0
   )
-  console.log(totalPie)
+  const stacked = duration !== 'daily' ? { stackId: 'a' } : {}
   return (
     <>
       <Hero>
@@ -193,6 +205,17 @@ const StatsPage = () => {
               }}
             >
               Weekly
+            </a>
+          </TabItem>
+          <TabItem isActive={duration === 'daily'}>
+            <a
+              href="#"
+              onClick={e => {
+                e.preventDefault()
+                setDuration('daily')
+              }}
+            >
+              Daily
             </a>
           </TabItem>
         </TabList>
@@ -368,6 +391,154 @@ const StatsPage = () => {
               activeDot={{ r: 4 }}
             />
           </LineChart>
+        </Column>
+      </Columns>
+      <Columns>
+        <Column is="12">
+          {duration && (
+            <BarChart
+              width={900}
+              height={400}
+              data={o}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 30,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="date" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+
+              <Bar
+                type="monotone"
+                dataKey={`@brightleaf/elements-downloads`}
+                name="@brightleaf/elements"
+                fill="#00d1b2"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`@brightleaf/react-hooks-downloads`}
+                name="@brightleaf/react-hooks"
+                fill="#1c8cdc"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`react-form-elements-downloads`}
+                name="react-form-elements"
+                fill="#ea485c"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`creature-features-downloads`}
+                name="creature-features"
+                fill="#fa7e17"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`@kev_nz/async-tools-downloads`}
+                name="@kev_nz/async-tools"
+                fill="#7a9792"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`back-off-downloads`}
+                name="back-off"
+                fill="#1957fb"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`pxpay-downloads`}
+                name="pxpay"
+                fill="#c495f0"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`pxpost-downloads`}
+                name="pxpost"
+                fill="#fb4c19"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`isom-downloads`}
+                name="isom"
+                fill="#8f98ff"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`year-month-day-downloads`}
+                name="year-month-day"
+                fill="#ff4674"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`1stand15th-downloads`}
+                name="1stand15th"
+                fill="#c8fb19"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`xtconf-downloads`}
+                name="xtconf"
+                fill="#0c837f"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`fuxor-downloads`}
+                name="fuxor"
+                fill="#ffe31d"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                name="nom-de-plume"
+                dataKey={`nom-de-plume-downloads`}
+                fill="#63323e"
+                {...stacked}
+              />
+              <Bar
+                type="monotone"
+                dataKey={`alternative-facts-downloads`}
+                fill="#b43e32"
+                {...stacked}
+              />
+
+              <Bar
+                type="monotone"
+                dataKey={`@kev_nz/lokijs-downloads`}
+                name="@kev_nz/lokijs"
+                fill="#387d32"
+                {...stacked}
+              />
+
+              <Bar
+                type="monotone"
+                dataKey={`days-in-a-row-downloads`}
+                name="days-in-a-row"
+                fill="#74d600"
+                {...stacked}
+              />
+            </BarChart>
+          )}
+          <br />
+          <br />
+          <br />
+          <br />
         </Column>
       </Columns>
     </>
