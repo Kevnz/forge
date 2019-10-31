@@ -1,0 +1,39 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.tab-link.is-loading {
+  color: rgba($color: #000000, $alpha: 0.24);
+}
+.tab-link.is-loading::after {
+  position: absolute;
+  left: calc(50% - (1em / 2));
+  top: calc(50% - (1em / 2));
+  position: absolute !important;
+  animation: spinAround 0.5s infinite linear;
+
+  border: 2px solid #003292;
+
+  border-top-color: rgb(219, 219, 219);
+  border-right-color: rgb(219, 219, 219);
+
+  border-radius: 290486px;
+
+  border-right-color: transparent;
+
+  border-top-color: transparent;
+
+  content: "";
+
+  display: block;
+
+  height: 1em;
+
+  position: relative;
+
+  width: 1em;
+}

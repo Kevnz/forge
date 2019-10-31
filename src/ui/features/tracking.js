@@ -32,6 +32,9 @@ import {
 } from 'recharts'
 
 import { useTitle, useGet } from '@brightleaf/react-hooks'
+import classnames from 'classnames'
+
+import './tracking.scss'
 
 const COLORS = [
   '#00d1b2',
@@ -56,7 +59,7 @@ const COLORS = [
 const StatsPage = () => {
   const [duration, setDuration] = useState('monthly')
   const useStatsGet = (pkg, color) => {
-    const { data, getUrl } = useGet(
+    const { data, loading, getUrl } = useGet(
       `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}`
     )
     useEffect(() => {
@@ -97,39 +100,80 @@ const StatsPage = () => {
       totals = { name: pkg, downloads: data.downloads, color }
     }
     // name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
-    return [downs, totals]
+    return [downs, totals, loading]
   }
   useTitle('downloaded packages')
-  const [elements, elementsTotal] = useStatsGet(
+  const [elements, elementsTotal, elementsLoading] = useStatsGet(
     '@brightleaf/elements',
     COLORS[0]
   )
-  const [hooks, hooksTotal] = useStatsGet('@brightleaf/react-hooks', COLORS[1])
-  const [rfe, rfeTotal] = useStatsGet('react-form-elements', COLORS[2])
-  const [creatureFeatures, creatureFeaturesTotal] = useStatsGet(
+  const [hooks, hooksTotal, hookLoading] = useStatsGet(
+    '@brightleaf/react-hooks',
+    COLORS[1]
+  )
+  const [rfe, rfeTotal, rfeLoading] = useStatsGet(
+    'react-form-elements',
+    COLORS[2]
+  )
+  const [creatureFeatures, creatureFeaturesTotal, cfLoading] = useStatsGet(
     'creature-features',
     COLORS[3]
   )
-  const [asyncTools, asyncToolsTotal] = useStatsGet(
+  const [asyncTools, asyncToolsTotal, asyncLoading] = useStatsGet(
     '@kev_nz/async-tools',
     COLORS[4]
   )
-  const [backOff, backOffTotal] = useStatsGet('back-off', COLORS[5])
-  const [pxpay, pxpayTotals] = useStatsGet('pxpay', COLORS[6])
-  const [pxpost, pxpostTotals] = useStatsGet('pxpost', COLORS[7])
-  const [isom, isomTotals] = useStatsGet('isom', COLORS[8])
-  const [ymd, ymdTotals] = useStatsGet('year-month-day', COLORS[9])
-  const [first, firstTotals] = useStatsGet('1stand15th', COLORS[10])
-  const [xtconf, xtconfTotals] = useStatsGet('xtconf', COLORS[11])
-  const [fuxor, fuxorTotals] = useStatsGet('fuxor', COLORS[12])
-  const [ndp, ndpTotals] = useStatsGet('nom-de-plume', COLORS[13])
-  const [altFacts, altFactsTotals] = useStatsGet(
+  const [backOff, backOffTotal, backOffLoading] = useStatsGet(
+    'back-off',
+    COLORS[5]
+  )
+  const [pxpay, pxpayTotals, pxpayLoading] = useStatsGet('pxpay', COLORS[6])
+  const [pxpost, pxpostTotals, pxpostLoading] = useStatsGet('pxpost', COLORS[7])
+  const [isom, isomTotals, isomLoading] = useStatsGet('isom', COLORS[8])
+  const [ymd, ymdTotals, ymdLoading] = useStatsGet('year-month-day', COLORS[9])
+  const [first, firstTotals, firstLoading] = useStatsGet(
+    '1stand15th',
+    COLORS[10]
+  )
+  const [xtconf, xtconfTotals, xtconfLoading] = useStatsGet(
+    'xtconf',
+    COLORS[11]
+  )
+  const [fuxor, fuxorTotals, fuxorLoading] = useStatsGet('fuxor', COLORS[12])
+  const [ndp, ndpTotals, ndpLoading] = useStatsGet('nom-de-plume', COLORS[13])
+  const [altFacts, altFactsTotals, altLoading] = useStatsGet(
     'alternative-facts',
     COLORS[14]
   )
-  const [diar, diarTotals] = useStatsGet('days-in-a-row', COLORS[16])
-  const [loki, lokiTotals] = useStatsGet('@kev_nz/lokijs', COLORS[15])
+  const [diar, diarTotals, diarLoading] = useStatsGet(
+    'days-in-a-row',
+    COLORS[16]
+  )
+  const [loki, lokiTotals, lokiLoading] = useStatsGet(
+    '@kev_nz/lokijs',
+    COLORS[15]
+  )
 
+  const isLoading =
+    elementsLoading ||
+    hookLoading ||
+    rfeLoading ||
+    cfLoading ||
+    asyncLoading ||
+    backOffLoading ||
+    pxpayLoading ||
+    pxpostLoading ||
+    isomLoading ||
+    ymdLoading ||
+    firstLoading ||
+    xtconfLoading ||
+    fuxorLoading ||
+    ndpLoading ||
+    altLoading ||
+    diarLoading ||
+    lokiLoading
+
+  console.log('isLoading', isLoading)
   const o = elements.map((el, index) => {
     return {
       ...el,
@@ -185,8 +229,11 @@ const StatsPage = () => {
       </Hero>
       <Tabs isToggle isToggleRounded>
         <TabList>
-          <TabItem isActive={duration === 'monthly'}>
+          <TabItem isActive={duration === 'monthly' && !isLoading}>
             <a
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'monthly',
+              })}
               href="#"
               onClick={e => {
                 e.preventDefault()
@@ -196,9 +243,12 @@ const StatsPage = () => {
               Montly
             </a>
           </TabItem>
-          <TabItem isActive={duration === 'weekly'}>
+          <TabItem isActive={duration === 'weekly' && !isLoading}>
             <a
               href="#"
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'weekly',
+              })}
               onClick={e => {
                 e.preventDefault()
                 setDuration('weekly')
@@ -207,8 +257,11 @@ const StatsPage = () => {
               Weekly
             </a>
           </TabItem>
-          <TabItem isActive={duration === 'daily'}>
+          <TabItem isActive={duration === 'daily' && !isLoading}>
             <a
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'daily',
+              })}
               href="#"
               onClick={e => {
                 e.preventDefault()
