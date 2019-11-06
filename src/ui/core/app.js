@@ -114,6 +114,21 @@ export default class App extends Component {
                   </a>
                 </MenuListItem>
                 <MenuListItem>
+                  <a href="https://kevinisom.info/creature-features">
+                    <Icon fas icon="pastafarianism" /> Creature Features
+                  </a>
+                </MenuListItem>
+                <MenuListItem>
+                  <a href="https://kevinisom.info/back-off">
+                    <Icon fas icon="redo" /> Back-Off
+                  </a>
+                </MenuListItem>
+                <MenuListItem>
+                  <a href="https://kevinisom.info/async-tools">
+                    <Icon fas icon="tools" /> Async Tools
+                  </a>
+                </MenuListItem>
+                <MenuListItem>
                   <a href="https://github.com/kevnz/">
                     <Icon fab icon="github" /> GitHub
                   </a>
