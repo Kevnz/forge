@@ -23,6 +23,7 @@ import {
 } from '@brightleaf/elements'
 import createHashSource from 'hash-source'
 import { NavMenu } from '../components/nav-menu'
+import modules from '../data/my-packages'
 import './app.scss'
 
 const source = createHashSource()
@@ -35,6 +36,7 @@ const Confirm = React.lazy(() => import('../features/confirms'))
 const Hidden = React.lazy(() => import('../features/hidden'))
 const Stats = React.lazy(() => import('../features/stats'))
 const Tracking = React.lazy(() => import('../features/tracking'))
+const TheModule = React.lazy(() => import('../features/module'))
 
 console.log('Tracking', Tracking)
 
@@ -90,7 +92,12 @@ export default class App extends Component {
                 </MenuListItem>
                 <MenuListItem>
                   <UpLink to="/tracking">
-                    <Icon fas icon="chart-line" /> NPM Stats2
+                    <Icon fas icon="chart-pie" /> NPM Stats2
+                  </UpLink>
+                </MenuListItem>
+                <MenuListItem>
+                  <UpLink to={`/package/${modules[0].slug}`}>
+                    <Icon fas icon="cogs" /> Module Stats
                   </UpLink>
                 </MenuListItem>
               </MenuList>
@@ -157,6 +164,7 @@ export default class App extends Component {
                 <Confirm path="/confirm" />
                 <Stats path="/stats" />
                 <Tracking path="/tracking" />
+                <TheModule path="/package/:module" />
               </Router>
             </React.Suspense>
           </Section>
