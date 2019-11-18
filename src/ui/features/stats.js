@@ -43,7 +43,7 @@ const SingleModule = ({ name, title, color }) => {
 }
 
 const StatsPage = () => {
-  useTitle('downloaded packages')
+  useTitle('Tracking NPM module downloads')
 
   const lines = modules.map(m => <SingleModule key={m.slug} {...m} />)
 
