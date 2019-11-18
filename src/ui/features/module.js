@@ -77,10 +77,9 @@ const HEADING = {
 const StatsPage = ({ module }) => {
   const [duration, setDuration] = useState('monthly')
   const [moduleSlug, setModuleSlug] = useState(module)
-  console.log('module', module)
-  console.log('modules', modules)
+
   const mod = modules.find(pkg => pkg.slug === moduleSlug)
-  console.log('mod', moduleSlug)
+
   const useStatsGet = (pkg, color) => {
     const { data, loading, getUrl } = useGet(
       `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}`
@@ -90,7 +89,7 @@ const StatsPage = ({ module }) => {
     )
     const {
       data: backBackData,
-      loading: backLBackoading,
+      loading: backBackLoading,
       getUrl: getBackBackUrl,
     } = useGet(
       `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}&back=${backsBack[duration]}`
@@ -219,7 +218,7 @@ const StatsPage = ({ module }) => {
     const uniq = [
       ...new Set(previousDowns.concat(downs).concat(furtherBackDowns)),
     ]
-    return [uniq, totals, loading && backLoading]
+    return [uniq, totals, loading && backLoading && backBackLoading]
   }
 
   useTitle('downloaded packages')
