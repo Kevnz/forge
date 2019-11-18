@@ -76,7 +76,7 @@ const myPackages = [
     slug: '1stand15th',
     name: '1stand15th',
     title: '1st and 15th',
-    color: '#c8fb19',
+    color: '#ddbd37',
   },
   {
     slug: 'pxpay',
