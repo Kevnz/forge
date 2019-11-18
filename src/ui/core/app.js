@@ -87,12 +87,12 @@ export default class App extends Component {
                 </MenuListItem>
                 <MenuListItem>
                   <UpLink to="/stats">
-                    <Icon fas icon="chart-line" /> NPM Stats
+                    <Icon fas icon="chart-line" /> NPM Overview
                   </UpLink>
                 </MenuListItem>
                 <MenuListItem>
                   <UpLink to="/tracking">
-                    <Icon fas icon="chart-pie" /> NPM Stats2
+                    <Icon fas icon="chart-pie" /> NPM Details
                   </UpLink>
                 </MenuListItem>
                 <MenuListItem>
