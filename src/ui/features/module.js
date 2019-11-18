@@ -62,17 +62,23 @@ const COLORS = [
 const backs = {
   daily: 2,
   weekly: 8,
+  fortnightly: 15,
   monthly: 33,
+  bimonthly: 63,
 }
 const backsBack = {
   daily: 3,
   weekly: 15,
+  fortnightly: 29,
   monthly: 64,
+  bimonthly: 126,
 }
 const HEADING = {
   daily: ['Three days ago', 'Two days ago', 'Yesterday'],
   weekly: ['Two weeks ago', 'One week ago', 'This week'],
+  fortnightly: ['Two fortnights ago', 'One fortnight ago', 'This fortnightly'],
   monthly: ['Two months ago', 'One month ago', 'This month'],
+  bimonthly: ['Two months ago', 'One month ago', 'This month'],
 }
 const StatsPage = ({ module }) => {
   const [duration, setDuration] = useState('monthly')
@@ -254,6 +260,20 @@ const StatsPage = ({ module }) => {
       </Hero>
       <Tabs isToggle isToggleRounded>
         <TabList>
+          <TabItem isActive={duration === 'bimonthly' && !isLoading}>
+            <a
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'bimonthly',
+              })}
+              href="#"
+              onClick={e => {
+                e.preventDefault()
+                setDuration('bimonthly')
+              }}
+            >
+              BiMonthly
+            </a>
+          </TabItem>
           <TabItem isActive={duration === 'monthly' && !isLoading}>
             <a
               className={classnames('tab-link', {
@@ -266,6 +286,20 @@ const StatsPage = ({ module }) => {
               }}
             >
               Monthly
+            </a>
+          </TabItem>
+          <TabItem isActive={duration === 'fortnightly' && !isLoading}>
+            <a
+              href="#"
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'fortnightly',
+              })}
+              onClick={e => {
+                e.preventDefault()
+                setDuration('fortnightly')
+              }}
+            >
+              Fortnightly
             </a>
           </TabItem>
           <TabItem isActive={duration === 'weekly' && !isLoading}>
