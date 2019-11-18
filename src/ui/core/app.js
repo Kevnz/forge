@@ -37,7 +37,7 @@ const Hidden = React.lazy(() => import('../features/hidden'))
 const Stats = React.lazy(() => import('../features/stats'))
 const Tracking = React.lazy(() => import('../features/tracking'))
 const TheModule = React.lazy(() => import('../features/module'))
-
+const Dashboard = React.lazy(() => import('../features/dashboard'))
 console.log('Tracking', Tracking)
 
 const UpLink = props => {
@@ -167,6 +167,7 @@ export default class App extends Component {
                 <Stats path="/stats" />
                 <Tracking path="/tracking" />
                 <TheModule path="/package/:module" />
+                <Dashboard path="/dashboard" />
               </Router>
             </React.Suspense>
           </Section>
