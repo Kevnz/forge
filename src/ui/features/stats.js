@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react'
-import { Column, Columns, Title, SubTitle } from '@brightleaf/elements'
+import {
+  Column,
+  Columns,
+  Title,
+  SubTitle,
+  Panel,
+  PanelBlock,
+} from '@brightleaf/elements'
 
 import { useTitle, useGet } from '@brightleaf/react-hooks'
 import modules from '../data/my-packages'
@@ -25,15 +32,13 @@ const useStatsGet = pkg => {
 const SingleModule = ({ name, title, color }) => {
   const [data, total] = useStatsGet(name)
   return (
-    <Columns>
-      <Column is="4">
-        <SparkLine data={data} color={color}></SparkLine>
-      </Column>
-      <Column>
-        <Title is="4">{title}</Title>
-        <SubTitle is="5">Total: {total}</SubTitle>
-      </Column>
-    </Columns>
+    <Column is="4">
+      <Panel heading={`${title} Total: ${total}`}>
+        <PanelBlock>
+          <SparkLine data={data} color={color}></SparkLine>
+        </PanelBlock>
+      </Panel>
+    </Column>
   )
 }
 
@@ -45,7 +50,7 @@ const StatsPage = () => {
   return (
     <>
       <br />
-      {lines}
+      <Columns isMultiline>{lines}</Columns>
     </>
   )
 }
