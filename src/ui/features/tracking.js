@@ -73,6 +73,7 @@ const CustomTooltip = ({ label, payload, ...props }) => {
         <strong
           style={{
             color: p.color,
+            textShadow: '#ccc 1px 1px 0px',
           }}
         >
           {p.name}:
@@ -136,7 +137,7 @@ const StatsPage = () => {
     // name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
     return [downs, totals, loading]
   }
-  useTitle('downloaded packages')
+  useTitle('Tracking Downloaded NPM Packages')
   const [elements, elementsTotal, elementsLoading] = useStatsGet(
     '@brightleaf/elements',
     COLORS[0]
