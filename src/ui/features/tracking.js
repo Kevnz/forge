@@ -261,7 +261,7 @@ const StatsPage = () => {
           <SubTitle>NPM Stats</SubTitle>
         </HeroBody>
       </Hero>
-      <Tabs isToggle>
+      <Tabs isToggle isFullWidth>
         <TabList>
           <TabItem isActive={duration === 'bimonthly' && !isLoading}>
             <a
