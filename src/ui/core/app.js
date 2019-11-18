@@ -101,6 +101,8 @@ export default class App extends Component {
                   </UpLink>
                 </MenuListItem>
               </MenuList>
+              <br />
+
               <MenuLabel>
                 <Icon fas icon="book" /> Documentation
               </MenuLabel>
