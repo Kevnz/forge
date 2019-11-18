@@ -56,6 +56,28 @@ const COLORS = [
   '#74d600',
 ]
 
+const CustomTooltip = ({ label, payload }) => {
+  console.log('payload', payload)
+  return (
+    <div className="custom-tooltip">
+      <p className="label">{`${payload[0]?.name} : ${payload[0]?.value}`}</p>
+      <p className="intro">??</p>
+      <p className="desc">Anything you want can be displayed here.</p>
+    </div>
+  )
+}
+
+const CustomTooltipForLine = props => {
+  console.log('payload', props)
+  return (
+    <div className="custom-tooltip">
+      <p className="label">?</p>
+      <p className="intro">??</p>
+      <p className="desc">Anything you want can be displayed here.</p>
+    </div>
+  )
+}
+
 const StatsPage = () => {
   const [duration, setDuration] = useState('monthly')
   const useStatsGet = (pkg, color) => {
@@ -229,6 +251,20 @@ const StatsPage = () => {
       </Hero>
       <Tabs isToggle isToggleRounded>
         <TabList>
+          <TabItem isActive={duration === 'bimonthly' && !isLoading}>
+            <a
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'bimonthly',
+              })}
+              href="#"
+              onClick={e => {
+                e.preventDefault()
+                setDuration('bimonthly')
+              }}
+            >
+              Bi-Monthly
+            </a>
+          </TabItem>
           <TabItem isActive={duration === 'monthly' && !isLoading}>
             <a
               className={classnames('tab-link', {
@@ -240,7 +276,21 @@ const StatsPage = () => {
                 setDuration('monthly')
               }}
             >
-              Montly
+              Monthly
+            </a>
+          </TabItem>
+          <TabItem isActive={duration === 'fortnightly' && !isLoading}>
+            <a
+              href="#"
+              className={classnames('tab-link', {
+                'is-loading': isLoading && duration === 'fortnightly',
+              })}
+              onClick={e => {
+                e.preventDefault()
+                setDuration('fortnightly')
+              }}
+            >
+              Fortnightly
             </a>
           </TabItem>
           <TabItem isActive={duration === 'weekly' && !isLoading}>
@@ -300,7 +350,8 @@ const StatsPage = () => {
               ))}
             </Pie>
             <Pie />
-            <Tooltip />
+
+            <Tooltip content={<CustomTooltip />} />
           </PieChart>
         </Column>
         <Column>Downloads: {totalPie}</Column>
@@ -321,7 +372,7 @@ const StatsPage = () => {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" />
             <YAxis />
-            <Tooltip />
+            <Tooltip content={<CustomTooltipForLine />} />
             <Legend />
             <Line
               type="monotone"
