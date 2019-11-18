@@ -2,7 +2,9 @@ executors:
   node:
     docker:
       - image: circleci/node:12
-
+  build-machine:
+    docker:
+      - image: circleci/node:10
 aliases:
   install_node_modules: &install_node_modules
     run:
@@ -33,7 +35,18 @@ jobs:
           root: ./
           paths:
             - dist
-
+  buildOld:
+    executor: build-machine
+    steps:
+      - checkout
+      - <<: *install_node_modules
+      - run:
+          name: Build
+          command: npm run build
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - dist
   deploy:
     executor: node
     steps:
@@ -59,7 +72,7 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "0 * * * *"
           filters:
             branches:
               only:
@@ -69,4 +82,6 @@ workflows:
       - build:
           requires:
             - test
-
+      - buildOld:
+          requires:
+            - test
