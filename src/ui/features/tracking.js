@@ -56,24 +56,36 @@ const COLORS = [
   '#74d600',
 ]
 
-const CustomTooltip = ({ label, payload }) => {
-  console.log('payload', payload)
+const CustomTooltip = ({ label, payload, ...props }) => {
+  const deets = payload
+    .sort((a, b) => {
+      if (a.value < b.value) {
+        return 1
+      }
+      if (a.value > b.value) {
+        return -1
+      }
+      // a must be equal to b
+      return 0
+    })
+    .map(p => (
+      <p key={`${p.name}-${p.value}`} className="display">
+        <strong
+          style={{
+            color: p.color,
+          }}
+        >
+          {p.name}:
+        </strong>
+        {p.value}
+      </p>
+    ))
   return (
-    <div className="custom-tooltip">
-      <p className="label">{`${payload[0]?.name} : ${payload[0]?.value}`}</p>
-      <p className="intro">??</p>
-      <p className="desc">Anything you want can be displayed here.</p>
-    </div>
-  )
-}
-
-const CustomTooltipForLine = props => {
-  console.log('payload', props)
-  return (
-    <div className="custom-tooltip">
-      <p className="label">?</p>
-      <p className="intro">??</p>
-      <p className="desc">Anything you want can be displayed here.</p>
+    <div className="chart-tooltip">
+      {label && <p className="label">{label}</p>}
+      {deets}
+      <p className="intro"></p>
+      <p className="desc"></p>
     </div>
   )
 }
@@ -195,7 +207,6 @@ const StatsPage = () => {
     diarLoading ||
     lokiLoading
 
-  console.log('isLoading', isLoading)
   const o = elements.map((el, index) => {
     return {
       ...el,
@@ -372,7 +383,7 @@ const StatsPage = () => {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" />
             <YAxis />
-            <Tooltip content={<CustomTooltipForLine />} />
+            <Tooltip content={<CustomTooltip />} />
             <Legend />
             <Line
               type="monotone"
