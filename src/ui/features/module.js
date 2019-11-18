@@ -37,6 +37,7 @@ import {
 import { useTitle, useGet } from '@brightleaf/react-hooks'
 import classnames from 'classnames'
 import modules from '../data/my-packages'
+import SparkLine from '../components/spark-line'
 import './tracking.scss'
 
 const COLORS = [
@@ -227,7 +228,7 @@ const StatsPage = ({ module }) => {
     return [uniq, totals, loading && backLoading && backBackLoading]
   }
 
-  useTitle('downloaded packages')
+  useTitle(`NPM Download Stats for ${mod.name}`)
 
   const [downloads, totals, isLoading] = useStatsGet(mod.name, COLORS[0])
   console.info('results', {
@@ -250,6 +251,20 @@ const StatsPage = ({ module }) => {
       </DropDownItem>
     )
   })
+
+  const data = downloads
+    .sort((a, b) => {
+      if (new Date(a.date) > new Date(b.date)) {
+        return 1
+      }
+      if (new Date(a.date) < new Date(b.date)) {
+        return -1
+      }
+      // a must be equal to b
+      return 0
+    })
+    .map(d => d[`${mod.name}-downloads`])
+
   return (
     <>
       <Hero>
@@ -348,6 +363,11 @@ const StatsPage = ({ module }) => {
           <Title is="4">
             {HEADING[duration][2]}: {!isLoading && totals?.downloads?.current}
           </Title>
+        </Column>
+      </Columns>
+      <Columns>
+        <Column isFull>
+          <SparkLine data={data} color={mod.color} width={400}></SparkLine>
         </Column>
       </Columns>
       <Columns>
