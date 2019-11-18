@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@brightleaf/elements": "^1.4.0",
+    "@brightleaf/elements": "^1.5.0",
     "@brightleaf/react-hooks": "^4.1.1",
     "@reach/router": "^1.2.1",
     "classnames": "^2.2.6",
