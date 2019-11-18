@@ -525,7 +525,7 @@ const StatsPage = () => {
 
       <Columns>
         <Column is="12">
-          <Panel heading={`Module Downloads ${totalPie}`}>
+          <Panel heading={`All Module Downloads in a Day`}>
             <PanelBlock as="div">
               {duration && (
                 <BarChart
