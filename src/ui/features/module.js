@@ -15,6 +15,9 @@ import {
   Tabs,
   DropDownItem,
   DropDownMenu,
+  Notification,
+  Panel,
+  PanelBlock,
 } from '@brightleaf/elements'
 import { navigate, Link } from '@reach/router'
 
@@ -79,7 +82,7 @@ const HEADING = {
   weekly: ['Two weeks ago', 'One week ago', 'This week'],
   fortnightly: ['Two fortnights ago', 'One fortnight ago', 'This fortnightly'],
   monthly: ['Two months ago', 'One month ago', 'This month'],
-  bimonthly: ['Two months ago', 'One month ago', 'This month'],
+  bimonthly: ['Four months ago', 'Two months ago', 'The past two months'],
 }
 const StatsPage = ({ module }) => {
   const [duration, setDuration] = useState('monthly')
@@ -273,7 +276,7 @@ const StatsPage = ({ module }) => {
           <SubTitle>NPM Stats - {mod.title}</SubTitle>
         </HeroBody>
       </Hero>
-      <Tabs isToggle isToggleRounded>
+      <Tabs isToggle>
         <TabList>
           <TabItem isActive={duration === 'bimonthly' && !isLoading}>
             <a
@@ -349,25 +352,32 @@ const StatsPage = ({ module }) => {
       </Tabs>
 
       <Columns>
-        <Column is="3">
-          <Title is="4">
-            {HEADING[duration][0]}: {!isLoading && totals?.downloads?.further}
-          </Title>
+        <Column isOneThird>
+          <Notification isShown isDismissible={false} isPrimary>
+            <div className="heading">{HEADING[duration][0]}:</div>
+            <Title as="div">{!isLoading && totals?.downloads?.further}</Title>
+          </Notification>
         </Column>
-        <Column is="3">
-          <Title is="4">
-            {HEADING[duration][1]}: {!isLoading && totals?.downloads?.previous}
-          </Title>
+        <Column isOneThird>
+          <Notification isShown isDismissible={false} isPrimary>
+            <div className="heading"> {HEADING[duration][1]}: </div>
+            <Title as="div">{!isLoading && totals?.downloads?.previous}</Title>
+          </Notification>
         </Column>
-        <Column is="3">
-          <Title is="4">
-            {HEADING[duration][2]}: {!isLoading && totals?.downloads?.current}
-          </Title>
+        <Column isOneThird>
+          <Notification isShown isDismissible={false} isPrimary>
+            <div className="heading"> {HEADING[duration][2]}:</div>
+            <Title as="div">{!isLoading && totals?.downloads?.current}</Title>
+          </Notification>
         </Column>
       </Columns>
       <Columns>
         <Column isFull>
-          <SparkLine data={data} color={mod.color} width={400}></SparkLine>
+          <Panel heading="Daily Downloads">
+            <PanelBlock as="div">
+              <SparkLine data={data} color={mod.color} width={400}></SparkLine>
+            </PanelBlock>
+          </Panel>
         </Column>
       </Columns>
       <Columns>
