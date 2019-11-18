@@ -120,6 +120,36 @@ const myPackages = [
     title: 'Loki JS',
     color: '#387d32',
   },
+  {
+    slug: 'delayed-job',
+    name: '@kev_nz/delayed-job',
+    title: 'Delayed Job',
+    color: '#b237dd',
+  },
+  {
+    slug: 'daylight',
+    name: '@kev_nz/daylight',
+    title: 'Daylight',
+    color: '#dd3750',
+  },
+  {
+    slug: 'eslint-config',
+    name: '@kev_nz/eslint-config',
+    title: 'ESLint Config',
+    color: '#837bfa',
+  },
+  {
+    slug: 'days-in-a-row',
+    name: 'days-in-a-row',
+    title: 'Days In A Row',
+    color: '#3d8510',
+  },
+  {
+    slug: 'stats-js',
+    name: 'stats-js',
+    title: 'Stats JS',
+    color: '#106485',
+  },
 ]
 
 export default myPackages
