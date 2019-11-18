@@ -18,6 +18,7 @@ import {
   Notification,
   Panel,
   PanelBlock,
+  Heading,
 } from '@brightleaf/elements'
 import { navigate, Link } from '@reach/router'
 
@@ -276,7 +277,7 @@ const StatsPage = ({ module }) => {
           <SubTitle>NPM Stats - {mod.title}</SubTitle>
         </HeroBody>
       </Hero>
-      <Tabs isToggle>
+      <Tabs isToggle isFullWidth>
         <TabList>
           <TabItem isActive={duration === 'bimonthly' && !isLoading}>
             <a
@@ -354,19 +355,19 @@ const StatsPage = ({ module }) => {
       <Columns>
         <Column isOneThird>
           <Notification isShown isDismissible={false} isPrimary>
-            <div className="heading">{HEADING[duration][0]}:</div>
+            <Heading>{HEADING[duration][0]}:</Heading>
             <Title as="div">{!isLoading && totals?.downloads?.further}</Title>
           </Notification>
         </Column>
         <Column isOneThird>
           <Notification isShown isDismissible={false} isPrimary>
-            <div className="heading"> {HEADING[duration][1]}: </div>
+            <Heading> {HEADING[duration][1]}: </Heading>
             <Title as="div">{!isLoading && totals?.downloads?.previous}</Title>
           </Notification>
         </Column>
         <Column isOneThird>
           <Notification isShown isDismissible={false} isPrimary>
-            <div className="heading"> {HEADING[duration][2]}:</div>
+            <Heading> {HEADING[duration][2]}:</Heading>
             <Title as="div">{!isLoading && totals?.downloads?.current}</Title>
           </Notification>
         </Column>
