@@ -290,7 +290,7 @@ const StatsPage = ({ module }) => {
                 setDuration('bimonthly')
               }}
             >
-              BiMonthly
+              Bi-Monthly
             </a>
           </TabItem>
           <TabItem isActive={duration === 'monthly' && !isLoading}>

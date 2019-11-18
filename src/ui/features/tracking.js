@@ -13,6 +13,8 @@ import {
   TabItem,
   TabList,
   Tabs,
+  PanelBlock,
+  Panel,
 } from '@brightleaf/elements'
 
 import {
@@ -336,322 +338,343 @@ const StatsPage = () => {
         </TabList>
       </Tabs>
       <Columns>
-        <Column>
-          <PieChart
-            width={600}
-            height={600}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 30,
-              bottom: 5,
-            }}
-          >
-            <Pie
-              dataKey="downloads"
-              isAnimationActive={false}
-              data={pie}
-              cx={200}
-              cy={200}
-              outerRadius={160}
-              fill="#8884d8"
-              label
-            >
-              {pie.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={entry.color} />
-              ))}
-            </Pie>
-            <Pie />
+        <Column isTwoFifths>
+          <Panel heading={`Module Downloads ${totalPie}`}>
+            <PanelBlock as="div">
+              <PieChart
+                width={550}
+                height={420}
+                margin={{
+                  top: 5,
+                  right: 30,
+                  left: 30,
+                  bottom: 5,
+                }}
+              >
+                <Pie
+                  dataKey="downloads"
+                  isAnimationActive={false}
+                  data={pie}
+                  cx={200}
+                  cy={200}
+                  outerRadius={160}
+                  fill="#8884d8"
+                  label
+                >
+                  {pie.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={entry.color} />
+                  ))}
+                </Pie>
+                <Pie />
 
-            <Tooltip content={<CustomTooltip />} />
-          </PieChart>
+                <Tooltip content={<CustomTooltip />} />
+              </PieChart>
+            </PanelBlock>
+          </Panel>
         </Column>
-        <Column>Downloads: {totalPie}</Column>
+        <Column isThreeFifths>
+          <Panel heading="Daily Module Downloads">
+            <PanelBlock as="div">
+              <LineChart
+                width={800}
+                height={420}
+                data={o}
+                margin={{
+                  top: 5,
+                  right: 30,
+                  left: 30,
+                  bottom: 5,
+                }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
+                <YAxis />
+                <Tooltip content={<CustomTooltip />} />
+                <Legend />
+                <Line
+                  type="monotone"
+                  dataKey={`@brightleaf/elements-downloads`}
+                  name="@brightleaf/elements"
+                  stroke="#00d1b2"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`@brightleaf/react-hooks-downloads`}
+                  name="@brightleaf/react-hooks"
+                  stroke="#1c8cdc"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`react-form-elements-downloads`}
+                  name="react-form-elements"
+                  stroke="#ea485c"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`creature-features-downloads`}
+                  name="creature-features"
+                  stroke="#fa7e17"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`@kev_nz/async-tools-downloads`}
+                  name="@kev_nz/async-tools"
+                  stroke="#7a9792"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`back-off-downloads`}
+                  name="back-off"
+                  stroke="#1957fb"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`pxpay-downloads`}
+                  name="pxpay"
+                  stroke="#c495f0"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`pxpost-downloads`}
+                  name="pxpost"
+                  stroke="#fb4c19"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`isom-downloads`}
+                  name="isom"
+                  stroke="#8f98ff"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`year-month-day-downloads`}
+                  name="year-month-day"
+                  stroke="#ff4674"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`1stand15th-downloads`}
+                  name="1stand15th"
+                  stroke="#c8fb19"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`xtconf-downloads`}
+                  name="xtconf"
+                  stroke="#0c837f"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`fuxor-downloads`}
+                  name="fuxor"
+                  stroke="#ffe31d"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  name="nom-de-plume"
+                  dataKey={`nom-de-plume-downloads`}
+                  stroke="#63323e"
+                  activeDot={{ r: 4 }}
+                />
+                <Line
+                  type="monotone"
+                  dataKey={`alternative-facts-downloads`}
+                  stroke="#b43e32"
+                  activeDot={{ r: 4 }}
+                />
+
+                <Line
+                  type="monotone"
+                  dataKey={`@kev_nz/lokijs-downloads`}
+                  name="@kev_nz/lokijs"
+                  stroke="#387d32"
+                  activeDot={{ r: 4 }}
+                />
+
+                <Line
+                  type="monotone"
+                  dataKey={`days-in-a-row-downloads`}
+                  name="days-in-a-row"
+                  stroke="#74d600"
+                  activeDot={{ r: 4 }}
+                />
+              </LineChart>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </PanelBlock>
+          </Panel>
+        </Column>
       </Columns>
+
       <Columns>
         <Column is="12">
-          <LineChart
-            width={900}
-            height={400}
-            data={o}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 30,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="date" />
-            <YAxis />
-            <Tooltip content={<CustomTooltip />} />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey={`@brightleaf/elements-downloads`}
-              name="@brightleaf/elements"
-              stroke="#00d1b2"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`@brightleaf/react-hooks-downloads`}
-              name="@brightleaf/react-hooks"
-              stroke="#1c8cdc"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`react-form-elements-downloads`}
-              name="react-form-elements"
-              stroke="#ea485c"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`creature-features-downloads`}
-              name="creature-features"
-              stroke="#fa7e17"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`@kev_nz/async-tools-downloads`}
-              name="@kev_nz/async-tools"
-              stroke="#7a9792"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`back-off-downloads`}
-              name="back-off"
-              stroke="#1957fb"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`pxpay-downloads`}
-              name="pxpay"
-              stroke="#c495f0"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`pxpost-downloads`}
-              name="pxpost"
-              stroke="#fb4c19"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`isom-downloads`}
-              name="isom"
-              stroke="#8f98ff"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`year-month-day-downloads`}
-              name="year-month-day"
-              stroke="#ff4674"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`1stand15th-downloads`}
-              name="1stand15th"
-              stroke="#c8fb19"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`xtconf-downloads`}
-              name="xtconf"
-              stroke="#0c837f"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`fuxor-downloads`}
-              name="fuxor"
-              stroke="#ffe31d"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              name="nom-de-plume"
-              dataKey={`nom-de-plume-downloads`}
-              stroke="#63323e"
-              activeDot={{ r: 4 }}
-            />
-            <Line
-              type="monotone"
-              dataKey={`alternative-facts-downloads`}
-              stroke="#b43e32"
-              activeDot={{ r: 4 }}
-            />
+          <Panel heading={`Module Downloads ${totalPie}`}>
+            <PanelBlock as="div">
+              {duration && (
+                <BarChart
+                  width={1200}
+                  height={500}
+                  data={o}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 30,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="date" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
 
-            <Line
-              type="monotone"
-              dataKey={`@kev_nz/lokijs-downloads`}
-              name="@kev_nz/lokijs"
-              stroke="#387d32"
-              activeDot={{ r: 4 }}
-            />
+                  <Bar
+                    type="monotone"
+                    dataKey={`@brightleaf/elements-downloads`}
+                    name="@brightleaf/elements"
+                    fill="#00d1b2"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`@brightleaf/react-hooks-downloads`}
+                    name="@brightleaf/react-hooks"
+                    fill="#1c8cdc"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`react-form-elements-downloads`}
+                    name="react-form-elements"
+                    fill="#ea485c"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`creature-features-downloads`}
+                    name="creature-features"
+                    fill="#fa7e17"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`@kev_nz/async-tools-downloads`}
+                    name="@kev_nz/async-tools"
+                    fill="#7a9792"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`back-off-downloads`}
+                    name="back-off"
+                    fill="#1957fb"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`pxpay-downloads`}
+                    name="pxpay"
+                    fill="#c495f0"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`pxpost-downloads`}
+                    name="pxpost"
+                    fill="#fb4c19"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`isom-downloads`}
+                    name="isom"
+                    fill="#8f98ff"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`year-month-day-downloads`}
+                    name="year-month-day"
+                    fill="#ff4674"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`1stand15th-downloads`}
+                    name="1stand15th"
+                    fill="#c8fb19"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`xtconf-downloads`}
+                    name="xtconf"
+                    fill="#0c837f"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`fuxor-downloads`}
+                    name="fuxor"
+                    fill="#ffe31d"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    name="nom-de-plume"
+                    dataKey={`nom-de-plume-downloads`}
+                    fill="#63323e"
+                    {...stacked}
+                  />
+                  <Bar
+                    type="monotone"
+                    dataKey={`alternative-facts-downloads`}
+                    fill="#b43e32"
+                    {...stacked}
+                  />
 
-            <Line
-              type="monotone"
-              dataKey={`days-in-a-row-downloads`}
-              name="days-in-a-row"
-              stroke="#74d600"
-              activeDot={{ r: 4 }}
-            />
-          </LineChart>
-        </Column>
-      </Columns>
-      <Columns>
-        <Column is="12">
-          {duration && (
-            <BarChart
-              width={900}
-              height={400}
-              data={o}
-              margin={{
-                top: 5,
-                right: 30,
-                left: 30,
-                bottom: 5,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="date" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
+                  <Bar
+                    type="monotone"
+                    dataKey={`@kev_nz/lokijs-downloads`}
+                    name="@kev_nz/lokijs"
+                    fill="#387d32"
+                    {...stacked}
+                  />
 
-              <Bar
-                type="monotone"
-                dataKey={`@brightleaf/elements-downloads`}
-                name="@brightleaf/elements"
-                fill="#00d1b2"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`@brightleaf/react-hooks-downloads`}
-                name="@brightleaf/react-hooks"
-                fill="#1c8cdc"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`react-form-elements-downloads`}
-                name="react-form-elements"
-                fill="#ea485c"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`creature-features-downloads`}
-                name="creature-features"
-                fill="#fa7e17"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`@kev_nz/async-tools-downloads`}
-                name="@kev_nz/async-tools"
-                fill="#7a9792"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`back-off-downloads`}
-                name="back-off"
-                fill="#1957fb"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`pxpay-downloads`}
-                name="pxpay"
-                fill="#c495f0"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`pxpost-downloads`}
-                name="pxpost"
-                fill="#fb4c19"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`isom-downloads`}
-                name="isom"
-                fill="#8f98ff"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`year-month-day-downloads`}
-                name="year-month-day"
-                fill="#ff4674"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`1stand15th-downloads`}
-                name="1stand15th"
-                fill="#c8fb19"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`xtconf-downloads`}
-                name="xtconf"
-                fill="#0c837f"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`fuxor-downloads`}
-                name="fuxor"
-                fill="#ffe31d"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                name="nom-de-plume"
-                dataKey={`nom-de-plume-downloads`}
-                fill="#63323e"
-                {...stacked}
-              />
-              <Bar
-                type="monotone"
-                dataKey={`alternative-facts-downloads`}
-                fill="#b43e32"
-                {...stacked}
-              />
-
-              <Bar
-                type="monotone"
-                dataKey={`@kev_nz/lokijs-downloads`}
-                name="@kev_nz/lokijs"
-                fill="#387d32"
-                {...stacked}
-              />
-
-              <Bar
-                type="monotone"
-                dataKey={`days-in-a-row-downloads`}
-                name="days-in-a-row"
-                fill="#74d600"
-                {...stacked}
-              />
-            </BarChart>
-          )}
-          <br />
+                  <Bar
+                    type="monotone"
+                    dataKey={`days-in-a-row-downloads`}
+                    name="days-in-a-row"
+                    fill="#74d600"
+                    {...stacked}
+                  />
+                </BarChart>
+              )}
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </PanelBlock>
+          </Panel>
           <br />
           <br />
           <br />
