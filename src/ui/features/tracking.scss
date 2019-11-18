@@ -20,11 +20,8 @@
 
   border-top-color: rgb(219, 219, 219);
   border-right-color: rgb(219, 219, 219);
-
   border-radius: 290486px;
-
   border-right-color: transparent;
-
   border-top-color: transparent;
 
   content: "";
@@ -36,4 +33,16 @@
   position: relative;
 
   width: 1em;
+}
+
+.chart-tooltip {
+  background: #ffffff;
+  padding: 5px;
+  border: 1px solid black;
+  .label {
+    font-weight: bold;
+  }
+  .display {
+    font-size: smaller;
+  }
 }
