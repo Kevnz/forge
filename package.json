@@ -15,6 +15,7 @@
     "@brightleaf/elements": "^1.5.0",
     "@brightleaf/react-hooks": "^4.1.1",
     "@reach/router": "^1.2.1",
+    "bulmaswatch": "^0.7.5",
     "classnames": "^2.2.6",
     "hash-source": "^1.0.4",
     "isom": "^1.0.0",
