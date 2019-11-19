@@ -85,162 +85,120 @@ const HEADING = {
   monthly: ['Two months ago', 'One month ago', 'This month'],
   bimonthly: ['Four months ago', 'Two months ago', 'The past two months'],
 }
+
+const usePkgDetails = pkg => {
+  const { data, loading, getUrl } = useGet(
+    `https://kev-pi.herokuapp.com/api/package/details?pkg=${pkg}`
+  )
+
+  useEffect(() => {
+    getUrl()
+  }, [pkg])
+  return [data, loading]
+}
+const usePkgDownloads = (pkg, duration, color) => {
+  const { data, loading, getUrl } = useGet(
+    `https://kev-pi.herokuapp.com/api/package/yearly?pkg=${pkg}`
+  )
+  useEffect(() => {
+    getUrl()
+  }, [pkg])
+
+  let downs = [
+    {
+      downloads: 0,
+      date: '2019-09-27',
+    },
+  ]
+  let previousDowns = [
+    {
+      downloads: 0,
+      date: '2019-09-26',
+    },
+  ]
+  let furtherBackDowns = [
+    {
+      downloads: 0,
+      date: '2019-09-25',
+    },
+  ]
+  let totals = { name: pkg, downloads: 0 }
+
+  const breakdownMapper = down => {
+    return {
+      date: down.end,
+      [`${pkg}-downloads`]: down.downloads,
+      downloads: down.downloads,
+      name: pkg,
+    }
+  }
+  if (data && data.breakdown) {
+    downs = data.breakdown
+      .slice(data.breakdown.length - backs[duration])
+      .map(breakdownMapper)
+
+    previousDowns = data.breakdown
+      .slice(
+        data.breakdown.length - backsBack[duration],
+        data.breakdown.length - backs[duration]
+      )
+      .map(breakdownMapper)
+    furtherBackDowns = data.breakdown
+      .slice(
+        data.breakdown.length - backsBack[duration] - backs[duration] + 2,
+        data.breakdown.length - backsBack[duration]
+      )
+      .map(breakdownMapper)
+
+    totals = {
+      name: pkg,
+      downloads: {
+        current: downs.reduce((acc, current) => {
+          acc = acc + current.downloads
+          return acc
+        }, 0),
+        previous: previousDowns.reduce((acc, current) => {
+          acc = acc + current.downloads
+          return acc
+        }, 0),
+        further: furtherBackDowns.reduce((acc, current) => {
+          acc = acc + current.downloads
+          return acc
+        }, 0),
+      },
+      color,
+    }
+  }
+
+  const uniq = [
+    ...new Set(previousDowns.concat(downs).concat(furtherBackDowns)),
+  ].sort((a, b) => {
+    if (new Date(a.date) > new Date(b.date)) {
+      return 1
+    }
+    if (new Date(a.date) < new Date(b.date)) {
+      return -1
+    }
+    // a must be equal to b
+    return 0
+  })
+  return [uniq, totals, loading]
+}
 const StatsPage = ({ module }) => {
   const [duration, setDuration] = useState('monthly')
   const [moduleSlug, setModuleSlug] = useState(module)
 
   const mod = modules.find(pkg => pkg.slug === moduleSlug)
 
-  const useStatsGet = (pkg, color) => {
-    const { data, loading, getUrl } = useGet(
-      `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}`
-    )
-    const { data: backData, loading: backLoading, getUrl: getBackUrl } = useGet(
-      `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}&back=${backs[duration]}`
-    )
-    const {
-      data: backBackData,
-      loading: backBackLoading,
-      getUrl: getBackBackUrl,
-    } = useGet(
-      `https://kev-pi.herokuapp.com/api/package/${duration}?pkg=${pkg}&back=${backsBack[duration]}`
-    )
-    useEffect(() => {
-      getUrl()
-      getBackUrl()
-      getBackBackUrl()
-    }, [pkg, duration])
-
-    let downs = [
-      {
-        downloads: 0,
-        date: '2019-09-27',
-      },
-    ]
-    let previousDowns = [
-      {
-        downloads: 0,
-        date: '2019-09-26',
-      },
-    ]
-    let furtherBackDowns = [
-      {
-        downloads: 0,
-        date: '2019-09-25',
-      },
-    ]
-    let totals = { name: pkg, downloads: 0 }
-    const previousTotals = { name: pkg, downloads: 0 }
-    const doubleBackTotals = { name: pkg, downloads: 0 }
-    if (
-      data &&
-      data.breakdown &&
-      backData &&
-      backData.breakdown &&
-      backBackData &&
-      backBackData.breakdown
-    ) {
-      // data.breakdown.pop()
-      downs = data.breakdown.map(down => {
-        // downloads	101
-        // start	2019-09-26
-        // end	2019-09-26
-        // package	back-off
-
-        return {
-          date: down.end,
-          [`${pkg}-downloads`]: down.downloads,
-          name: pkg,
-        }
-      })
-      previousDowns = backData.breakdown.map(down => {
-        // downloads	101
-        // start	2019-09-26
-        // end	2019-09-26
-        // package	back-off
-
-        return {
-          date: down.end,
-          [`${pkg}-downloads`]: down.downloads,
-          name: pkg,
-        }
-      })
-      furtherBackDowns = backBackData.breakdown.map(down => {
-        return {
-          date: down.end,
-          [`${pkg}-downloads`]: down.downloads,
-          name: pkg,
-        }
-      })
-      totals = {
-        name: pkg,
-        downloads: {
-          current: data.totals.downloads,
-          previous: backData.totals.downloads,
-          further: backBackData.totals.downloads,
-        },
-        color,
-      }
-    }
-    if (data && data.downloads && backData && backData.downloads) {
-      console.log('the other one setting totals', data)
-      downs = [
-        {
-          date: data.end,
-          [`${pkg}-downloads`]: data.downloads,
-          name: pkg,
-        },
-      ]
-      previousDowns = [
-        {
-          date: backData.end,
-          [`${pkg}-downloads`]: backData.downloads,
-          name: pkg,
-        },
-      ]
-      furtherBackDowns = [
-        {
-          date: backBackData.end,
-          [`${pkg}-downloads`]: backBackData.downloads,
-          name: pkg,
-        },
-      ]
-
-      totals = {
-        name: pkg,
-        downloads: {
-          current:
-            data.totals && data.totals.downloads
-              ? data.totals.downloads
-              : data.downloads,
-          previous:
-            backData.totals && backData.totals.downloads
-              ? backData.totals.downloads
-              : backData.downloads,
-          further:
-            backBackData.totals && backBackData.totals.downloads
-              ? backBackData.totals.downloads
-              : backBackData.downloads,
-        },
-        color,
-      }
-    }
-
-    const uniq = [
-      ...new Set(previousDowns.concat(downs).concat(furtherBackDowns)),
-    ]
-    return [uniq, totals, loading && backLoading && backBackLoading]
-  }
-
   useTitle(`NPM Download Stats for ${mod.name}`)
+  const [downloads, totals, isLoading] = usePkgDownloads(
+    mod.name,
+    duration,
+    mod.color
+  )
 
-  const [downloads, totals, isLoading] = useStatsGet(mod.name, COLORS[0])
-  console.info('results', {
-    downloads,
-    totals,
-  })
-
-  const stacked = duration !== 'daily' ? { stackId: 'a' } : {}
+  const [pkgDetails, isLoadingDetails] = usePkgDetails(mod.name)
+  console.log('details', { pkgDetails, isLoadingDetails })
 
   const moduleItems = modules.map(m => {
     return (
@@ -269,6 +227,16 @@ const StatsPage = ({ module }) => {
     })
     .map(d => d[`${mod.name}-downloads`])
 
+  const min = Math.min(...data)
+  const max = Math.max(...data)
+  const minDays = downloads.filter(d => {
+    return d[`${mod.name}-downloads`] === min
+  })
+  const maxDays = downloads.filter(d => {
+    return d[`${mod.name}-downloads`] === max
+  })
+  console.log('min days', minDays)
+  console.log('max days', maxDays)
   return (
     <>
       <Hero>
@@ -379,6 +347,32 @@ const StatsPage = ({ module }) => {
               <SparkLine data={data} color={mod.color} width={400}></SparkLine>
             </PanelBlock>
           </Panel>
+        </Column>
+      </Columns>
+      <Columns>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isWarning>
+            <Heading>Least Downloads:</Heading>
+            <Title as="div">{!isLoading && min}</Title>
+          </Notification>
+        </Column>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isWarning>
+            <Heading>Times Least Hit:</Heading>
+            <Title as="div">{!isLoading && minDays.length}</Title>
+          </Notification>
+        </Column>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isSuccess isBold>
+            <Heading> Most Downloads: </Heading>
+            <Title as="div">{!isLoading && max}</Title>
+          </Notification>
+        </Column>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isSuccess>
+            <Heading>Times Most Hit:</Heading>
+            <Title as="div">{!isLoading && maxDays.length}</Title>
+          </Notification>
         </Column>
       </Columns>
       <Columns>
