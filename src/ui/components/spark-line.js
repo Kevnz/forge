@@ -25,12 +25,13 @@ const convertDataToPoints = ({
   }))
 }
 
-const SparkLine = ({ data, color, width, height, margin }) => {
+const SparkLine = ({ data, color, width, height, margin, limit }) => {
   const points = convertDataToPoints({
     data,
     width,
     height,
     margin,
+    limit,
   })
 
   const linePoints = points.map(p => [p.x, p.y]).reduce((a, b) => a.concat(b))

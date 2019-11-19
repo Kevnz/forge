@@ -14,7 +14,7 @@ import SparkLine from '../components/spark-line'
 
 const useStatsGet = pkg => {
   const { data, getUrl } = useGet(
-    `https://kev-pi.herokuapp.com/api/package/bimonthly?pkg=${pkg}`
+    `https://kev-pi.herokuapp.com/api/package/yearly?pkg=${pkg}`
   )
   useEffect(() => {
     getUrl()

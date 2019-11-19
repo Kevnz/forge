@@ -42,6 +42,7 @@ const ContactForm = () => {
         <Hidden name="form-name" initialValue="contact" />
 
         <ConfirmButton
+          title="confirm"
           question="Are you sure you want to send the message?"
           onConfirm={e => {
             console.log('confirm button click')
