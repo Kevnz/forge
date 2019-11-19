@@ -1,31 +1,5 @@
 @charset "utf-8";
-// @import "../../../node_modules/bulma/sass/utilities/initial-variables";
-/* Color Theme Swatches in Hex
-$Color-Theme-Dark: #00205D;
-$Color-Theme-Blue: #003292;
-$Color-Theme-Yellow: #FBC100;
-$Color-Theme-Orange: #FF7B00;
-$Color-Theme-Red: #ED0000;
-$Color-Theme-Green: #025930;
 
-
-$blue: $Color-Theme-Blue;
-
-$primary: $Color-Theme-Orange;
-$warning: $Color-Theme-Yellow;
-$success: $Color-Theme-Green;
-$danger: $Color-Theme-Red;
-$info: $Color-Theme-Blue;
-$dark: $Color-Theme-Dark;
-// $primary-invert: $pink-invert;
-// Customization
-
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
-
-@import "../../../node_modules/bulma/bulma";
-*/
 @import "bulma/sass/utilities/initial-variables";
 
 @import "~bulmaswatch/united/variables";
