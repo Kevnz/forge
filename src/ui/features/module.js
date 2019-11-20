@@ -20,49 +20,13 @@ import {
   PanelBlock,
   Heading,
 } from '@brightleaf/elements'
-import { navigate, Link } from '@reach/router'
-
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  PieChart,
-  Pie,
-  Sector,
-  Cell,
-  BarChart,
-  Bar,
-} from 'recharts'
+import { navigate } from '@reach/router'
 
 import { useTitle, useGet } from '@brightleaf/react-hooks'
 import classnames from 'classnames'
 import modules from '../data/my-packages'
 import SparkLine from '../components/spark-line'
 import './tracking.scss'
-
-const COLORS = [
-  '#00d1b2',
-  '#1c8cdc',
-  '#ea485c',
-  '#fa7e17',
-  '#7a9792',
-  '#1957fb',
-  '#c495f0',
-  '#fb4c19',
-  '#8f98ff',
-  '#ff4674',
-  '#c8fb19',
-  '#0c837f',
-  '#ffe31d',
-  '#63323e',
-  '#b43e32',
-  '#387d32',
-  '#74d600',
-]
 
 const backs = {
   daily: 2,
@@ -214,6 +178,17 @@ const StatsPage = ({ module }) => {
     )
   })
 
+  const currentVersion = pkgDetails['dist-tags']
+    ? pkgDetails['dist-tags'].latest
+    : '0.0.0'
+  const versions = pkgDetails.versions ? Object.keys(pkgDetails.versions) : []
+
+  const createdOn = pkgDetails.time
+    ? new Date(pkgDetails.time.created)
+    : new Date()
+  const lastPublishedOn = pkgDetails.time
+    ? new Date(pkgDetails.time[currentVersion])
+    : new Date()
   const data = downloads
     .sort((a, b) => {
       if (new Date(a.date) > new Date(b.date)) {
@@ -235,8 +210,7 @@ const StatsPage = ({ module }) => {
   const maxDays = downloads.filter(d => {
     return d[`${mod.name}-downloads`] === max
   })
-  console.log('min days', minDays)
-  console.log('max days', maxDays)
+
   return (
     <>
       <Hero>
@@ -376,9 +350,40 @@ const StatsPage = ({ module }) => {
         </Column>
       </Columns>
       <Columns>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isInfo>
+            <Heading>Current Version:</Heading>
+            <Title as="div">{!isLoading && currentVersion}</Title>
+          </Notification>
+        </Column>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isInfo>
+            <Heading>Total Versions</Heading>
+            <Title as="div">{!isLoading && versions.length}</Title>
+          </Notification>
+        </Column>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isInfo>
+            <Heading>Created On</Heading>
+            <Title as="div" is="4">
+              {!isLoading && createdOn.toDateString()}
+            </Title>
+          </Notification>
+        </Column>
+        <Column isOneQuarter>
+          <Notification isShown isDismissible={false} isInfo>
+            <Heading>Last Published On</Heading>
+            <Title as="div" is="4">
+              {!isLoading && lastPublishedOn.toDateString()}
+            </Title>
+          </Notification>
+        </Column>
+      </Columns>
+      <Columns>
         <Column>
-          {' '}
-          <DropDownMenu label="Pick Module">{moduleItems}</DropDownMenu>
+          <DropDownMenu label="Pick Module" isUp>
+            {moduleItems}
+          </DropDownMenu>
         </Column>
       </Columns>
     </>
