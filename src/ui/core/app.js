@@ -71,14 +71,14 @@ export default class App extends Component {
               <MenuLabel>General</MenuLabel>
               <MenuList className="menu-list">
                 <MenuListItem>
-                  <Link to="/">
+                  <UpLink to="/">
                     <Icon fas icon="home" /> Home
-                  </Link>
+                  </UpLink>
                 </MenuListItem>
                 <MenuListItem>
-                  <Link to="/contact">
+                  <UpLink to="/contact">
                     <Icon fas icon="inbox" /> Contact
-                  </Link>
+                  </UpLink>
                 </MenuListItem>
                 <MenuListItem>
                   <UpLink to="/confirm">
@@ -149,8 +149,9 @@ export default class App extends Component {
           <NavBar isPrimary isFixedTop>
             <NavBarBrand
               src="/flames.png"
-              href="https://brightleaf.dev"
+              href="/"
               target="navbarBasicExample"
+              title="The Forge"
               width="32"
               height="32"
             />
