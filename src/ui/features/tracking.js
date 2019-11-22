@@ -15,8 +15,10 @@ import {
   Tabs,
   PanelBlock,
   Panel,
+  BreadcrumbItem,
+  Breadcrumb,
 } from '@brightleaf/elements'
-
+import { Link } from '@reach/router'
 import {
   LineChart,
   Line,
@@ -263,6 +265,17 @@ const StatsPage = () => {
           <SubTitle>NPM Stats</SubTitle>
         </HeroBody>
       </Hero>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <Link to="/">Home</Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <Link to="/modules">Modules</Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <a>Download Tracking</a>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Tabs isToggle isFullWidth>
         <TabList>
           <TabItem isActive={duration === 'bimonthly' && !isLoading}>
