@@ -29,25 +29,38 @@ import SparkLine from '../components/spark-line'
 import './tracking.scss'
 
 const backs = {
-  daily: 2,
-  weekly: 8,
-  fortnightly: 15,
-  monthly: 33,
-  bimonthly: 63,
+  daily: 1,
+  weekly: 7,
+  fortnightly: 14,
+  monthly: 31,
+  bimonthly: 62,
+  quarterly: 91,
 }
+
 const backsBack = {
-  daily: 3,
-  weekly: 15,
-  fortnightly: 29,
-  monthly: 64,
-  bimonthly: 126,
+  daily: 2,
+  weekly: 14,
+  fortnightly: 28,
+  monthly: 62,
+  bimonthly: 124,
+  quarterly: 182,
 }
+
+const units = {
+  daily: 1,
+  weekly: 7,
+  fortnightly: 14,
+  monthly: 31,
+  bimonthly: 62,
+}
+
 const HEADING = {
   daily: ['Three days ago', 'Two days ago', 'Yesterday'],
   weekly: ['Two weeks ago', 'One week ago', 'This week'],
   fortnightly: ['Two fortnights ago', 'One fortnight ago', 'This fortnightly'],
   monthly: ['Two months ago', 'One month ago', 'This month'],
   bimonthly: ['Four months ago', 'Two months ago', 'The past two months'],
+  quarterly: ['Nine months ago', 'Six months ago', 'The past thre months'],
 }
 
 const usePkgDetails = pkg => {
@@ -97,22 +110,33 @@ const usePkgDownloads = (pkg, duration, color) => {
     }
   }
   if (data && data.breakdown) {
-    downs = data.breakdown
+    downs = []
+      .concat(data.breakdown)
       .slice(data.breakdown.length - backs[duration])
       .map(breakdownMapper)
 
-    previousDowns = data.breakdown
+    previousDowns = []
+      .concat(data.breakdown)
       .slice(
         data.breakdown.length - backsBack[duration],
         data.breakdown.length - backs[duration]
       )
       .map(breakdownMapper)
-    furtherBackDowns = data.breakdown
+
+    const fbdDuece = [].concat(data.breakdown)
+
+    furtherBackDowns = []
+      .concat(data.breakdown)
       .slice(
-        data.breakdown.length - backsBack[duration] - backs[duration] + 2,
-        data.breakdown.length - backsBack[duration]
+        fbdDuece.length - (backsBack[duration] + backs[duration]),
+        fbdDuece.length - backsBack[duration]
       )
       .map(breakdownMapper)
+
+    const further = furtherBackDowns.reduce((acc, current) => {
+      acc = acc + current.downloads
+      return acc
+    }, 0)
 
     totals = {
       name: pkg,
@@ -125,10 +149,7 @@ const usePkgDownloads = (pkg, duration, color) => {
           acc = acc + current.downloads
           return acc
         }, 0),
-        further: furtherBackDowns.reduce((acc, current) => {
-          acc = acc + current.downloads
-          return acc
-        }, 0),
+        further: further,
       },
       color,
     }
@@ -162,7 +183,6 @@ const StatsPage = ({ module }) => {
   )
 
   const [pkgDetails, isLoadingDetails] = usePkgDetails(mod.name)
-  console.log('details', { pkgDetails, isLoadingDetails })
 
   const moduleItems = modules.map(m => {
     return (
@@ -202,14 +222,16 @@ const StatsPage = ({ module }) => {
     })
     .map(d => d[`${mod.name}-downloads`])
 
-  const min = Math.min(...data)
-  const max = Math.max(...data)
+  const min = Math.min(...data) || 0
+  const max = Math.max(...data) || 0
   const minDays = downloads.filter(d => {
     return d[`${mod.name}-downloads`] === min
   })
   const maxDays = downloads.filter(d => {
     return d[`${mod.name}-downloads`] === max
   })
+
+  const isAnyLoading = isLoading || isLoadingDetails
 
   return (
     <>
@@ -221,10 +243,10 @@ const StatsPage = ({ module }) => {
       </Hero>
       <Tabs isToggle isFullWidth>
         <TabList>
-          <TabItem isActive={duration === 'bimonthly' && !isLoading}>
+          <TabItem isActive={duration === 'bimonthly' && !isAnyLoading}>
             <a
               className={classnames('tab-link', {
-                'is-loading': isLoading && duration === 'bimonthly',
+                'is-loading': isAnyLoading && duration === 'bimonthly',
               })}
               href="#"
               onClick={e => {
@@ -235,10 +257,10 @@ const StatsPage = ({ module }) => {
               Bi-Monthly
             </a>
           </TabItem>
-          <TabItem isActive={duration === 'monthly' && !isLoading}>
+          <TabItem isActive={duration === 'monthly' && !isAnyLoading}>
             <a
               className={classnames('tab-link', {
-                'is-loading': isLoading && duration === 'monthly',
+                'is-loading': isAnyLoading && duration === 'monthly',
               })}
               href="#"
               onClick={e => {
@@ -249,11 +271,11 @@ const StatsPage = ({ module }) => {
               Monthly
             </a>
           </TabItem>
-          <TabItem isActive={duration === 'fortnightly' && !isLoading}>
+          <TabItem isActive={duration === 'fortnightly' && !isAnyLoading}>
             <a
               href="#"
               className={classnames('tab-link', {
-                'is-loading': isLoading && duration === 'fortnightly',
+                'is-loading': isAnyLoading && duration === 'fortnightly',
               })}
               onClick={e => {
                 e.preventDefault()
@@ -263,11 +285,11 @@ const StatsPage = ({ module }) => {
               Fortnightly
             </a>
           </TabItem>
-          <TabItem isActive={duration === 'weekly' && !isLoading}>
+          <TabItem isActive={duration === 'weekly' && !isAnyLoading}>
             <a
               href="#"
               className={classnames('tab-link', {
-                'is-loading': isLoading && duration === 'weekly',
+                'is-loading': isAnyLoading && duration === 'weekly',
               })}
               onClick={e => {
                 e.preventDefault()
@@ -277,10 +299,10 @@ const StatsPage = ({ module }) => {
               Weekly
             </a>
           </TabItem>
-          <TabItem isActive={duration === 'daily' && !isLoading}>
+          <TabItem isActive={duration === 'daily' && !isAnyLoading}>
             <a
               className={classnames('tab-link', {
-                'is-loading': isLoading && duration === 'daily',
+                'is-loading': isAnyLoading && duration === 'daily',
               })}
               href="#"
               onClick={e => {
@@ -298,19 +320,25 @@ const StatsPage = ({ module }) => {
         <Column isOneThird>
           <Notification isShown isDismissible={false} isPrimary>
             <Heading>{HEADING[duration][0]}:</Heading>
-            <Title as="div">{!isLoading && totals?.downloads?.further}</Title>
+            <Title as="div">
+              {!isAnyLoading && totals?.downloads?.further}
+            </Title>
           </Notification>
         </Column>
         <Column isOneThird>
           <Notification isShown isDismissible={false} isPrimary>
             <Heading> {HEADING[duration][1]}: </Heading>
-            <Title as="div">{!isLoading && totals?.downloads?.previous}</Title>
+            <Title as="div">
+              {!isAnyLoading && totals?.downloads?.previous}
+            </Title>
           </Notification>
         </Column>
         <Column isOneThird>
           <Notification isShown isDismissible={false} isPrimary>
             <Heading> {HEADING[duration][2]}:</Heading>
-            <Title as="div">{!isLoading && totals?.downloads?.current}</Title>
+            <Title as="div">
+              {!isAnyLoading && totals?.downloads?.current}
+            </Title>
           </Notification>
         </Column>
       </Columns>
@@ -327,25 +355,25 @@ const StatsPage = ({ module }) => {
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isWarning>
             <Heading>Least Downloads:</Heading>
-            <Title as="div">{!isLoading && min}</Title>
+            <Title as="div">{!isAnyLoading && min}</Title>
           </Notification>
         </Column>
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isWarning>
             <Heading>Times Least Hit:</Heading>
-            <Title as="div">{!isLoading && minDays.length}</Title>
+            <Title as="div">{!isAnyLoading && minDays.length}</Title>
           </Notification>
         </Column>
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isSuccess isBold>
             <Heading> Most Downloads: </Heading>
-            <Title as="div">{!isLoading && max}</Title>
+            <Title as="div">{!isAnyLoading && max}</Title>
           </Notification>
         </Column>
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isSuccess>
             <Heading>Times Most Hit:</Heading>
-            <Title as="div">{!isLoading && maxDays.length}</Title>
+            <Title as="div">{!isAnyLoading && maxDays?.length}</Title>
           </Notification>
         </Column>
       </Columns>
@@ -353,20 +381,20 @@ const StatsPage = ({ module }) => {
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isInfo>
             <Heading>Current Version:</Heading>
-            <Title as="div">{!isLoading && currentVersion}</Title>
+            <Title as="div">{!isAnyLoading && currentVersion}</Title>
           </Notification>
         </Column>
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isInfo>
             <Heading>Total Versions</Heading>
-            <Title as="div">{!isLoading && versions.length}</Title>
+            <Title as="div">{!isAnyLoading && versions.length}</Title>
           </Notification>
         </Column>
         <Column isOneQuarter>
           <Notification isShown isDismissible={false} isInfo>
             <Heading>Created On</Heading>
             <Title as="div" is="4">
-              {!isLoading && createdOn.toDateString()}
+              {!isAnyLoading && createdOn.toDateString()}
             </Title>
           </Notification>
         </Column>
@@ -374,7 +402,7 @@ const StatsPage = ({ module }) => {
           <Notification isShown isDismissible={false} isInfo>
             <Heading>Last Published On</Heading>
             <Title as="div" is="4">
-              {!isLoading && lastPublishedOn.toDateString()}
+              {!isAnyLoading && lastPublishedOn.toDateString()}
             </Title>
           </Notification>
         </Column>
