@@ -2,7 +2,12 @@
   "test": "npx jest --config=jest.config.js --detectOpenHandles --forceExit --watch",
   "lint": "npx eslint ./src",
   "build": "npx webpack --config ./src/webpack/prod.config.js --mode production",
-
+  "themes": [
+    "npx node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o dist ./src/ui/core/themes/lux.scss",
+    "npx node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o dist ./src/ui/core/themes/united.scss",
+    "npx node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o dist ./src/ui/core/themes/darkly.scss",
+    "npx node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o dist ./src/ui/core/themes/flatly.scss"
+  ],
   "dev": [
     "npx webpack-dev-server --config ./src/webpack/dev.config.js --mode development"
   ],
