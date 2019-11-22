@@ -2,6 +2,8 @@
 
 @import "bulma/sass/utilities/initial-variables";
 
+$navbar-burger-color: #7f888f;
+
 @import "~bulmaswatch/united/variables";
 
 @import "bulma/bulma";
@@ -11,4 +13,8 @@
 .flame-log {
   width: 62px;
   vertical-align: middle;
+}
+
+.navigation-view .navbar-burger {
+  color: $navbar-burger-color;
 }
