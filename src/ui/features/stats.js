@@ -6,9 +6,12 @@ import {
   SubTitle,
   Panel,
   PanelBlock,
+  BreadcrumbItem,
+  Breadcrumb,
 } from '@brightleaf/elements'
 
 import { useTitle, useGet } from '@brightleaf/react-hooks'
+import { Link } from '@reach/router'
 import modules from '../data/my-packages'
 import SparkLine from '../components/spark-line'
 
@@ -50,6 +53,17 @@ const StatsPage = () => {
   return (
     <>
       <br />
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <Link to="/">Home</Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <Link to="/modules">Modules</Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <a>Overview</a>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Columns isMultiline>{lines}</Columns>
     </>
   )
