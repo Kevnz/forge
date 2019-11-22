@@ -7,22 +7,18 @@ import {
   Location,
 } from '@reach/router'
 import {
-  Hero,
-  HeroBody,
   Section,
-  Title,
-  SubTitle,
   NavBar,
   NavBarBrand,
-  NavigationView,
   Menu,
   MenuLabel,
   MenuList,
   MenuListItem,
   Icon,
+  NavigationView,
+  Loader,
 } from '@brightleaf/elements'
 import createHashSource from 'hash-source'
-import { NavMenu } from '../components/nav-menu'
 import modules from '../data/my-packages'
 import './app.scss'
 
@@ -38,8 +34,10 @@ const Stats = React.lazy(() => import('../features/stats'))
 const Tracking = React.lazy(() => import('../features/tracking'))
 const TheModule = React.lazy(() => import('../features/module'))
 const Dashboard = React.lazy(() => import('../features/dashboard'))
-console.log('Tracking', Tracking)
-
+const Modules = React.lazy(() => import('../features/modules'))
+const SignUp = React.lazy(() => import('../features/signup'))
+const Login = React.lazy(() => import('../features/login'))
+const LoaderPage = React.lazy(() => import('../features/loading'))
 const UpLink = props => {
   return (
     <Location>
@@ -66,7 +64,7 @@ export default class App extends Component {
     return (
       <LocationProvider history={history}>
         <Fragment>
-          <NavMenu>
+          <NavigationView isStatic>
             <Menu>
               <MenuLabel>General</MenuLabel>
               <MenuList className="menu-list">
@@ -144,7 +142,7 @@ export default class App extends Component {
                 </MenuListItem>
               </MenuList>
             </Menu>
-          </NavMenu>
+          </NavigationView>
 
           <NavBar isPrimary isFixedTop>
             <NavBarBrand
@@ -158,17 +156,29 @@ export default class App extends Component {
           </NavBar>
 
           <Section>
-            <React.Suspense fallback={<div>Loading</div>}>
+            <React.Suspense
+              fallback={
+                <div>
+                  <br />
+                  <br />
+                  <Loader isSize1 />
+                </div>
+              }
+            >
               <Router>
                 <Home path="/" />
                 <About path="/about" />
                 <Contact path="/contact" />
                 <Hidden path="/hidden/contact" />
                 <Confirm path="/confirm" />
+                <Modules path="/modules" />
                 <Stats path="/stats" />
                 <Tracking path="/tracking" />
                 <TheModule path="/package/:module" />
                 <Dashboard path="/dashboard" />
+                <SignUp path="/register" />
+                <Login path="/login" />
+                <LoaderPage path="/loader" />
               </Router>
             </React.Suspense>
           </Section>
