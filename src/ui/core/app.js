@@ -38,6 +38,8 @@ const Modules = React.lazy(() => import('../features/modules'))
 const SignUp = React.lazy(() => import('../features/signup'))
 const Login = React.lazy(() => import('../features/login'))
 const LoaderPage = React.lazy(() => import('../features/loading'))
+const Animations = React.lazy(() => import('../features/animations'))
+
 const UpLink = props => {
   return (
     <Location>
@@ -96,6 +98,11 @@ export default class App extends Component {
                 <MenuListItem>
                   <UpLink to={`/package/${modules[0].slug}`}>
                     <Icon fas icon="cogs" /> Module Stats
+                  </UpLink>
+                </MenuListItem>
+                <MenuListItem>
+                  <UpLink to="/animations">
+                    <Icon fas icon="bacon" /> Animation
                   </UpLink>
                 </MenuListItem>
               </MenuList>
@@ -179,6 +186,7 @@ export default class App extends Component {
                 <SignUp path="/register" />
                 <Login path="/login" />
                 <LoaderPage path="/loader" />
+                <Animations path="/animations" />
               </Router>
             </React.Suspense>
           </Section>
