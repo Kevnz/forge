@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@brightleaf/animate.scss": "^3.7.1",
     "@brightleaf/elements": "^1.6.1",
     "@brightleaf/react-hooks": "^4.1.1",
     "@reach/router": "^1.2.1",
@@ -20,6 +21,7 @@
     "gotrue-js": "^0.9.25",
     "hash-source": "^1.0.4",
     "isom": "^1.0.0",
+    "prop-types": "^15.7.2",
     "query-string": "^6.9.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
