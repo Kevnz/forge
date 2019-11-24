@@ -150,6 +150,12 @@ const myPackages = [
     title: 'Stats JS',
     color: '#106485',
   },
+  {
+    slug: 'animate-scss',
+    name: '@brightleaf/animate.scss',
+    title: 'Animate SCSS',
+    color: '#106485',
+  },
 ]
 
 export default myPackages
