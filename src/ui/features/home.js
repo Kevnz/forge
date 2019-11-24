@@ -10,7 +10,7 @@ import {
   MenuListItem,
 } from '@brightleaf/elements'
 import { Link } from '@reach/router'
-
+import { Animated } from '../components/animated'
 import modules from '../data/my-packages'
 
 export default () => {
@@ -55,6 +55,9 @@ export default () => {
             </MenuListItem>
           </MenuList>
         </Menu>
+        <Animated animation="lightSpeedIn">Hi</Animated>
+        <Animated animation="lightSpeedOut">Bye</Animated>
+        <Animated animation="hinge">Hinge</Animated>
       </Container>
     </Section>
   )
