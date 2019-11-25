@@ -25,15 +25,16 @@ const useStatsGet = pkg => {
 
   let downs = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   let totalDownloads = 'Loading'
+  const breakdown = []
   if (data && data.breakdown) {
     downs = data.breakdown.map(ds => ds.downloads)
     totalDownloads = data.totals.downloads
   }
-  return [downs, totalDownloads]
+  return [downs, totalDownloads, breakdown]
 }
 
 const SingleModule = ({ name, title, color }) => {
-  const [data, total] = useStatsGet(name)
+  const [data, total, breakdown] = useStatsGet(name)
   return (
     <Column is="4">
       <Panel heading={`${title} Total: ${total}`}>
