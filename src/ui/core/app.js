@@ -39,6 +39,10 @@ const SignUp = React.lazy(() => import('../features/signup'))
 const Login = React.lazy(() => import('../features/login'))
 const LoaderPage = React.lazy(() => import('../features/loading'))
 const Animations = React.lazy(() => import('../features/animations'))
+const ChainAnimations = React.lazy(() => import('../features/chain-animations'))
+const SimpleAnimations = React.lazy(() =>
+  import('../features/simple-animations')
+)
 const Missing = React.lazy(() => import('../features/missing'))
 const UpLink = props => {
   return (
@@ -187,6 +191,8 @@ export default class App extends Component {
                 <Login path="/login" />
                 <LoaderPage path="/loader" />
                 <Animations path="/animations" />
+                <ChainAnimations path="/chained-animations" />
+                <SimpleAnimations path="/demo-animations" />
                 <Missing default />
               </Router>
             </React.Suspense>
