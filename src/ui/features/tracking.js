@@ -29,7 +29,6 @@ import {
   Legend,
   PieChart,
   Pie,
-  Sector,
   Cell,
   BarChart,
   Bar,
