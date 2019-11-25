@@ -3,7 +3,6 @@ import classnames from 'classnames'
 import propTypes from 'prop-types'
 import styles from './animated.module.scss'
 
-console.log('styles', styles)
 export const Animated = ({
   children,
   animation,
@@ -24,11 +23,11 @@ export const Animated = ({
       ) {
         target.classList.add('is-hidden')
       }
-      onAnimationEnd()
+      onAnimationEnd(animationName)
     }
     const onStart = ({ target, animationName }) => {
       target.classList.remove('is-hidden')
-      onAnimationStart()
+      onAnimationStart(animationName)
     }
     const current = container.current
     if (current) {
