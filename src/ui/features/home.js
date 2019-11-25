@@ -59,7 +59,13 @@ export default () => {
           </MenuLabel>
           <MenuList className="menu-list">
             <MenuListItem>
-              <Link to="/animations">Demo</Link>
+              <Link to="/demo-animations">Demo</Link>
+            </MenuListItem>
+            <MenuListItem>
+              <Link to="/chained-animations">Chained Animations</Link>
+            </MenuListItem>
+            <MenuListItem>
+              <Link to="/animations">All Animations</Link>
             </MenuListItem>
           </MenuList>
         </Menu>
