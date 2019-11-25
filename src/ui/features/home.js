@@ -63,15 +63,6 @@ export default () => {
             </MenuListItem>
           </MenuList>
         </Menu>
-        <Animated animation="lightSpeedIn" delay={1}>
-          Hi
-        </Animated>
-        <Animated animation="lightSpeedOut" delay={2}>
-          Bye
-        </Animated>
-        <Animated animation="hinge" delay={4}>
-          Hinge
-        </Animated>
       </Container>
     </Section>
   )
