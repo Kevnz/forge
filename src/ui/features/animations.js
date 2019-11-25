@@ -30,7 +30,11 @@ export default () => {
           animation={allAnimations[anim]}
           onAnimationEnd={() => {
             setTimeout(() => {
-              setAnim(anim + 1)
+              if (anim === allAnimations.length) {
+                setAnim(0)
+              } else {
+                setAnim(anim + 1)
+              }
             }, 50)
           }}
         >
