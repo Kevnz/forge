@@ -54,6 +54,14 @@ export default () => {
               </Link>
             </MenuListItem>
           </MenuList>
+          <MenuLabel>
+            <SubTitle as="span">Animation</SubTitle>
+          </MenuLabel>
+          <MenuList className="menu-list">
+            <MenuListItem>
+              <Link to="/animation">Demo</Link>
+            </MenuListItem>
+          </MenuList>
         </Menu>
         <Animated animation="lightSpeedIn" delay={1}>
           Hi
