@@ -8,6 +8,8 @@ import {
   PanelBlock,
   BreadcrumbItem,
   Breadcrumb,
+  Notification,
+  Heading,
 } from '@brightleaf/elements'
 
 import { useTitle, useGet } from '@brightleaf/react-hooks'
@@ -29,6 +31,7 @@ const useStatsGet = pkg => {
   if (data && data.breakdown) {
     downs = data.breakdown.map(ds => ds.downloads)
     totalDownloads = data.totals.downloads
+    breakdown.push(...data.breakdown)
   }
   return [downs, totalDownloads, breakdown]
 }
@@ -42,6 +45,18 @@ const SingleModule = ({ name, title, color }) => {
           <SparkLine data={data} color={color}></SparkLine>
         </PanelBlock>
       </Panel>
+      <Notification isShown isDismissible={false} isInfo>
+        <Heading>{title} Yesterday:</Heading>
+        <Title as="div" is="5">
+          {breakdown.length > 300 && breakdown[364].downloads}
+        </Title>
+      </Notification>
+      <Notification isShown isDismissible={false} isWarning>
+        <Heading>{title} Day Before:</Heading>
+        <Title as="div" is="5">
+          {breakdown.length > 300 && breakdown[363].downloads}
+        </Title>
+      </Notification>
     </Column>
   )
 }
