@@ -26,8 +26,11 @@ jobs:
           name: Test
           command: npm test
       - run:
+          name: Test
+          command: npm test
+      - run:
           name: E2E Test
-          command: npm test:e2e
+          command: npm run test:e2e
 
   build:
     executor: node
