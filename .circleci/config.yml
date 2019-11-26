@@ -2,6 +2,9 @@ executors:
   node:
     docker:
       - image: circleci/node:12
+  tester:
+    docker:
+      - image: circleci/node:12-browsers
   build-machine:
     docker:
       - image: circleci/node:10
@@ -15,13 +18,16 @@ version: 2.1
 
 jobs:
   test:
-    executor: node
+    executor: tester
     steps:
       - checkout
       - <<: *install_node_modules
       - run:
           name: Test
           command: npm test
+      - run:
+          name: E2E Test
+          command: npm test:e2e
 
   build:
     executor: node
