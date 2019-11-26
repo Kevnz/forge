@@ -52,10 +52,16 @@ const SingleModule = ({ name, title, color }) => {
         </Title>
       </Notification>
       <Notification isShown isDismissible={false} isWarning>
-        <Heading>{title} Day Before:</Heading>
+        <Heading>{title} 7 Days:</Heading>
         <Title as="div" is="5">
+          {breakdown.length > 300 && breakdown[357].downloads} -{' '}
+          {breakdown.length > 300 && breakdown[358].downloads} -{' '}
+          {breakdown.length > 300 && breakdown[359].downloads} -{' '}
+          {breakdown.length > 300 && breakdown[360].downloads} -{' '}
+          {breakdown.length > 300 && breakdown[361].downloads} -{' '}
+          {breakdown.length > 300 && breakdown[362].downloads} -{' '}
           {breakdown.length > 300 && breakdown[363].downloads}
-        </Title>
+                 </Title>
       </Notification>
     </Column>
   )
