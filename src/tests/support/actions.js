@@ -6,12 +6,12 @@ const pages = require('./pages')
 const scope = require('./scope')
 
 // Defines whether puppeteer runs Chrome in headless mode.
-const headless = true
-const slowMo = 5
+let headless = false
+let slowMo = 15
 
 // Chrome is set to run headlessly and with no slowdown in CircleCI
-// if (process.env.CIRCLECI) headless = true
-// if (process.env.CIRCLECI) slowMo = 0
+if (process.env.CIRCLECI) headless = true
+if (process.env.CIRCLECI) slowMo = 0
 
 const goToPage = async page => {
   if (!scope.browser) {
@@ -20,7 +20,7 @@ const goToPage = async page => {
 
   scope.context.currentPage = await scope.browser.newPage()
   scope.context.currentPage.setViewport({ width: 1280, height: 1024 })
-  const url = scope.host + pages.home
+  const url = scope.host + pages[page]
   return scope.context.currentPage.goto(url, {
     waitUntil: 'networkidle2',
   })
@@ -58,6 +58,9 @@ const clickButton = async text => {
   return scope.expect(page).toClick('button', { text: text })
 }
 
+const matchScreenshot = async name => {
+  const page = scope.context.currentPage
+}
 module.exports = {
   clickButton,
   clickLink,
@@ -65,4 +68,5 @@ module.exports = {
   goToPage,
   hasText,
   hasTitle,
+  matchScreenshot,
 }
