@@ -19,5 +19,5 @@
     "npx isom build",
     "npx isom serve"
   ],
-  "cleanuptest:e2e": "node ./src/scripts/report.js"
+  "cleanuptest:e2e": "node ./src/scripts/reports.js"
 }
