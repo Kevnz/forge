@@ -20,6 +20,7 @@ import {
 } from '@brightleaf/elements'
 import createHashSource from 'hash-source'
 import modules from '../data/my-packages'
+import Routes from './router'
 import './app.scss'
 
 const source = createHashSource()
@@ -43,6 +44,7 @@ const ChainAnimations = React.lazy(() => import('../features/chain-animations'))
 const SimpleAnimations = React.lazy(() =>
   import('../features/simple-animations')
 )
+const Working = React.lazy(() => import('../features/worker'))
 const Missing = React.lazy(() => import('../features/missing'))
 const UpLink = props => {
   return (
@@ -176,25 +178,7 @@ export default class App extends Component {
                 </div>
               }
             >
-              <Router>
-                <Home path="/" />
-                <About path="/about" />
-                <Contact path="/contact" />
-                <Hidden path="/hidden/contact" />
-                <Confirm path="/confirm" />
-                <Modules path="/modules" />
-                <Stats path="/stats" />
-                <Tracking path="/tracking" />
-                <TheModule path="/package/:module" />
-                <Dashboard path="/dashboard" />
-                <SignUp path="/register" />
-                <Login path="/login" />
-                <LoaderPage path="/loader" />
-                <Animations path="/animations" />
-                <ChainAnimations path="/chained-animations" />
-                <SimpleAnimations path="/demo-animations" />
-                <Missing default />
-              </Router>
+              <Routes />
             </React.Suspense>
           </Section>
         </Fragment>
