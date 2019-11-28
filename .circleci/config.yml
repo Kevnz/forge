@@ -5,6 +5,7 @@ executors:
   tester:
     docker:
       - image: circleci/node:12-browsers
+    working_directory: ~/forge
   build-machine:
     docker:
       - image: circleci/node:10
@@ -32,9 +33,9 @@ jobs:
           name: E2E Test
           command: npm run test:e2e
       - store_test_results:
-          path: ./reports
+          path: ~/forge/reports
       - store_artifacts:
-          path: ./reports
+          path: ~/forge/reports
 
   build:
     executor: node
