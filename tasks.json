@@ -1,6 +1,7 @@
 {
   "test": "npx jest --config=jest.config.js --detectOpenHandles --forceExit --watch",
   "lint": "npx eslint ./src",
+  "build:test": "cross-env NODE_ENV=test webpack --config ./src/webpack/prod.config.js --mode production",
   "build": "npx webpack --config ./src/webpack/prod.config.js --mode production",
   "themes": [
     "npx node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o dist ./src/ui/core/themes/lux.scss",
@@ -14,10 +15,13 @@
   "storybook": "npx start-storybook -p 6006",
   "build-storybook": "npx build-storybook",
   "serve": "node ./src/scripts/serve.js &",
+  "serve:mocks": "node ./src/mockdata/index.js &",
   "test:e2e": "npx cucumber-js ./src/tests/features/*.feature --require './src/tests/**/**.js'  -f json:./reports/cucumber_report.json",
   "pretest:e2e": [
-    "npx isom build",
-    "npx isom serve"
+    "npx isom build:test",
+    "npx isom serve",
+    "npx isom serve:mocks"
   ],
-  "cleanuptest:e2e": "node ./src/scripts/reports.js"
+  "cleanuptest:e2e": "node ./src/scripts/reports.js",
+  "test:e2e:dev": "npx cucumber-js ./src/tests/features/*.feature --require './src/tests/**/**.js'"
 }
