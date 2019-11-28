@@ -2,14 +2,14 @@ const reporter = require('cucumber-html-reporter')
 const cucumberJunitConvert = require('cucumber-junit-convert')
 
 const junitOpts = {
-  inputJsonFile: '~/forge/reports/cucumber_report.json',
-  outputXmlFile: '~/forge/reports/cucumber_report.xml',
+  inputJsonFile: '/home/circleci/forge/reports/cucumber_report.json',
+  outputXmlFile: '/home/circleci/forge/reports/cucumber_report.xml',
 }
 
 const options = {
   theme: 'bootstrap',
-  jsonFile: '~/forge/reports/cucumber_report.json',
-  output: '~/forge/reports/cucumber_report.html',
+  jsonFile: '/home/circleci/forge/reports/cucumber_report.json',
+  output: '/home/circleci/forge/reports/cucumber_report.html',
   reportSuiteAsScenarios: true,
   scenarioTimestamp: true,
   launchReport: true,
