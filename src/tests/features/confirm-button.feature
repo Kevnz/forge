@@ -3,7 +3,7 @@ Feature: Confirm Button
   As a user
   I want to go to have a dialog
 
-  Scenario: go to
+  Scenario: Confirm Submission
     Given I go to 'homepage'
     When I click the 'Confirm Button Example' link
     Then the page should show the Button 'Send'
