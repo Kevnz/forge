@@ -18,5 +18,6 @@
   "pretest:e2e": [
     "npx isom build",
     "npx isom serve"
-  ]
+  ],
+  "cleanuptest:e2e": "node ./src/tasks/report.js"
 }
