@@ -1,4 +1,7 @@
+require('xtconf')()
+const path = require('path')
 const webpack = require('webpack')
+const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const baseConfig = require('./config')
@@ -15,6 +18,7 @@ const devConfig = {
       process: {
         env: {
           NODE_ENV: '"development"',
+          API: `"${process.env.API || 'https://kev-pi.herokuapp.com'}"`,
         },
       },
     }),
@@ -22,6 +26,12 @@ const devConfig = {
       title: 'Web App',
       template: './src/ui/index.html',
     }),
+    new CopyPlugin([
+      {
+        from: path.join(process.cwd(), '/src/ui/workers'),
+        to: path.join(process.cwd(), '/src/public/workers'),
+      },
+    ]),
   ],
   devServer: {
     historyApiFallback: true,

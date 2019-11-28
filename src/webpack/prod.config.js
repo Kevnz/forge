@@ -1,3 +1,4 @@
+require('xtconf')()
 const path = require('path')
 const webpack = require('webpack')
 const CopyPlugin = require('copy-webpack-plugin')
@@ -17,6 +18,7 @@ const prodConfig = {
       process: {
         env: {
           NODE_ENV: '"production"',
+          API: `"${process.env.API || 'https://kev-pi.herokuapp.com'}"`,
         },
       },
     }),
@@ -28,6 +30,12 @@ const prodConfig = {
       {
         from: path.join(process.cwd(), '/src/public'),
         to: path.join(process.cwd(), '/dist'),
+      },
+    ]),
+    new CopyPlugin([
+      {
+        from: path.join(process.cwd(), '/src/ui/workers'),
+        to: path.join(process.cwd(), '/dist/workers'),
       },
     ]),
   ],
