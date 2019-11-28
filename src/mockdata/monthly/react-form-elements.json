@@ -1,0 +1,203 @@
+{
+  "breakdown": [
+    {
+      "downloads": 98,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 155,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 204,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 306,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 191,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 110,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 102,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 117,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 216,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 132,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 105,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 103,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 154,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 101,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 151,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 104,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 166,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 247,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 244,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 245,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 384,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 639,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 725,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 686,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 724,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 673,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 701,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 810,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 690,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 685,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "react-form-elements"
+    }
+  ],
+  "totals": {
+    "downloads": 10166,
+    "start": "2019-10-27",
+    "end": "2019-11-27",
+    "package": "react-form-elements"
+  },
+  "addedUp": 10166
+}

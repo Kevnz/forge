@@ -1,0 +1,383 @@
+{
+  "breakdown": [
+    {
+      "downloads": 44,
+      "start": "2019-09-27",
+      "end": "2019-09-27",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-09-28",
+      "end": "2019-09-28",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-09-29",
+      "end": "2019-09-29",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 8,
+      "start": "2019-09-30",
+      "end": "2019-09-30",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 58,
+      "start": "2019-10-01",
+      "end": "2019-10-01",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 63,
+      "start": "2019-10-02",
+      "end": "2019-10-02",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 65,
+      "start": "2019-10-03",
+      "end": "2019-10-03",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 88,
+      "start": "2019-10-04",
+      "end": "2019-10-04",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-10-05",
+      "end": "2019-10-05",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 85,
+      "start": "2019-10-06",
+      "end": "2019-10-06",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-10-07",
+      "end": "2019-10-07",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 10,
+      "start": "2019-10-08",
+      "end": "2019-10-08",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 65,
+      "start": "2019-10-09",
+      "end": "2019-10-09",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 19,
+      "start": "2019-10-10",
+      "end": "2019-10-10",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 72,
+      "start": "2019-10-11",
+      "end": "2019-10-11",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 25,
+      "start": "2019-10-12",
+      "end": "2019-10-12",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 11,
+      "start": "2019-10-13",
+      "end": "2019-10-13",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-10-14",
+      "end": "2019-10-14",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 106,
+      "start": "2019-10-15",
+      "end": "2019-10-15",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 24,
+      "start": "2019-10-16",
+      "end": "2019-10-16",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 11,
+      "start": "2019-10-17",
+      "end": "2019-10-17",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 15,
+      "start": "2019-10-18",
+      "end": "2019-10-18",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 5,
+      "start": "2019-10-19",
+      "end": "2019-10-19",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 88,
+      "start": "2019-10-20",
+      "end": "2019-10-20",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 84,
+      "start": "2019-10-21",
+      "end": "2019-10-21",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 54,
+      "start": "2019-10-22",
+      "end": "2019-10-22",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 139,
+      "start": "2019-10-23",
+      "end": "2019-10-23",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 88,
+      "start": "2019-10-24",
+      "end": "2019-10-24",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 55,
+      "start": "2019-10-25",
+      "end": "2019-10-25",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 23,
+      "start": "2019-10-26",
+      "end": "2019-10-26",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 55,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 109,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 208,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 49,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 37,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 11,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 20,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 66,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 25,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 3,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 3,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 12,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 44,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 4,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 14,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 50,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 2,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 9,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 126,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 384,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 472,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 436,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 472,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 433,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 469,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 516,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 451,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "@kev_nz/eslint-config"
+    },
+    {
+      "downloads": 473,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "@kev_nz/eslint-config"
+    }
+  ],
+  "totals": {
+    "downloads": 6467,
+    "start": "2019-09-27",
+    "end": "2019-11-27",
+    "package": "@kev_nz/eslint-config"
+  },
+  "addedUp": 6467
+}

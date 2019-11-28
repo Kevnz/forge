@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 1034,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1135,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 564,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 348,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 919,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1007,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 871,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "stats-js"
+    }
+  ],
+  "totals": {
+    "downloads": 5878,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "stats-js"
+  },
+  "addedUp": 5878
+}

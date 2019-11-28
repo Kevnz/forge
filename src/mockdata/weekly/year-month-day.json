@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 249,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 247,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 237,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 243,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 245,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 248,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 250,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "year-month-day"
+    }
+  ],
+  "totals": {
+    "downloads": 1719,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "year-month-day"
+  },
+  "addedUp": 1719
+}

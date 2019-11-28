@@ -1,0 +1,203 @@
+{
+  "breakdown": [
+    {
+      "downloads": 99,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 115,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 104,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 106,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 109,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 112,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 106,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 102,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 109,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 111,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 100,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 114,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 101,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 104,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 175,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 247,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 259,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 269,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 258,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 249,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 247,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 237,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 243,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 245,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 248,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "year-month-day"
+    },
+    {
+      "downloads": 250,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "year-month-day"
+    }
+  ],
+  "totals": {
+    "downloads": 5289,
+    "start": "2019-10-27",
+    "end": "2019-11-27",
+    "package": "year-month-day"
+  },
+  "addedUp": 5289
+}

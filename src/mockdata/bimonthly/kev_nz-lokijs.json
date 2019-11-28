@@ -1,0 +1,383 @@
+{
+  "breakdown": [
+    {
+      "downloads": 7,
+      "start": "2019-09-27",
+      "end": "2019-09-27",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 0,
+      "start": "2019-09-28",
+      "end": "2019-09-28",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 0,
+      "start": "2019-09-29",
+      "end": "2019-09-29",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 3,
+      "start": "2019-09-30",
+      "end": "2019-09-30",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 0,
+      "start": "2019-10-01",
+      "end": "2019-10-01",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 59,
+      "start": "2019-10-02",
+      "end": "2019-10-02",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 64,
+      "start": "2019-10-03",
+      "end": "2019-10-03",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 79,
+      "start": "2019-10-04",
+      "end": "2019-10-04",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 0,
+      "start": "2019-10-05",
+      "end": "2019-10-05",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 82,
+      "start": "2019-10-06",
+      "end": "2019-10-06",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 87,
+      "start": "2019-10-07",
+      "end": "2019-10-07",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 7,
+      "start": "2019-10-08",
+      "end": "2019-10-08",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 63,
+      "start": "2019-10-09",
+      "end": "2019-10-09",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 18,
+      "start": "2019-10-10",
+      "end": "2019-10-10",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 70,
+      "start": "2019-10-11",
+      "end": "2019-10-11",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 21,
+      "start": "2019-10-12",
+      "end": "2019-10-12",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 9,
+      "start": "2019-10-13",
+      "end": "2019-10-13",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-10-14",
+      "end": "2019-10-14",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 102,
+      "start": "2019-10-15",
+      "end": "2019-10-15",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 63,
+      "start": "2019-10-16",
+      "end": "2019-10-16",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 103,
+      "start": "2019-10-17",
+      "end": "2019-10-17",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-10-18",
+      "end": "2019-10-18",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-10-19",
+      "end": "2019-10-19",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 178,
+      "start": "2019-10-20",
+      "end": "2019-10-20",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 136,
+      "start": "2019-10-21",
+      "end": "2019-10-21",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 142,
+      "start": "2019-10-22",
+      "end": "2019-10-22",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 234,
+      "start": "2019-10-23",
+      "end": "2019-10-23",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 173,
+      "start": "2019-10-24",
+      "end": "2019-10-24",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 135,
+      "start": "2019-10-25",
+      "end": "2019-10-25",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-10-26",
+      "end": "2019-10-26",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 145,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 194,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 299,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 139,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 102,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 114,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 159,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 119,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 156,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 238,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 250,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 250,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 250,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 241,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 241,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 241,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "@kev_nz/lokijs"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "@kev_nz/lokijs"
+    }
+  ],
+  "totals": {
+    "downloads": 7768,
+    "start": "2019-09-27",
+    "end": "2019-11-27",
+    "package": "@kev_nz/lokijs"
+  },
+  "addedUp": 7768
+}

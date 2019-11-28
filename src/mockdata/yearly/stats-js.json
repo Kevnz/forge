@@ -1,0 +1,2201 @@
+{
+  "breakdown": [
+    {
+      "downloads": 404,
+      "start": "2018-11-28",
+      "end": "2018-11-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 352,
+      "start": "2018-11-29",
+      "end": "2018-11-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 316,
+      "start": "2018-11-30",
+      "end": "2018-11-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 38,
+      "start": "2018-12-01",
+      "end": "2018-12-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 40,
+      "start": "2018-12-02",
+      "end": "2018-12-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 402,
+      "start": "2018-12-03",
+      "end": "2018-12-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 319,
+      "start": "2018-12-04",
+      "end": "2018-12-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 443,
+      "start": "2018-12-05",
+      "end": "2018-12-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 344,
+      "start": "2018-12-06",
+      "end": "2018-12-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 272,
+      "start": "2018-12-07",
+      "end": "2018-12-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 59,
+      "start": "2018-12-08",
+      "end": "2018-12-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 29,
+      "start": "2018-12-09",
+      "end": "2018-12-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 346,
+      "start": "2018-12-10",
+      "end": "2018-12-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 336,
+      "start": "2018-12-11",
+      "end": "2018-12-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 266,
+      "start": "2018-12-12",
+      "end": "2018-12-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 250,
+      "start": "2018-12-13",
+      "end": "2018-12-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 254,
+      "start": "2018-12-14",
+      "end": "2018-12-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 59,
+      "start": "2018-12-15",
+      "end": "2018-12-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 49,
+      "start": "2018-12-16",
+      "end": "2018-12-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 279,
+      "start": "2018-12-17",
+      "end": "2018-12-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 310,
+      "start": "2018-12-18",
+      "end": "2018-12-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 304,
+      "start": "2018-12-19",
+      "end": "2018-12-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 256,
+      "start": "2018-12-20",
+      "end": "2018-12-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 203,
+      "start": "2018-12-21",
+      "end": "2018-12-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 30,
+      "start": "2018-12-22",
+      "end": "2018-12-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 28,
+      "start": "2018-12-23",
+      "end": "2018-12-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 38,
+      "start": "2018-12-24",
+      "end": "2018-12-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 72,
+      "start": "2018-12-25",
+      "end": "2018-12-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 133,
+      "start": "2018-12-26",
+      "end": "2018-12-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 127,
+      "start": "2018-12-27",
+      "end": "2018-12-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 109,
+      "start": "2018-12-28",
+      "end": "2018-12-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 40,
+      "start": "2018-12-29",
+      "end": "2018-12-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 56,
+      "start": "2018-12-30",
+      "end": "2018-12-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 61,
+      "start": "2018-12-31",
+      "end": "2018-12-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 28,
+      "start": "2019-01-01",
+      "end": "2019-01-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 216,
+      "start": "2019-01-02",
+      "end": "2019-01-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 248,
+      "start": "2019-01-03",
+      "end": "2019-01-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 205,
+      "start": "2019-01-04",
+      "end": "2019-01-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 46,
+      "start": "2019-01-05",
+      "end": "2019-01-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 30,
+      "start": "2019-01-06",
+      "end": "2019-01-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 246,
+      "start": "2019-01-07",
+      "end": "2019-01-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 269,
+      "start": "2019-01-08",
+      "end": "2019-01-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 375,
+      "start": "2019-01-09",
+      "end": "2019-01-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 310,
+      "start": "2019-01-10",
+      "end": "2019-01-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 261,
+      "start": "2019-01-11",
+      "end": "2019-01-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 54,
+      "start": "2019-01-12",
+      "end": "2019-01-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 41,
+      "start": "2019-01-13",
+      "end": "2019-01-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 247,
+      "start": "2019-01-14",
+      "end": "2019-01-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 269,
+      "start": "2019-01-15",
+      "end": "2019-01-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 325,
+      "start": "2019-01-16",
+      "end": "2019-01-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 315,
+      "start": "2019-01-17",
+      "end": "2019-01-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 285,
+      "start": "2019-01-18",
+      "end": "2019-01-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 34,
+      "start": "2019-01-19",
+      "end": "2019-01-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 28,
+      "start": "2019-01-20",
+      "end": "2019-01-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 235,
+      "start": "2019-01-21",
+      "end": "2019-01-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 271,
+      "start": "2019-01-22",
+      "end": "2019-01-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 329,
+      "start": "2019-01-23",
+      "end": "2019-01-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 327,
+      "start": "2019-01-24",
+      "end": "2019-01-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 227,
+      "start": "2019-01-25",
+      "end": "2019-01-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 82,
+      "start": "2019-01-26",
+      "end": "2019-01-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 78,
+      "start": "2019-01-27",
+      "end": "2019-01-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 330,
+      "start": "2019-01-28",
+      "end": "2019-01-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 383,
+      "start": "2019-01-29",
+      "end": "2019-01-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 370,
+      "start": "2019-01-30",
+      "end": "2019-01-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 427,
+      "start": "2019-01-31",
+      "end": "2019-01-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 344,
+      "start": "2019-02-01",
+      "end": "2019-02-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 71,
+      "start": "2019-02-02",
+      "end": "2019-02-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 25,
+      "start": "2019-02-03",
+      "end": "2019-02-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 339,
+      "start": "2019-02-04",
+      "end": "2019-02-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 442,
+      "start": "2019-02-05",
+      "end": "2019-02-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 411,
+      "start": "2019-02-06",
+      "end": "2019-02-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 334,
+      "start": "2019-02-07",
+      "end": "2019-02-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 318,
+      "start": "2019-02-08",
+      "end": "2019-02-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 36,
+      "start": "2019-02-09",
+      "end": "2019-02-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 43,
+      "start": "2019-02-10",
+      "end": "2019-02-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 255,
+      "start": "2019-02-11",
+      "end": "2019-02-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 266,
+      "start": "2019-02-12",
+      "end": "2019-02-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 308,
+      "start": "2019-02-13",
+      "end": "2019-02-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 359,
+      "start": "2019-02-14",
+      "end": "2019-02-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 290,
+      "start": "2019-02-15",
+      "end": "2019-02-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 72,
+      "start": "2019-02-16",
+      "end": "2019-02-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 32,
+      "start": "2019-02-17",
+      "end": "2019-02-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 376,
+      "start": "2019-02-18",
+      "end": "2019-02-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 542,
+      "start": "2019-02-19",
+      "end": "2019-02-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 483,
+      "start": "2019-02-20",
+      "end": "2019-02-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 631,
+      "start": "2019-02-21",
+      "end": "2019-02-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 550,
+      "start": "2019-02-22",
+      "end": "2019-02-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 104,
+      "start": "2019-02-23",
+      "end": "2019-02-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 76,
+      "start": "2019-02-24",
+      "end": "2019-02-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 416,
+      "start": "2019-02-25",
+      "end": "2019-02-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 427,
+      "start": "2019-02-26",
+      "end": "2019-02-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 691,
+      "start": "2019-02-27",
+      "end": "2019-02-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 654,
+      "start": "2019-02-28",
+      "end": "2019-02-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 817,
+      "start": "2019-03-01",
+      "end": "2019-03-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 276,
+      "start": "2019-03-02",
+      "end": "2019-03-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 57,
+      "start": "2019-03-03",
+      "end": "2019-03-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 752,
+      "start": "2019-03-04",
+      "end": "2019-03-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1038,
+      "start": "2019-03-05",
+      "end": "2019-03-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 930,
+      "start": "2019-03-06",
+      "end": "2019-03-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 882,
+      "start": "2019-03-07",
+      "end": "2019-03-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 763,
+      "start": "2019-03-08",
+      "end": "2019-03-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 58,
+      "start": "2019-03-09",
+      "end": "2019-03-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 24,
+      "start": "2019-03-10",
+      "end": "2019-03-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 564,
+      "start": "2019-03-11",
+      "end": "2019-03-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 819,
+      "start": "2019-03-12",
+      "end": "2019-03-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 901,
+      "start": "2019-03-13",
+      "end": "2019-03-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 935,
+      "start": "2019-03-14",
+      "end": "2019-03-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 713,
+      "start": "2019-03-15",
+      "end": "2019-03-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 280,
+      "start": "2019-03-16",
+      "end": "2019-03-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 93,
+      "start": "2019-03-17",
+      "end": "2019-03-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 304,
+      "start": "2019-03-18",
+      "end": "2019-03-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 926,
+      "start": "2019-03-19",
+      "end": "2019-03-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1019,
+      "start": "2019-03-20",
+      "end": "2019-03-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 847,
+      "start": "2019-03-21",
+      "end": "2019-03-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 627,
+      "start": "2019-03-22",
+      "end": "2019-03-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 88,
+      "start": "2019-03-23",
+      "end": "2019-03-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 133,
+      "start": "2019-03-24",
+      "end": "2019-03-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 795,
+      "start": "2019-03-25",
+      "end": "2019-03-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 803,
+      "start": "2019-03-26",
+      "end": "2019-03-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 683,
+      "start": "2019-03-27",
+      "end": "2019-03-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 926,
+      "start": "2019-03-28",
+      "end": "2019-03-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 835,
+      "start": "2019-03-29",
+      "end": "2019-03-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 487,
+      "start": "2019-03-30",
+      "end": "2019-03-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 67,
+      "start": "2019-03-31",
+      "end": "2019-03-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 892,
+      "start": "2019-04-01",
+      "end": "2019-04-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 629,
+      "start": "2019-04-02",
+      "end": "2019-04-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 641,
+      "start": "2019-04-03",
+      "end": "2019-04-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 712,
+      "start": "2019-04-04",
+      "end": "2019-04-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 568,
+      "start": "2019-04-05",
+      "end": "2019-04-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 52,
+      "start": "2019-04-06",
+      "end": "2019-04-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 70,
+      "start": "2019-04-07",
+      "end": "2019-04-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 592,
+      "start": "2019-04-08",
+      "end": "2019-04-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 846,
+      "start": "2019-04-09",
+      "end": "2019-04-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 656,
+      "start": "2019-04-10",
+      "end": "2019-04-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 750,
+      "start": "2019-04-11",
+      "end": "2019-04-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 441,
+      "start": "2019-04-12",
+      "end": "2019-04-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 123,
+      "start": "2019-04-13",
+      "end": "2019-04-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 84,
+      "start": "2019-04-14",
+      "end": "2019-04-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 564,
+      "start": "2019-04-15",
+      "end": "2019-04-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 777,
+      "start": "2019-04-16",
+      "end": "2019-04-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 827,
+      "start": "2019-04-17",
+      "end": "2019-04-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 634,
+      "start": "2019-04-18",
+      "end": "2019-04-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 383,
+      "start": "2019-04-19",
+      "end": "2019-04-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 83,
+      "start": "2019-04-20",
+      "end": "2019-04-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 92,
+      "start": "2019-04-21",
+      "end": "2019-04-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 490,
+      "start": "2019-04-22",
+      "end": "2019-04-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 684,
+      "start": "2019-04-23",
+      "end": "2019-04-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 597,
+      "start": "2019-04-24",
+      "end": "2019-04-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 814,
+      "start": "2019-04-25",
+      "end": "2019-04-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 433,
+      "start": "2019-04-26",
+      "end": "2019-04-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 101,
+      "start": "2019-04-27",
+      "end": "2019-04-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 115,
+      "start": "2019-04-28",
+      "end": "2019-04-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 616,
+      "start": "2019-04-29",
+      "end": "2019-04-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 623,
+      "start": "2019-04-30",
+      "end": "2019-04-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 451,
+      "start": "2019-05-01",
+      "end": "2019-05-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 596,
+      "start": "2019-05-02",
+      "end": "2019-05-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 596,
+      "start": "2019-05-03",
+      "end": "2019-05-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 104,
+      "start": "2019-05-04",
+      "end": "2019-05-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 123,
+      "start": "2019-05-05",
+      "end": "2019-05-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 715,
+      "start": "2019-05-06",
+      "end": "2019-05-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 940,
+      "start": "2019-05-07",
+      "end": "2019-05-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 748,
+      "start": "2019-05-08",
+      "end": "2019-05-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 866,
+      "start": "2019-05-09",
+      "end": "2019-05-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 593,
+      "start": "2019-05-10",
+      "end": "2019-05-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 108,
+      "start": "2019-05-11",
+      "end": "2019-05-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 64,
+      "start": "2019-05-12",
+      "end": "2019-05-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 753,
+      "start": "2019-05-13",
+      "end": "2019-05-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 763,
+      "start": "2019-05-14",
+      "end": "2019-05-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 961,
+      "start": "2019-05-15",
+      "end": "2019-05-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 950,
+      "start": "2019-05-16",
+      "end": "2019-05-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 952,
+      "start": "2019-05-17",
+      "end": "2019-05-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-05-18",
+      "end": "2019-05-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 70,
+      "start": "2019-05-19",
+      "end": "2019-05-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 812,
+      "start": "2019-05-20",
+      "end": "2019-05-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1033,
+      "start": "2019-05-21",
+      "end": "2019-05-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1029,
+      "start": "2019-05-22",
+      "end": "2019-05-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 910,
+      "start": "2019-05-23",
+      "end": "2019-05-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 660,
+      "start": "2019-05-24",
+      "end": "2019-05-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 134,
+      "start": "2019-05-25",
+      "end": "2019-05-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 63,
+      "start": "2019-05-26",
+      "end": "2019-05-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 679,
+      "start": "2019-05-27",
+      "end": "2019-05-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 908,
+      "start": "2019-05-28",
+      "end": "2019-05-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 823,
+      "start": "2019-05-29",
+      "end": "2019-05-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 629,
+      "start": "2019-05-30",
+      "end": "2019-05-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 715,
+      "start": "2019-05-31",
+      "end": "2019-05-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 105,
+      "start": "2019-06-01",
+      "end": "2019-06-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 44,
+      "start": "2019-06-02",
+      "end": "2019-06-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 795,
+      "start": "2019-06-03",
+      "end": "2019-06-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 927,
+      "start": "2019-06-04",
+      "end": "2019-06-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 717,
+      "start": "2019-06-05",
+      "end": "2019-06-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 763,
+      "start": "2019-06-06",
+      "end": "2019-06-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 817,
+      "start": "2019-06-07",
+      "end": "2019-06-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 135,
+      "start": "2019-06-08",
+      "end": "2019-06-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 81,
+      "start": "2019-06-09",
+      "end": "2019-06-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 655,
+      "start": "2019-06-10",
+      "end": "2019-06-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 834,
+      "start": "2019-06-11",
+      "end": "2019-06-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 822,
+      "start": "2019-06-12",
+      "end": "2019-06-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 892,
+      "start": "2019-06-13",
+      "end": "2019-06-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 849,
+      "start": "2019-06-14",
+      "end": "2019-06-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 174,
+      "start": "2019-06-15",
+      "end": "2019-06-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 87,
+      "start": "2019-06-16",
+      "end": "2019-06-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 806,
+      "start": "2019-06-17",
+      "end": "2019-06-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 799,
+      "start": "2019-06-18",
+      "end": "2019-06-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 948,
+      "start": "2019-06-19",
+      "end": "2019-06-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1037,
+      "start": "2019-06-20",
+      "end": "2019-06-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 751,
+      "start": "2019-06-21",
+      "end": "2019-06-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 89,
+      "start": "2019-06-22",
+      "end": "2019-06-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-06-23",
+      "end": "2019-06-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 866,
+      "start": "2019-06-24",
+      "end": "2019-06-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 699,
+      "start": "2019-06-25",
+      "end": "2019-06-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1048,
+      "start": "2019-06-26",
+      "end": "2019-06-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 612,
+      "start": "2019-06-27",
+      "end": "2019-06-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 519,
+      "start": "2019-06-28",
+      "end": "2019-06-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 76,
+      "start": "2019-06-29",
+      "end": "2019-06-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 68,
+      "start": "2019-06-30",
+      "end": "2019-06-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 536,
+      "start": "2019-07-01",
+      "end": "2019-07-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 610,
+      "start": "2019-07-02",
+      "end": "2019-07-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 889,
+      "start": "2019-07-03",
+      "end": "2019-07-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 582,
+      "start": "2019-07-04",
+      "end": "2019-07-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 494,
+      "start": "2019-07-05",
+      "end": "2019-07-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 88,
+      "start": "2019-07-06",
+      "end": "2019-07-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 79,
+      "start": "2019-07-07",
+      "end": "2019-07-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 763,
+      "start": "2019-07-08",
+      "end": "2019-07-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 814,
+      "start": "2019-07-09",
+      "end": "2019-07-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 741,
+      "start": "2019-07-10",
+      "end": "2019-07-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 921,
+      "start": "2019-07-11",
+      "end": "2019-07-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 854,
+      "start": "2019-07-12",
+      "end": "2019-07-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 101,
+      "start": "2019-07-13",
+      "end": "2019-07-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 202,
+      "start": "2019-07-14",
+      "end": "2019-07-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 764,
+      "start": "2019-07-15",
+      "end": "2019-07-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 924,
+      "start": "2019-07-16",
+      "end": "2019-07-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 943,
+      "start": "2019-07-17",
+      "end": "2019-07-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 730,
+      "start": "2019-07-18",
+      "end": "2019-07-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 694,
+      "start": "2019-07-19",
+      "end": "2019-07-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 113,
+      "start": "2019-07-20",
+      "end": "2019-07-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 118,
+      "start": "2019-07-21",
+      "end": "2019-07-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 956,
+      "start": "2019-07-22",
+      "end": "2019-07-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 869,
+      "start": "2019-07-23",
+      "end": "2019-07-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 753,
+      "start": "2019-07-24",
+      "end": "2019-07-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 911,
+      "start": "2019-07-25",
+      "end": "2019-07-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 681,
+      "start": "2019-07-26",
+      "end": "2019-07-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 275,
+      "start": "2019-07-27",
+      "end": "2019-07-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 153,
+      "start": "2019-07-28",
+      "end": "2019-07-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1052,
+      "start": "2019-07-29",
+      "end": "2019-07-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1243,
+      "start": "2019-07-30",
+      "end": "2019-07-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1174,
+      "start": "2019-07-31",
+      "end": "2019-07-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1223,
+      "start": "2019-08-01",
+      "end": "2019-08-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1117,
+      "start": "2019-08-02",
+      "end": "2019-08-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-08-03",
+      "end": "2019-08-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 106,
+      "start": "2019-08-04",
+      "end": "2019-08-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1146,
+      "start": "2019-08-05",
+      "end": "2019-08-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 995,
+      "start": "2019-08-06",
+      "end": "2019-08-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1329,
+      "start": "2019-08-07",
+      "end": "2019-08-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1196,
+      "start": "2019-08-08",
+      "end": "2019-08-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 881,
+      "start": "2019-08-09",
+      "end": "2019-08-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-08-10",
+      "end": "2019-08-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 93,
+      "start": "2019-08-11",
+      "end": "2019-08-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1211,
+      "start": "2019-08-12",
+      "end": "2019-08-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1177,
+      "start": "2019-08-13",
+      "end": "2019-08-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 860,
+      "start": "2019-08-14",
+      "end": "2019-08-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 604,
+      "start": "2019-08-15",
+      "end": "2019-08-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 731,
+      "start": "2019-08-16",
+      "end": "2019-08-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 163,
+      "start": "2019-08-17",
+      "end": "2019-08-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 127,
+      "start": "2019-08-18",
+      "end": "2019-08-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1364,
+      "start": "2019-08-19",
+      "end": "2019-08-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1559,
+      "start": "2019-08-20",
+      "end": "2019-08-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1316,
+      "start": "2019-08-21",
+      "end": "2019-08-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1604,
+      "start": "2019-08-22",
+      "end": "2019-08-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1104,
+      "start": "2019-08-23",
+      "end": "2019-08-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 165,
+      "start": "2019-08-24",
+      "end": "2019-08-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-08-25",
+      "end": "2019-08-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1567,
+      "start": "2019-08-26",
+      "end": "2019-08-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1194,
+      "start": "2019-08-27",
+      "end": "2019-08-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1416,
+      "start": "2019-08-28",
+      "end": "2019-08-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 961,
+      "start": "2019-08-29",
+      "end": "2019-08-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 949,
+      "start": "2019-08-30",
+      "end": "2019-08-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-08-31",
+      "end": "2019-08-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 210,
+      "start": "2019-09-01",
+      "end": "2019-09-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 664,
+      "start": "2019-09-02",
+      "end": "2019-09-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1119,
+      "start": "2019-09-03",
+      "end": "2019-09-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1303,
+      "start": "2019-09-04",
+      "end": "2019-09-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1373,
+      "start": "2019-09-05",
+      "end": "2019-09-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1209,
+      "start": "2019-09-06",
+      "end": "2019-09-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 69,
+      "start": "2019-09-07",
+      "end": "2019-09-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 59,
+      "start": "2019-09-08",
+      "end": "2019-09-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1196,
+      "start": "2019-09-09",
+      "end": "2019-09-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1607,
+      "start": "2019-09-10",
+      "end": "2019-09-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1103,
+      "start": "2019-09-11",
+      "end": "2019-09-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 823,
+      "start": "2019-09-12",
+      "end": "2019-09-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 617,
+      "start": "2019-09-13",
+      "end": "2019-09-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 151,
+      "start": "2019-09-14",
+      "end": "2019-09-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 108,
+      "start": "2019-09-15",
+      "end": "2019-09-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1126,
+      "start": "2019-09-16",
+      "end": "2019-09-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1346,
+      "start": "2019-09-17",
+      "end": "2019-09-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1198,
+      "start": "2019-09-18",
+      "end": "2019-09-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1387,
+      "start": "2019-09-19",
+      "end": "2019-09-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1152,
+      "start": "2019-09-20",
+      "end": "2019-09-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 330,
+      "start": "2019-09-21",
+      "end": "2019-09-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 134,
+      "start": "2019-09-22",
+      "end": "2019-09-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 998,
+      "start": "2019-09-23",
+      "end": "2019-09-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1303,
+      "start": "2019-09-24",
+      "end": "2019-09-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1371,
+      "start": "2019-09-25",
+      "end": "2019-09-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1255,
+      "start": "2019-09-26",
+      "end": "2019-09-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 790,
+      "start": "2019-09-27",
+      "end": "2019-09-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 156,
+      "start": "2019-09-28",
+      "end": "2019-09-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 103,
+      "start": "2019-09-29",
+      "end": "2019-09-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 826,
+      "start": "2019-09-30",
+      "end": "2019-09-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1020,
+      "start": "2019-10-01",
+      "end": "2019-10-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 693,
+      "start": "2019-10-02",
+      "end": "2019-10-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1149,
+      "start": "2019-10-03",
+      "end": "2019-10-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1165,
+      "start": "2019-10-04",
+      "end": "2019-10-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 174,
+      "start": "2019-10-05",
+      "end": "2019-10-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 221,
+      "start": "2019-10-06",
+      "end": "2019-10-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1227,
+      "start": "2019-10-07",
+      "end": "2019-10-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1272,
+      "start": "2019-10-08",
+      "end": "2019-10-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1254,
+      "start": "2019-10-09",
+      "end": "2019-10-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1136,
+      "start": "2019-10-10",
+      "end": "2019-10-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 951,
+      "start": "2019-10-11",
+      "end": "2019-10-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 216,
+      "start": "2019-10-12",
+      "end": "2019-10-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 93,
+      "start": "2019-10-13",
+      "end": "2019-10-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 500,
+      "start": "2019-10-14",
+      "end": "2019-10-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 816,
+      "start": "2019-10-15",
+      "end": "2019-10-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1030,
+      "start": "2019-10-16",
+      "end": "2019-10-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1088,
+      "start": "2019-10-17",
+      "end": "2019-10-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 843,
+      "start": "2019-10-18",
+      "end": "2019-10-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 224,
+      "start": "2019-10-19",
+      "end": "2019-10-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 177,
+      "start": "2019-10-20",
+      "end": "2019-10-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 775,
+      "start": "2019-10-21",
+      "end": "2019-10-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 747,
+      "start": "2019-10-22",
+      "end": "2019-10-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1004,
+      "start": "2019-10-23",
+      "end": "2019-10-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 854,
+      "start": "2019-10-24",
+      "end": "2019-10-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 651,
+      "start": "2019-10-25",
+      "end": "2019-10-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 246,
+      "start": "2019-10-26",
+      "end": "2019-10-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 216,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 628,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 750,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 897,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 804,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 631,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 265,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 174,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 623,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 850,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 872,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 941,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 799,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 182,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 198,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 569,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 850,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 888,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 864,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 997,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 388,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 282,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 777,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1326,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1086,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1034,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1135,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 564,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 348,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 919,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 1007,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "stats-js"
+    },
+    {
+      "downloads": 871,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "stats-js"
+    }
+  ],
+  "totals": {
+    "downloads": 205619,
+    "start": "2018-11-28",
+    "end": "2019-11-27",
+    "package": "stats-js"
+  },
+  "addedUp": 205619
+}

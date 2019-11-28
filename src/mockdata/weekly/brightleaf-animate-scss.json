@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 0,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "@brightleaf/animate.scss"
+    },
+    {
+      "downloads": 0,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "@brightleaf/animate.scss"
+    },
+    {
+      "downloads": 0,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "@brightleaf/animate.scss"
+    },
+    {
+      "downloads": 50,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "@brightleaf/animate.scss"
+    },
+    {
+      "downloads": 117,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "@brightleaf/animate.scss"
+    },
+    {
+      "downloads": 79,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "@brightleaf/animate.scss"
+    },
+    {
+      "downloads": 73,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "@brightleaf/animate.scss"
+    }
+  ],
+  "totals": {
+    "downloads": 319,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "@brightleaf/animate.scss"
+  },
+  "addedUp": 319
+}

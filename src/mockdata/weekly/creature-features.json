@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 361,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "creature-features"
+    },
+    {
+      "downloads": 386,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "creature-features"
+    },
+    {
+      "downloads": 359,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "creature-features"
+    },
+    {
+      "downloads": 361,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "creature-features"
+    },
+    {
+      "downloads": 380,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "creature-features"
+    },
+    {
+      "downloads": 360,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "creature-features"
+    },
+    {
+      "downloads": 360,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "creature-features"
+    }
+  ],
+  "totals": {
+    "downloads": 2567,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "creature-features"
+  },
+  "addedUp": 2567
+}

@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 249,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "alternative-facts"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "alternative-facts"
+    },
+    {
+      "downloads": 238,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "alternative-facts"
+    },
+    {
+      "downloads": 242,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "alternative-facts"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "alternative-facts"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "alternative-facts"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "alternative-facts"
+    }
+  ],
+  "totals": {
+    "downloads": 1689,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "alternative-facts"
+  },
+  "addedUp": 1689
+}

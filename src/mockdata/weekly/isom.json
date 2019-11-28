@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 553,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "isom"
+    },
+    {
+      "downloads": 599,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "isom"
+    },
+    {
+      "downloads": 550,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "isom"
+    },
+    {
+      "downloads": 578,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "isom"
+    },
+    {
+      "downloads": 611,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "isom"
+    },
+    {
+      "downloads": 559,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "isom"
+    },
+    {
+      "downloads": 581,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "isom"
+    }
+  ],
+  "totals": {
+    "downloads": 4031,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "isom"
+  },
+  "addedUp": 4031
+}

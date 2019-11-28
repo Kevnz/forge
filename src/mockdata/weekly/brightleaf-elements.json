@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 681,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 766,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 676,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 702,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 737,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 679,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 674,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "@brightleaf/elements"
+    }
+  ],
+  "totals": {
+    "downloads": 4915,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "@brightleaf/elements"
+  },
+  "addedUp": 4915
+}

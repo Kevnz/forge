@@ -1,0 +1,383 @@
+{
+  "breakdown": [
+    {
+      "downloads": 74,
+      "start": "2019-09-27",
+      "end": "2019-09-27",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 50,
+      "start": "2019-09-28",
+      "end": "2019-09-28",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 52,
+      "start": "2019-09-29",
+      "end": "2019-09-29",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 55,
+      "start": "2019-09-30",
+      "end": "2019-09-30",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 54,
+      "start": "2019-10-01",
+      "end": "2019-10-01",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 134,
+      "start": "2019-10-02",
+      "end": "2019-10-02",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 124,
+      "start": "2019-10-03",
+      "end": "2019-10-03",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 136,
+      "start": "2019-10-04",
+      "end": "2019-10-04",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 55,
+      "start": "2019-10-05",
+      "end": "2019-10-05",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 180,
+      "start": "2019-10-06",
+      "end": "2019-10-06",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 142,
+      "start": "2019-10-07",
+      "end": "2019-10-07",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 58,
+      "start": "2019-10-08",
+      "end": "2019-10-08",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 113,
+      "start": "2019-10-09",
+      "end": "2019-10-09",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 68,
+      "start": "2019-10-10",
+      "end": "2019-10-10",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 120,
+      "start": "2019-10-11",
+      "end": "2019-10-11",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 72,
+      "start": "2019-10-12",
+      "end": "2019-10-12",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 59,
+      "start": "2019-10-13",
+      "end": "2019-10-13",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 148,
+      "start": "2019-10-14",
+      "end": "2019-10-14",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 150,
+      "start": "2019-10-15",
+      "end": "2019-10-15",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 168,
+      "start": "2019-10-16",
+      "end": "2019-10-16",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 103,
+      "start": "2019-10-17",
+      "end": "2019-10-17",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 124,
+      "start": "2019-10-18",
+      "end": "2019-10-18",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-10-19",
+      "end": "2019-10-19",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 181,
+      "start": "2019-10-20",
+      "end": "2019-10-20",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 142,
+      "start": "2019-10-21",
+      "end": "2019-10-21",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 146,
+      "start": "2019-10-22",
+      "end": "2019-10-22",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 235,
+      "start": "2019-10-23",
+      "end": "2019-10-23",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 189,
+      "start": "2019-10-24",
+      "end": "2019-10-24",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 151,
+      "start": "2019-10-25",
+      "end": "2019-10-25",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 119,
+      "start": "2019-10-26",
+      "end": "2019-10-26",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 99,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 197,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 212,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 303,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 143,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 152,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 101,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 119,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 188,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 122,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 100,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 102,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 100,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 145,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 239,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 158,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 242,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 244,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 435,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 633,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 760,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 681,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 766,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 676,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 702,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 737,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 679,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "@brightleaf/elements"
+    },
+    {
+      "downloads": 674,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "@brightleaf/elements"
+    }
+  ],
+  "totals": {
+    "downloads": 13743,
+    "start": "2019-09-27",
+    "end": "2019-11-27",
+    "package": "@brightleaf/elements"
+  },
+  "addedUp": 13743
+}

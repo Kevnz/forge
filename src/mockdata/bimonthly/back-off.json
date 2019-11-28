@@ -1,0 +1,383 @@
+{
+  "breakdown": [
+    {
+      "downloads": 58,
+      "start": "2019-09-27",
+      "end": "2019-09-27",
+      "package": "back-off"
+    },
+    {
+      "downloads": 58,
+      "start": "2019-09-28",
+      "end": "2019-09-28",
+      "package": "back-off"
+    },
+    {
+      "downloads": 48,
+      "start": "2019-09-29",
+      "end": "2019-09-29",
+      "package": "back-off"
+    },
+    {
+      "downloads": 52,
+      "start": "2019-09-30",
+      "end": "2019-09-30",
+      "package": "back-off"
+    },
+    {
+      "downloads": 49,
+      "start": "2019-10-01",
+      "end": "2019-10-01",
+      "package": "back-off"
+    },
+    {
+      "downloads": 133,
+      "start": "2019-10-02",
+      "end": "2019-10-02",
+      "package": "back-off"
+    },
+    {
+      "downloads": 148,
+      "start": "2019-10-03",
+      "end": "2019-10-03",
+      "package": "back-off"
+    },
+    {
+      "downloads": 162,
+      "start": "2019-10-04",
+      "end": "2019-10-04",
+      "package": "back-off"
+    },
+    {
+      "downloads": 48,
+      "start": "2019-10-05",
+      "end": "2019-10-05",
+      "package": "back-off"
+    },
+    {
+      "downloads": 165,
+      "start": "2019-10-06",
+      "end": "2019-10-06",
+      "package": "back-off"
+    },
+    {
+      "downloads": 172,
+      "start": "2019-10-07",
+      "end": "2019-10-07",
+      "package": "back-off"
+    },
+    {
+      "downloads": 58,
+      "start": "2019-10-08",
+      "end": "2019-10-08",
+      "package": "back-off"
+    },
+    {
+      "downloads": 148,
+      "start": "2019-10-09",
+      "end": "2019-10-09",
+      "package": "back-off"
+    },
+    {
+      "downloads": 72,
+      "start": "2019-10-10",
+      "end": "2019-10-10",
+      "package": "back-off"
+    },
+    {
+      "downloads": 148,
+      "start": "2019-10-11",
+      "end": "2019-10-11",
+      "package": "back-off"
+    },
+    {
+      "downloads": 78,
+      "start": "2019-10-12",
+      "end": "2019-10-12",
+      "package": "back-off"
+    },
+    {
+      "downloads": 61,
+      "start": "2019-10-13",
+      "end": "2019-10-13",
+      "package": "back-off"
+    },
+    {
+      "downloads": 196,
+      "start": "2019-10-14",
+      "end": "2019-10-14",
+      "package": "back-off"
+    },
+    {
+      "downloads": 192,
+      "start": "2019-10-15",
+      "end": "2019-10-15",
+      "package": "back-off"
+    },
+    {
+      "downloads": 156,
+      "start": "2019-10-16",
+      "end": "2019-10-16",
+      "package": "back-off"
+    },
+    {
+      "downloads": 105,
+      "start": "2019-10-17",
+      "end": "2019-10-17",
+      "package": "back-off"
+    },
+    {
+      "downloads": 98,
+      "start": "2019-10-18",
+      "end": "2019-10-18",
+      "package": "back-off"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-10-19",
+      "end": "2019-10-19",
+      "package": "back-off"
+    },
+    {
+      "downloads": 213,
+      "start": "2019-10-20",
+      "end": "2019-10-20",
+      "package": "back-off"
+    },
+    {
+      "downloads": 153,
+      "start": "2019-10-21",
+      "end": "2019-10-21",
+      "package": "back-off"
+    },
+    {
+      "downloads": 163,
+      "start": "2019-10-22",
+      "end": "2019-10-22",
+      "package": "back-off"
+    },
+    {
+      "downloads": 292,
+      "start": "2019-10-23",
+      "end": "2019-10-23",
+      "package": "back-off"
+    },
+    {
+      "downloads": 216,
+      "start": "2019-10-24",
+      "end": "2019-10-24",
+      "package": "back-off"
+    },
+    {
+      "downloads": 154,
+      "start": "2019-10-25",
+      "end": "2019-10-25",
+      "package": "back-off"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-10-26",
+      "end": "2019-10-26",
+      "package": "back-off"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-10-27",
+      "end": "2019-10-27",
+      "package": "back-off"
+    },
+    {
+      "downloads": 165,
+      "start": "2019-10-28",
+      "end": "2019-10-28",
+      "package": "back-off"
+    },
+    {
+      "downloads": 236,
+      "start": "2019-10-29",
+      "end": "2019-10-29",
+      "package": "back-off"
+    },
+    {
+      "downloads": 387,
+      "start": "2019-10-30",
+      "end": "2019-10-30",
+      "package": "back-off"
+    },
+    {
+      "downloads": 162,
+      "start": "2019-10-31",
+      "end": "2019-10-31",
+      "package": "back-off"
+    },
+    {
+      "downloads": 104,
+      "start": "2019-11-01",
+      "end": "2019-11-01",
+      "package": "back-off"
+    },
+    {
+      "downloads": 100,
+      "start": "2019-11-02",
+      "end": "2019-11-02",
+      "package": "back-off"
+    },
+    {
+      "downloads": 122,
+      "start": "2019-11-03",
+      "end": "2019-11-03",
+      "package": "back-off"
+    },
+    {
+      "downloads": 185,
+      "start": "2019-11-04",
+      "end": "2019-11-04",
+      "package": "back-off"
+    },
+    {
+      "downloads": 129,
+      "start": "2019-11-05",
+      "end": "2019-11-05",
+      "package": "back-off"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-11-06",
+      "end": "2019-11-06",
+      "package": "back-off"
+    },
+    {
+      "downloads": 97,
+      "start": "2019-11-07",
+      "end": "2019-11-07",
+      "package": "back-off"
+    },
+    {
+      "downloads": 106,
+      "start": "2019-11-08",
+      "end": "2019-11-08",
+      "package": "back-off"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-09",
+      "end": "2019-11-09",
+      "package": "back-off"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-10",
+      "end": "2019-11-10",
+      "package": "back-off"
+    },
+    {
+      "downloads": 106,
+      "start": "2019-11-11",
+      "end": "2019-11-11",
+      "package": "back-off"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-12",
+      "end": "2019-11-12",
+      "package": "back-off"
+    },
+    {
+      "downloads": 96,
+      "start": "2019-11-13",
+      "end": "2019-11-13",
+      "package": "back-off"
+    },
+    {
+      "downloads": 156,
+      "start": "2019-11-14",
+      "end": "2019-11-14",
+      "package": "back-off"
+    },
+    {
+      "downloads": 238,
+      "start": "2019-11-15",
+      "end": "2019-11-15",
+      "package": "back-off"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-16",
+      "end": "2019-11-16",
+      "package": "back-off"
+    },
+    {
+      "downloads": 240,
+      "start": "2019-11-17",
+      "end": "2019-11-17",
+      "package": "back-off"
+    },
+    {
+      "downloads": 255,
+      "start": "2019-11-18",
+      "end": "2019-11-18",
+      "package": "back-off"
+    },
+    {
+      "downloads": 290,
+      "start": "2019-11-19",
+      "end": "2019-11-19",
+      "package": "back-off"
+    },
+    {
+      "downloads": 397,
+      "start": "2019-11-20",
+      "end": "2019-11-20",
+      "package": "back-off"
+    },
+    {
+      "downloads": 362,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "back-off"
+    },
+    {
+      "downloads": 373,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "back-off"
+    },
+    {
+      "downloads": 362,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "back-off"
+    },
+    {
+      "downloads": 360,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "back-off"
+    },
+    {
+      "downloads": 393,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "back-off"
+    },
+    {
+      "downloads": 360,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "back-off"
+    },
+    {
+      "downloads": 360,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "back-off"
+    }
+  ],
+  "totals": {
+    "downloads": 10651,
+    "start": "2019-09-27",
+    "end": "2019-11-27",
+    "package": "back-off"
+  },
+  "addedUp": 10651
+}

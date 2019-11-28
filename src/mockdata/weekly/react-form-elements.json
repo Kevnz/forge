@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 686,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 724,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 673,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 701,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 810,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 690,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "react-form-elements"
+    },
+    {
+      "downloads": 685,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "react-form-elements"
+    }
+  ],
+  "totals": {
+    "downloads": 4969,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "react-form-elements"
+  },
+  "addedUp": 4969
+}

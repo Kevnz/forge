@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 673,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "@brightleaf/react-hooks"
+    },
+    {
+      "downloads": 712,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "@brightleaf/react-hooks"
+    },
+    {
+      "downloads": 672,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "@brightleaf/react-hooks"
+    },
+    {
+      "downloads": 701,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "@brightleaf/react-hooks"
+    },
+    {
+      "downloads": 736,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "@brightleaf/react-hooks"
+    },
+    {
+      "downloads": 679,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "@brightleaf/react-hooks"
+    },
+    {
+      "downloads": 675,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "@brightleaf/react-hooks"
+    }
+  ],
+  "totals": {
+    "downloads": 4848,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "@brightleaf/react-hooks"
+  },
+  "addedUp": 4848
+}

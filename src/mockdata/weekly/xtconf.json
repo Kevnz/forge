@@ -1,0 +1,53 @@
+{
+  "breakdown": [
+    {
+      "downloads": 123,
+      "start": "2019-11-21",
+      "end": "2019-11-21",
+      "package": "xtconf"
+    },
+    {
+      "downloads": 128,
+      "start": "2019-11-22",
+      "end": "2019-11-22",
+      "package": "xtconf"
+    },
+    {
+      "downloads": 121,
+      "start": "2019-11-23",
+      "end": "2019-11-23",
+      "package": "xtconf"
+    },
+    {
+      "downloads": 121,
+      "start": "2019-11-24",
+      "end": "2019-11-24",
+      "package": "xtconf"
+    },
+    {
+      "downloads": 120,
+      "start": "2019-11-25",
+      "end": "2019-11-25",
+      "package": "xtconf"
+    },
+    {
+      "downloads": 120,
+      "start": "2019-11-26",
+      "end": "2019-11-26",
+      "package": "xtconf"
+    },
+    {
+      "downloads": 147,
+      "start": "2019-11-27",
+      "end": "2019-11-27",
+      "package": "xtconf"
+    }
+  ],
+  "totals": {
+    "downloads": 880,
+    "start": "2019-11-21",
+    "end": "2019-11-27",
+    "package": "xtconf"
+  },
+  "addedUp": 880
+}
