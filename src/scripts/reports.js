@@ -22,4 +22,4 @@ const options = {
 reporter.generate(options)
 console.info('process', process.cwd())
 console.info('__dirname', __dirname)
-cucumberJunitConvert.convert(junitOpts)
+// cucumberJunitConvert.convert(junitOpts)
