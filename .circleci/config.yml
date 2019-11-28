@@ -2,6 +2,7 @@ executors:
   node:
     docker:
       - image: circleci/node:12
+    working_directory: ~/forge
   tester:
     docker:
       - image: circleci/node:12-browsers
@@ -9,6 +10,7 @@ executors:
   build-machine:
     docker:
       - image: circleci/node:10
+    working_directory: ~/forge
 aliases:
   install_node_modules: &install_node_modules
     run:
