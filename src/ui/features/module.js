@@ -26,6 +26,7 @@ import { useTitle, useGet } from '@brightleaf/react-hooks'
 import classnames from 'classnames'
 import modules from '../data/my-packages'
 import SparkLine from '../components/spark-line'
+import SparkLineBar from '../components/spark-line-bar'
 import './tracking.scss'
 
 const backs = {
@@ -65,7 +66,7 @@ const HEADING = {
 
 const usePkgDetails = pkg => {
   const { data, loading, getUrl } = useGet(
-    `https://kev-pi.herokuapp.com/api/package/details?pkg=${pkg}`
+    `${process.env.API}/api/package/details?pkg=${pkg}`
   )
 
   useEffect(() => {
@@ -75,7 +76,7 @@ const usePkgDetails = pkg => {
 }
 const usePkgDownloads = (pkg, duration, color) => {
   const { data, loading, getUrl } = useGet(
-    `https://kev-pi.herokuapp.com/api/package/yearly?pkg=${pkg}`
+    `${process.env.API}/api/package/yearly?pkg=${pkg}`
   )
   useEffect(() => {
     getUrl()
@@ -99,7 +100,15 @@ const usePkgDownloads = (pkg, duration, color) => {
       date: '2019-09-25',
     },
   ]
-  let totals = { name: pkg, downloads: 0 }
+  let totals = {
+    name: pkg,
+    downloads: {
+      current: 0,
+      previous: 0,
+      further: 0,
+      breakdown: [],
+    },
+  }
 
   const breakdownMapper = down => {
     return {
@@ -150,6 +159,7 @@ const usePkgDownloads = (pkg, duration, color) => {
           return acc
         }, 0),
         further: further,
+        breakdown: data.breakdown.map(breakdownMapper),
       },
       color,
     }
@@ -183,7 +193,7 @@ const StatsPage = ({ module }) => {
   )
 
   const [pkgDetails, isLoadingDetails] = usePkgDetails(mod.name)
-
+  console.info('totals', totals.downloads.breakdown)
   const moduleItems = modules.map(m => {
     return (
       <DropDownItem
@@ -221,6 +231,18 @@ const StatsPage = ({ module }) => {
       return 0
     })
     .map(d => d[`${mod.name}-downloads`])
+  const fullData = totals.downloads.breakdown
+    .sort((a, b) => {
+      if (new Date(a.date) > new Date(b.date)) {
+        return 1
+      }
+      if (new Date(a.date) < new Date(b.date)) {
+        return -1
+      }
+      // a must be equal to b
+      return 0
+    })
+    .map(d => d[`${mod.name}-downloads`])
 
   const min = Math.min(...data) || 0
   const max = Math.max(...data) || 0
@@ -232,7 +254,12 @@ const StatsPage = ({ module }) => {
   })
 
   const isAnyLoading = isLoading || isLoadingDetails
-
+  console.log(
+    []
+      .concat(fullData)
+      .slice(fullData.length - 14)
+      .join(',')
+  )
   return (
     <>
       <Hero>
@@ -347,6 +374,19 @@ const StatsPage = ({ module }) => {
           <Panel heading="Daily Downloads">
             <PanelBlock as="div">
               <SparkLine data={data} color={mod.color} width={400}></SparkLine>
+            </PanelBlock>
+          </Panel>
+        </Column>
+      </Columns>
+      <Columns>
+        <Column isFull>
+          <Panel heading="Downloads in the last two weeks">
+            <PanelBlock as="div">
+              <SparkLineBar
+                data={[].concat(fullData).slice(fullData.length - 14)}
+                color={mod.color}
+                width={300}
+              ></SparkLineBar>
             </PanelBlock>
           </Panel>
         </Column>

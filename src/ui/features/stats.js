@@ -3,7 +3,7 @@ import {
   Column,
   Columns,
   Title,
-  SubTitle,
+  Container,
   Panel,
   PanelBlock,
   BreadcrumbItem,
@@ -19,7 +19,7 @@ import SparkLine from '../components/spark-line'
 
 const useStatsGet = pkg => {
   const { data, getUrl } = useGet(
-    `https://kev-pi.herokuapp.com/api/package/yearly?pkg=${pkg}`
+    `${process.env.API}/api/package/yearly?pkg=${pkg}`
   )
   useEffect(() => {
     getUrl()
@@ -42,7 +42,9 @@ const SingleModule = ({ name, title, color }) => {
     <Column is="4">
       <Panel heading={`${title} Total: ${total}`}>
         <PanelBlock>
-          <SparkLine data={data} color={color}></SparkLine>
+          <Container>
+            <SparkLine data={data} color={color}></SparkLine>
+          </Container>
         </PanelBlock>
       </Panel>
       <Notification isShown isDismissible={false} isInfo>
@@ -61,7 +63,7 @@ const SingleModule = ({ name, title, color }) => {
           {breakdown.length > 300 && breakdown[361].downloads} -{' '}
           {breakdown.length > 300 && breakdown[362].downloads} -{' '}
           {breakdown.length > 300 && breakdown[363].downloads}
-                 </Title>
+        </Title>
       </Notification>
     </Column>
   )
