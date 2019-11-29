@@ -4,7 +4,7 @@ const readlineSync = require('readline-sync')
 const fs = require('fs-extra')
 const equal = require('image-equal')
 const pixels = require('image-pixels')
-
+const output = require('image-output')
 const pages = require('./pages')
 
 const scope = require('./scope')
@@ -61,12 +61,12 @@ const clickButton = async text => {
   return scope.expect(page).toClick('button', { text: text })
 }
 
-const matchScreenshot = async function(name) {
-  const world = this
+const matchScreenshot = async function(name, world) {
+  console.info('MATCH')
 
   const screenShotName = `./src/tests/screenshots/approved/${name}.png`
   const testImageName = `./src/tests/screenshots/test/${name}.png`
-
+  const diffImageName = `./src/tests/screenshots/diff/${name}.png`
   const page = scope.context.currentPage
   const screenshotExists = await fs.pathExists(screenShotName)
   if (!screenshotExists) {
@@ -76,11 +76,15 @@ const matchScreenshot = async function(name) {
   await page.screenshot({ path: testImageName })
   let shot = await pixels(screenShotName)
   const testShot = await pixels(testImageName)
-  const areEqual = equal(shot, testShot, true)
-  console.log('eq', areEqual)
-  world.attach(areEqual, 'image/png')
+  const areEqual = equal(shot, testShot, diffImageName)
+
+  const d = await fs.readFile(diffImageName)
+  console.log('The D', typeof d)
+  world.attach(d, 'image/png')
   if (!areEqual) {
-    world.attach(areEqual, 'image/png')
+    console.info('they are not equal')
+    const diffImg = await pixels(diffImageName)
+    world.attach(d, 'image/png')
     var takeSnapshot = readlineSync.question('Do you want to update? ')
 
     if (takeSnapshot == 'yes') {
