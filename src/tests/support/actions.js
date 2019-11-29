@@ -77,7 +77,8 @@ const matchScreenshot = async function(name) {
   let shot = await pixels(screenShotName)
   const testShot = await pixels(testImageName)
   const areEqual = equal(shot, testShot, true)
-
+  console.log('eq', areEqual)
+  world.attach(areEqual, 'image/png')
   if (!areEqual) {
     world.attach(areEqual, 'image/png')
     var takeSnapshot = readlineSync.question('Do you want to update? ')
