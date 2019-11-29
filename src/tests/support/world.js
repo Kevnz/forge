@@ -1,11 +1,6 @@
 const { setWorldConstructor } = require('cucumber')
-
 const puppeteer = require('puppeteer')
-const { toMatchImageSnapshot } = require('jest-image-snapshot')
-
 const expect = require('expect-puppeteer')
-// expect.extend({ toMatchImageSnapshot })
-
 const scope = require('./scope')
 
 const World = function({ attach, parameters }) {

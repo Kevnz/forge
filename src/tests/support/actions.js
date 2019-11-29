@@ -38,7 +38,6 @@ const hasTitle = async text => {
 }
 
 const clickLink = async text => {
-  console.log('text of link', text)
   const page = scope.context.currentPage
   return scope.expect(page).toClick('a', { text: text })
 }
@@ -64,7 +63,7 @@ const clickButton = async text => {
 
 const matchScreenshot = async function(name) {
   const world = this
-  console.log('world')
+
   const screenShotName = `./src/tests/screenshots/approved/${name}.png`
   const testImageName = `./src/tests/screenshots/test/${name}.png`
 
