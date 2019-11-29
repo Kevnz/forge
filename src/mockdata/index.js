@@ -10,8 +10,6 @@ const getDuration = url => {
   return 'yearly'
 }
 const requestHandler = (request, response) => {
-  console.log(request.method)
-
   if (request.method === 'OPTIONS') {
     response.setHeader('Access-Control-Allow-Origin', '*')
     response.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')

@@ -1,5 +1,3 @@
-const path = require('path')
-console.log(path.resolve(process.cwd(), './dist'))
 const config = {
   root: './dist',
   port: 8080,
