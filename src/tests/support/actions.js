@@ -85,6 +85,10 @@ const matchScreenshot = async name => {
       shot = await pixels(screenShotName)
       return true
     }
+    const world = this
+
+    const sshot = await scope.context.currentPage.screenshot()
+    world.attach(sshot, 'image/png')
   }
 
   return assert(equal(shot, testShot, true))

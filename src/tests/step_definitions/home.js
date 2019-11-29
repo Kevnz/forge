@@ -1,4 +1,4 @@
-const { After, AfterAll, Given, When, Then } = require('cucumber')
+const { After, AfterAll, Given, When, Then, Status } = require('cucumber')
 const scope = require('../support/scope')
 const { goToPage, hasTitle } = require('../support/actions')
 
@@ -12,7 +12,12 @@ Then('the page should show {string}', function(string) {
   return hasTitle(string)
 })
 
-After(async () => {
+After(async function(testCase) {
+  const world = this
+  if (testCase.result.status === Status.FAILED) {
+    const sshot = await scope.context.currentPage.screenshot()
+    world.attach(sshot, 'image/png')
+  }
   // Here we check if a scenario has instantiated a browser and a current page
   if (scope.browser && scope.context.currentPage) {
     // if it has, find all the cookies, and delete them
