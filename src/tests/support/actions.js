@@ -79,11 +79,10 @@ const matchScreenshot = async function(name, world) {
   const areEqual = equal(shot, testShot, diffImageName)
 
   const d = await fs.readFile(diffImageName)
-  console.log('The D', typeof d)
-  world.attach(d, 'image/png')
+
   if (!areEqual) {
     console.info('they are not equal')
-    const diffImg = await pixels(diffImageName)
+
     world.attach(d, 'image/png')
     var takeSnapshot = readlineSync.question('Do you want to update? ')
 
