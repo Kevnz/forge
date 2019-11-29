@@ -1,5 +1,9 @@
 // Dependencies
 const assert = require('assert')
+const readlineSync = require('readline-sync')
+const fs = require('fs-extra')
+const equal = require('image-equal')
+const pixels = require('image-pixels')
 
 const pages = require('./pages')
 
@@ -59,8 +63,33 @@ const clickButton = async text => {
 }
 
 const matchScreenshot = async name => {
+  const screenShotName = `./src/tests/screenshots/approved/${name}.png`
+  const testImageName = `./src/tests/screenshots/test/${name}.png`
+
   const page = scope.context.currentPage
+  const screenshotExists = await fs.pathExists(screenShotName)
+  if (!screenshotExists) {
+    console.warn('Screenshot Does Not Exist - Creating')
+    await page.screenshot({ path: screenShotName })
+  }
+  await page.screenshot({ path: testImageName })
+  let shot = await pixels(screenShotName)
+  const testShot = await pixels(testImageName)
+  const areEqual = equal(shot, testShot, true)
+
+  if (!areEqual) {
+    var takeSnapshot = readlineSync.question('Do you want to update? ')
+
+    if (takeSnapshot == 'yes') {
+      await page.screenshot({ path: screenShotName })
+      shot = await pixels(screenShotName)
+      return true
+    }
+  }
+
+  return assert(equal(shot, testShot, true))
 }
+
 module.exports = {
   clickButton,
   clickLink,
