@@ -23,5 +23,11 @@
     "npx isom serve:mocks"
   ],
   "cleanuptest:e2e": "node ./src/scripts/reports.js",
-  "test:e2e:dev": "npx cucumber-js ./src/tests/features/*.feature --require './src/tests/**/**.js'"
+  "test:e2e:dev": "npx cucumber-js ./src/tests/features/*.feature --require './src/tests/**/**.js'",
+  "test:e2e:commit": "npx cucumber-js ./src/tests/features/*.feature --require './src/tests/**/**.js'",
+  "pretest:e2e:commit": [
+    "npx isom build:test",
+    "npx isom serve",
+    "npx isom serve:mocks"
+  ]
 }
