@@ -16,7 +16,7 @@ Then(
       hasText('760 - 681 - 766 - 676 - 702 - 737 - 679'),
       hasText('Back-Off Total: 12869'),
       hasText('Creature Features Total: 13276'),
-      matchScreenshot('stats'),
+      matchScreenshot.bind(this, 'stats'),
     ])
   }
 )
