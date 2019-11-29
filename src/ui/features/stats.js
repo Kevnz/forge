@@ -40,7 +40,7 @@ const SingleModule = ({ name, title, color }) => {
   const [data, total, breakdown] = useStatsGet(name)
   return (
     <Column is="4">
-      <Panel heading={`${title} Total: ${total} - XXX`}>
+      <Panel heading={`${title} Total: ${total}`}>
         <PanelBlock>
           <Container>
             <SparkLine data={data} color={color}></SparkLine>
