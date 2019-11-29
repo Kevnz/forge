@@ -3,11 +3,6 @@ const http = require('http')
 const qs = require('qs')
 const port = 3000
 const getDuration = url => {
-  console.log('the url', url)
-  console.log('the url weekly', url.indexOf('weekly'))
-  console.log('the url daily', url.indexOf('daily'))
-  console.log('the url monthly', url.indexOf('monthly'))
-  console.log('the url', url.indexOf('yearly'))
   if (url.indexOf('daily') > -1) return 'daily'
   if (url.indexOf('weekly') > -1) return 'weekly'
   if (url.indexOf('monthly') > -1) return 'monthly'
@@ -44,7 +39,7 @@ const requestHandler = (request, response) => {
     .replace('.', '-')
 
   const duration = getDuration(request.url.split('?')[0])
-  console.info('duration', duration)
+
   const data = fs.readFileSync(`./src/mockdata/${duration}/${pkgName}.json`)
   response.setHeader('Access-Control-Allow-Origin', '*')
   response.setHeader('Content-Type', 'application/json; charset=utf-8')
@@ -56,8 +51,8 @@ const server = http.createServer(requestHandler)
 
 server.listen(port, err => {
   if (err) {
-    return console.log('something bad happened', err)
+    return console.error('something bad happened', err)
   }
 
-  console.log(`server is listening on ${port}`)
+  console.info(`server is listening on ${port}`)
 })
