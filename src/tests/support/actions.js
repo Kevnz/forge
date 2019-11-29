@@ -80,7 +80,7 @@ const matchScreenshot = async function(name, world) {
 
   // const d = await fs.readFile(diffImageName)
 
-  if (!areEqual) {
+  if (false && !areEqual) {
     console.info('they are not equal')
 
     var takeSnapshot = readlineSync.question('Do you want to update? ')
@@ -96,7 +96,7 @@ const matchScreenshot = async function(name, world) {
     // world.attach(d, 'image/png')
   }
 
-  return assert(equal(shot, testShot, true))
+  return assert(equal(shot, testShot, diffImageName, { threshold: 0.5 }))
 }
 
 module.exports = {
