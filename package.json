@@ -16,8 +16,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:e2e:dev",
-      "pre-push": "npm test"
+      "pre-push": "npm test",
+      "pre-commit": "npm run test:e2e:dev"
     }
   },
   "dependencies": {
