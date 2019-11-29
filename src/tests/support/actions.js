@@ -76,7 +76,7 @@ const matchScreenshot = async function(name, world) {
   await page.screenshot({ path: testImageName })
   let shot = await pixels(screenShotName)
   const testShot = await pixels(testImageName)
-  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.21 })
+  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.5 })
 
   const d = await fs.readFile(diffImageName)
 
