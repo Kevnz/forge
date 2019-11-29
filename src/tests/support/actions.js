@@ -83,7 +83,6 @@ const matchScreenshot = async function(name, world) {
   if (!areEqual) {
     console.info('they are not equal')
 
-    world.attach(d, 'image/png')
     var takeSnapshot = readlineSync.question('Do you want to update? ')
 
     if (takeSnapshot == 'yes') {
@@ -94,6 +93,7 @@ const matchScreenshot = async function(name, world) {
 
     const sshot = await scope.context.currentPage.screenshot()
     world.attach(sshot, 'image/png')
+    world.attach(d, 'image/png')
   }
 
   return assert(equal(shot, testShot, true))
