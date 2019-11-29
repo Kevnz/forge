@@ -62,7 +62,7 @@ const clickButton = async text => {
   return scope.expect(page).toClick('button', { text: text })
 }
 
-const matchScreenshot = async name => {
+const matchScreenshot = async function(name) {
   const screenShotName = `./src/tests/screenshots/approved/${name}.png`
   const testImageName = `./src/tests/screenshots/test/${name}.png`
 
