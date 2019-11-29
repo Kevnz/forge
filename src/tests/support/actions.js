@@ -63,6 +63,8 @@ const clickButton = async text => {
 }
 
 const matchScreenshot = async function(name) {
+  const world = this
+  console.log('world')
   const screenShotName = `./src/tests/screenshots/approved/${name}.png`
   const testImageName = `./src/tests/screenshots/test/${name}.png`
 
@@ -78,6 +80,7 @@ const matchScreenshot = async function(name) {
   const areEqual = equal(shot, testShot, true)
 
   if (!areEqual) {
+    world.attach(areEqual, 'image/png')
     var takeSnapshot = readlineSync.question('Do you want to update? ')
 
     if (takeSnapshot == 'yes') {
@@ -85,7 +88,6 @@ const matchScreenshot = async function(name) {
       shot = await pixels(screenShotName)
       return true
     }
-    const world = this
 
     const sshot = await scope.context.currentPage.screenshot()
     world.attach(sshot, 'image/png')
