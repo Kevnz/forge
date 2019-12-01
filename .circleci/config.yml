@@ -59,10 +59,7 @@ jobs:
       - run:
           name: Build
           command: npm run build
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - dist
+
   deploy:
     executor: node
     steps:
@@ -70,6 +67,13 @@ jobs:
       - attach_workspace:
           at: ./
       - <<: *install_node_modules
+      - run:
+          name: Build
+          command: npm run build
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - dist
       - run:
           name: Install netlify-cli
           command: sudo npm install -g --silent netlify-cli
