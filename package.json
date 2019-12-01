@@ -24,6 +24,7 @@
     "@brightleaf/elements": "^1.6.1",
     "@brightleaf/react-hooks": "^4.1.1",
     "@reach/router": "^1.2.1",
+    "back-off": "^4.3.0",
     "bulmaswatch": "^0.7.5",
     "classnames": "^2.2.6",
     "gotrue-js": "^0.9.25",
