@@ -67,6 +67,7 @@ const matchScreenshot = async function(name, world) {
   const screenShotName = `./src/tests/screenshots/approved/${name}.png`
   const testImageName = `./src/tests/screenshots/test/${name}.png`
   const diffImageName = `./src/tests/screenshots/diff/${name}.png`
+  const diffImageName2 = `./reports${name}.png`
   const page = scope.context.currentPage
   const screenshotExists = await fs.pathExists(screenShotName)
   if (!screenshotExists) {
@@ -82,13 +83,14 @@ const matchScreenshot = async function(name, world) {
 
   if (!areEqual) {
     console.info('they are not equal')
+    if (!process.env.CIRCLECI) {
+      var takeSnapshot = readlineSync.question('Do you want to update? ')
 
-    var takeSnapshot = readlineSync.question('Do you want to update? ')
-
-    if (takeSnapshot == 'yes') {
-      await page.screenshot({ path: screenShotName })
-      shot = await pixels(screenShotName)
-      return true
+      if (takeSnapshot == 'yes') {
+        await page.screenshot({ path: screenShotName })
+        shot = await pixels(screenShotName)
+        return true
+      }
     }
 
     const sshot = await scope.context.currentPage.screenshot()
@@ -96,7 +98,7 @@ const matchScreenshot = async function(name, world) {
     // world.attach(d, 'image/png')
   }
 
-  return assert(equal(shot, testShot, diffImageName, { threshold: 0.5 }))
+  return assert(equal(shot, testShot, diffImageName2, { threshold: 0.5 }))
 }
 
 module.exports = {
