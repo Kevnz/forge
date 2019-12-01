@@ -92,6 +92,11 @@ export default class App extends Component {
                   </UpLink>
                 </MenuListItem>
                 <MenuListItem>
+                  <UpLink to="/backoff">
+                    <Icon fas icon="redo" /> Back Off
+                  </UpLink>
+                </MenuListItem>
+                <MenuListItem>
                   <UpLink to="/stats">
                     <Icon fas icon="chart-line" /> NPM Overview
                   </UpLink>
