@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Router } from '@reach/router'
 
 const About = React.lazy(() => import('../features/about'))
+const BackOff = React.lazy(() => import('../features/back-off'))
 const Home = React.lazy(() => import('../features/home'))
 const Contact = React.lazy(() => import('../features/contact'))
 const Confirm = React.lazy(() => import('../features/confirms'))
@@ -43,6 +44,7 @@ export default class App extends Component {
         <ChainAnimations path="/chained-animations" />
         <SimpleAnimations path="/demo-animations" />
         <Working path="/workers" />
+        <BackOff path="/backoff" />
         <Missing default />
       </Router>
     )
