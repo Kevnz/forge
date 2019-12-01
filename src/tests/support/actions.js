@@ -79,7 +79,7 @@ const matchScreenshot = async function(name, world) {
   const testShot = await pixels(testImageName)
   const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.5 })
   // return true
-  // const d = await fs.readFile(diffImageName)
+
 
   if (!areEqual) {
     console.info('they are not equal')
@@ -95,7 +95,8 @@ const matchScreenshot = async function(name, world) {
 
     const sshot = await scope.context.currentPage.screenshot()
     world.attach(sshot, 'image/png')
-    // world.attach(d, 'image/png')
+    const d = await fs.readFile(diffImageName)
+    world.attach(d, 'image/png')
   }
 
   return assert(equal(shot, testShot, diffImageName2, { threshold: 0.5 }))
