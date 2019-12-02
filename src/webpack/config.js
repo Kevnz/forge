@@ -1,8 +1,14 @@
 const path = require('path')
+const features = require('creature-features')()
+const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const featureFlags = new webpack.DefinePlugin({
+  FEATURES: features,
+})
 const cssLoader = 'css-loader'
 module.exports = {
   entry: './src/ui/index.js',
+  plugins: [featureFlags],
   module: {
     rules: [
       {
