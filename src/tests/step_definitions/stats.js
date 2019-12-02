@@ -20,3 +20,8 @@ Then(
     ])
   }
 )
+
+Then('the page should match the {string} screenshot', function(string) {
+  // Write code here that turns the phrase above into concrete actions
+  return matchScreenshot(string, this)
+})

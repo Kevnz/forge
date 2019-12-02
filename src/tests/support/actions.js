@@ -25,6 +25,7 @@ const goToPage = async page => {
   scope.context.currentPage = await scope.browser.newPage()
   scope.context.currentPage.setViewport({ width: 1280, height: 1024 })
   const url = scope.host + pages[page]
+
   return scope.context.currentPage.goto(url, {
     waitUntil: 'networkidle2',
   })
@@ -62,8 +63,6 @@ const clickButton = async text => {
 }
 
 const matchScreenshot = async function(name, world) {
-  console.info('MATCH')
-
   const screenShotName = `./src/tests/screenshots/approved/${name}.png`
   const testImageName = `./src/tests/screenshots/test/${name}.png`
   const diffImageName = `./src/tests/screenshots/diff/${name}.png`
@@ -84,7 +83,6 @@ const matchScreenshot = async function(name, world) {
   // return true
 
   if (!areEqual) {
-    console.info('they are not equal')
     if (!process.env.CIRCLECI) {
       var takeSnapshot = readlineSync.question('Do you want to update? ')
 

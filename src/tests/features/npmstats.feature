@@ -7,3 +7,12 @@ Feature: NPM Stats
     Given I go to 'stats'
     When the page loads
     Then the page should display the correct totals
+
+  Scenario: View Stat Tracking
+    Given I go to 'tracking'
+    When the page loads
+    Then the page should match the 'tracking' screenshot
+
+
+
+

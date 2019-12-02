@@ -2,7 +2,7 @@ const { After, AfterAll, Given, When, Then, Status } = require('cucumber')
 const scope = require('../support/scope')
 const { goToPage, hasTitle } = require('../support/actions')
 
-Given('I go to {string}', goToPage)
+Given('I go to {string}', { timeout: 60 * 1500 }, goToPage)
 
 When('the page loads', function() {
   return true
