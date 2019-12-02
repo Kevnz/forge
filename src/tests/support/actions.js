@@ -101,7 +101,7 @@ const matchScreenshot = async function(name, world) {
     world.attach(d, 'image/png')
   }
 
-  return assert(equal(shot, testShot, diffImageName2, { threshold: 0.5 }))
+  return assert(equal(shot, testShot, diffImageName2, { threshold: 0.85 }))
 }
 
 module.exports = {
