@@ -11,7 +11,7 @@ const scope = require('./scope')
 
 // Defines whether puppeteer runs Chrome in headless mode.
 let headless = true
-let slowMo = 15
+let slowMo = 5
 
 // Chrome is set to run headlessly and with no slowdown in CircleCI
 if (process.env.CIRCLECI) headless = true
