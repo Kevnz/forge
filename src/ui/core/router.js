@@ -20,6 +20,7 @@ const ChainAnimations = React.lazy(() => import('../features/chain-animations'))
 const SimpleAnimations = React.lazy(() =>
   import('../features/simple-animations')
 )
+const Dates = React.lazy(() => import('../features/dates'))
 const Working = React.lazy(() => import('../features/worker'))
 const Missing = React.lazy(() => import('../features/missing'))
 
@@ -45,6 +46,7 @@ export default class App extends Component {
         <SimpleAnimations path="/demo-animations" />
         <Working path="/workers" />
         <BackOff path="/backoff" />
+        <Dates path="/dates" />
         <Missing default />
       </Router>
     )
