@@ -92,12 +92,13 @@ const matchScreenshot = async function(name, world) {
         return true
       }
     }
+    const d = await fs.readFile(diffImageName)
+    world.attach(d, 'image/png')
 
     const sshot = await scope.context.currentPage.screenshot()
     world.attach(sshot, 'image/png')
   }
-  const d = await fs.readFile(diffImageName)
-  world.attach(d, 'image/png')
+
   return assert(equal(shot, testShot, diffImageName2, { threshold: 0.85 }))
 }
 
