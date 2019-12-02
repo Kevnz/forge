@@ -7,7 +7,7 @@ const junitOpts = {
 }
 
 const options = {
-  theme: 'bootstrap',
+  theme: 'foundation',
   jsonFile: '/home/circleci/forge/reports/cucumber_report.json',
   output: '/home/circleci/forge/reports/cucumber_report.html',
   reportSuiteAsScenarios: true,
