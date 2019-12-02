@@ -116,6 +116,13 @@ export default class App extends Component {
                     <Icon fas icon="bacon" /> Animation
                   </UpLink>
                 </MenuListItem>
+                {FEATURES && FEATURES.FeatureFlags && (
+                  <MenuListItem>
+                    <UpLink to="/">
+                      <Icon fas icon="gem" /> Feature Flags
+                    </UpLink>
+                  </MenuListItem>
+                )}
               </MenuList>
               <br />
 
