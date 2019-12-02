@@ -3,5 +3,6 @@ const pages = {
   homepage: '/#/',
   stats: '/#/stats',
   tracking: '/#/tracking',
+  dates: '/#/dates',
 }
 module.exports = pages
