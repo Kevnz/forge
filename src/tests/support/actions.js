@@ -74,12 +74,13 @@ const matchScreenshot = async function(name, world) {
     console.warn('Screenshot Does Not Exist - Creating')
     await page.screenshot({ path: screenShotName })
   }
-  const testshot = await page.screenshot({ path: testImageName })
 
+  const testshot = await page.screenshot()
+  await page.screenshot({ path: testImageName })
   world.attach(testshot, 'image/png')
   let shot = await pixels(screenShotName)
   const testShot = await pixels(testImageName)
-  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.5 })
+  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.85 })
   // return true
 
   if (!areEqual) {
