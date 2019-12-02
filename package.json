@@ -29,6 +29,7 @@
     "back-off": "^4.3.0",
     "bulmaswatch": "^0.7.5",
     "classnames": "^2.2.6",
+    "creature-features": "^5.0.0",
     "days-in-a-row": "^3.0.0",
     "gotrue-js": "^0.9.25",
     "hash-source": "^1.0.4",
@@ -94,6 +95,7 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   }
 }
