@@ -121,3 +121,16 @@ workflows:
       - build:
           requires:
             - test
+  bump:
+    triggers:
+      - schedule:
+          cron: "30 0 * * 1,3,5"
+          filters:
+            branches:
+              only:
+                - "master"
+    jobs:
+      - test
+      - build:
+          requires:
+            - test
