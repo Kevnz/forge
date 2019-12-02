@@ -125,7 +125,6 @@ export default class App extends Component {
                 )}
               </MenuList>
               <br />
-
               <MenuLabel>
                 <Icon fas icon="book" /> Documentation
               </MenuLabel>
