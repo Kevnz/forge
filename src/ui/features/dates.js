@@ -4,9 +4,8 @@ import {
   Title,
   SubTitle,
   Container,
-  Button,
-  Loader,
-  Notification,
+  Column,
+  Columns,
 } from '@brightleaf/elements'
 import fnf from '1stand15th'
 import ymd from 'year-month-day'
@@ -31,18 +30,24 @@ export default () => {
       <SubTitle as="p">Create awesome things</SubTitle>
       <Container>
         <br />
-        <Title>Days in a Row</Title>
-        <ul>{prettyDates}</ul>
-        <hr />
-        <Title>1st and 15th</Title>
-        <ul>{year2018}</ul>
-        <hr />
-        <Title>Year Month Day</Title>
-        <ul>
-          <li>Year: {ymdResult.year}</li>
-          <li>Month: {ymdResult.month}</li>
-          <li>Day: {ymdResult.day}</li>
-        </ul>
+        <Columns>
+          <Column isOneThird>
+            <Title>Days in a Row</Title>
+            <ul>{prettyDates}</ul>
+          </Column>
+          <Column isOneThird>
+            <Title>1st and 15th</Title>
+            <ul>{year2018}</ul>
+          </Column>
+          <Column isOneThird>
+            <Title>Year Month Day</Title>
+            <ul>
+              <li>Year: {ymdResult.year}</li>
+              <li>Month: {ymdResult.month}</li>
+              <li>Day: {ymdResult.day}</li>
+            </ul>
+          </Column>
+        </Columns>
       </Container>
     </Section>
   )

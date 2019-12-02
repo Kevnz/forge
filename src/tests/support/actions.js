@@ -79,7 +79,7 @@ const matchScreenshot = async function(name, world) {
   world.attach(testshot, 'image/png')
   let shot = await pixels(screenShotName)
   const testShot = await pixels(testImageName)
-  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.85 })
+  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.75 })
   // return true
 
   if (!areEqual) {
@@ -99,7 +99,7 @@ const matchScreenshot = async function(name, world) {
     world.attach(d, 'image/png')
   }
 
-  return assert(equal(shot, testShot, diffImageName2, { threshold: 0.85 }))
+  return assert(equal(shot, testShot, diffImageName2, { threshold: 0.75 }))
 }
 
 module.exports = {
