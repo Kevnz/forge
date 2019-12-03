@@ -6,8 +6,8 @@ Feature: Animation
   Scenario: basic animation
     Given I go to 'animation-demo'
     When the page loads
-    Then the page should match the 'animation-demo' screenshot
-  Scenario: basic animation
+    Then the page should show the text 'Hinge'
+  Scenario: full animations
     Given I go to 'animations'
     When the page loads
-    Then the page should match the 'animations' screenshot
+    Then the page should show the text 'Animation:'
