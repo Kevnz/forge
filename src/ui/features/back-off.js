@@ -11,6 +11,7 @@ import {
 import { useAsync } from '@brightleaf/react-hooks'
 import { delay } from '@kev_nz/async-tools'
 import BackOff from 'back-off'
+import Highlight from '../components/hightlight'
 
 const backoff = new BackOff({
   times: 5,
@@ -86,6 +87,41 @@ export default () => {
             {data.name} {data.times} times
           </Notification>
         )}
+        <hr />
+        <Highlight className="javascript" languages={['javascript']}>
+          {`
+import BackOff from 'back-off'
+
+const backoff = new BackOff({
+  times: 5,
+  delay: 50,
+  backoff: true,
+})
+
+const asyncTask = async () => {
+  let tries = 0
+  const retryTask = async payload => {
+    await delay(100)
+    tries++
+    if (tries < 3) {
+      throw new Error('not enough')
+    }
+    return {
+      name: 'Executed',
+      times: tries,
+    }
+  }
+  try {
+    const resultOfBackOff = await backoff.execute(() =>
+      retryTask({ data: 0, value: 1000 })
+    )
+    return resultOfBackOff
+  } catch (err) {
+    console.error('The Final Error', err)
+  }
+}
+`}
+        </Highlight>
       </Container>
     </Section>
   )
