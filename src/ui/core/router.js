@@ -23,6 +23,7 @@ const SimpleAnimations = React.lazy(() =>
 const Dates = React.lazy(() => import('../features/dates'))
 const Working = React.lazy(() => import('../features/worker'))
 const Flags = React.lazy(() => import('../features/flags'))
+const NetworkInfo = React.lazy(() => import('../features/network-info'))
 const Missing = React.lazy(() => import('../features/missing'))
 
 export default class App extends Component {
@@ -49,6 +50,7 @@ export default class App extends Component {
         <BackOff path="/backoff" />
         <Dates path="/dates" />
         <Flags path="/flags" />
+        <NetworkInfo path="/network-info" />
         <Missing default />
       </Router>
     )
