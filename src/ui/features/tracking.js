@@ -112,6 +112,7 @@ const StatsPage = () => {
     ]
     let totals = { name: pkg, downloads: 0 }
     if (data && data.breakdown) {
+      console.log('breakdown', pkg)
       // data.breakdown.pop()
       downs = data.breakdown.map(down => {
         // downloads	101
@@ -125,9 +126,12 @@ const StatsPage = () => {
           name: pkg,
         }
       })
-      totals = { name: pkg, downloads: data.totals.downloads, color }
+      console.log('data', data)
+      totals = { name: pkg, downloads: data.addedUp, color }
     }
     if (data && data.downloads) {
+      console.log('downloads', pkg)
+      console.log('data', data)
       downs = [
         {
           date: data.end,
@@ -135,7 +139,7 @@ const StatsPage = () => {
           name: pkg,
         },
       ]
-      totals = { name: pkg, downloads: data.downloads, color }
+      totals = { name: pkg, downloads: data.downloads[0].downloads, color }
     }
     // name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
     return [downs, totals, loading]
@@ -232,6 +236,7 @@ const StatsPage = () => {
       ...loki[index],
     }
   })
+  console.log('elements toital', elementsTotal)
   const pie = [
     elementsTotal,
     hooksTotal,
