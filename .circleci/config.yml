@@ -66,22 +66,22 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: rm -rf node_modules
-      - run: rm -r build
+      - run: rm -r dist
       - checkout
       - run: npm install
       - run: npm run build
       - run: rm -rf node_modules
-      - run: rm -r build
+      - run: rm -r dist
       - checkout
       - run: npm install
       - run: npm run build
       - run: rm -rf node_modules
-      - run: rm -r build
+      - run: rm -r dist
       - checkout
       - run: npm install
       - run: npm run build
       - run: rm -rf node_modules
-      - run: rm -r build
+      - run: rm -r dist
       - checkout
       - run: npm install
       - run: npm run build
