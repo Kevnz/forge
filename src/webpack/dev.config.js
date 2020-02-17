@@ -19,7 +19,7 @@ const devConfig = {
       process: {
         env: {
           NODE_ENV: '"development"',
-          API: `"${process.env.API || 'https://kev-pi.herokuapp.com'}"`,
+          API: `"https://kev-pi.herokuapp.com"`,
         },
       },
     }),
