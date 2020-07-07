@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "src/public/images/uploads" # Media files will be stored in the repo under src/public/images/uploads
-media_library: "src/public/images"
+public_folder: "src/public"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
