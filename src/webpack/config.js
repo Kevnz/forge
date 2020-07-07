@@ -17,6 +17,10 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
+        test: /\.md$/,
+        use: ['frontmatter-markdown-loader'],
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', cssLoader],
       },
