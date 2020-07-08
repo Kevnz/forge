@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import {
   useToggle,
-  Box,
+  Icon,
   Modal,
   Field,
   Control,
@@ -24,8 +24,12 @@ export const LoginLink = ({ children, className, isStatic }) => {
   const [modalShown, setModalShown] = useToggle(false)
   const { loginUser, isLoggedIn } = useIdentityContext()
   console.log('isLoggedIn', isLoggedIn)
+  if (isLoggedIn) {
+    return <div>Logged In</div>
+  }
   return (
     <div>
+      <Icon fas icon="sign-in-alt" />
       <a
         href="#"
         onClick={e => {
