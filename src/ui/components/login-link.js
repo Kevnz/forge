@@ -22,10 +22,23 @@ import form from 'react-form-elements/lib/form'
 export const LoginLink = ({ children, className, isStatic }) => {
   const formRef = useRef(null)
   const [modalShown, setModalShown] = useToggle(false)
-  const { loginUser, isLoggedIn } = useIdentityContext()
+  const { loginUser, isLoggedIn, logoutUser } = useIdentityContext()
   console.log('isLoggedIn', isLoggedIn)
   if (isLoggedIn) {
-    return <div>Logged In</div>
+    return (
+      <div>
+        <Icon fas icon="sign-out-alt" />
+        <a
+          href="#"
+          onClick={e => {
+            e.preventDefault()
+            logoutUser()
+          }}
+        >
+          Logout
+        </a>
+      </div>
+    )
   }
   return (
     <div>
