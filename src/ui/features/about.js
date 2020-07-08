@@ -1,8 +1,8 @@
 import React from 'react'
-import { react as About } from '../../pages/about/index.md' // <-- THIS
-
+import About from '../../pages/about/index.md' // <-- THIS
+import MarkdownComponent from '../components/markdown-component'
 export default () => (
   <main>
-    <About />
+    <MarkdownComponent source={About.html} />
   </main>
 )

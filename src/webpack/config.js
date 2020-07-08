@@ -2,6 +2,8 @@ const path = require('path')
 const features = require('creature-features')()
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const Mode = require('frontmatter-markdown-loader/mode')
+
 const featureFlags = new webpack.DefinePlugin({
   FEATURES: features,
 })
@@ -18,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        use: ['frontmatter-markdown-loader'],
+        loader: 'frontmatter-markdown-loader',
       },
       {
         test: /\.css$/,
