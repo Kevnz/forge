@@ -1,2 +1,8 @@
-import React from "react"
-export default () => <main><h1>About</h1></main>
+import React from 'react'
+import { react as About } from '../../pages/about/index.md' // <-- THIS
+
+export default () => (
+  <main>
+    <About />
+  </main>
+)
