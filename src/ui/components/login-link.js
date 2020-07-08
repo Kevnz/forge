@@ -26,23 +26,20 @@ export const LoginLink = ({ children, className, isStatic }) => {
   console.log('isLoggedIn', isLoggedIn)
   if (isLoggedIn) {
     return (
-      <div>
+      <a
+        href="#"
+        onClick={e => {
+          e.preventDefault()
+          logoutUser()
+        }}
+      >
         <Icon fas icon="sign-out-alt" />
-        <a
-          href="#"
-          onClick={e => {
-            e.preventDefault()
-            logoutUser()
-          }}
-        >
-          Logout
-        </a>
-      </div>
+        Logout
+      </a>
     )
   }
   return (
-    <div>
-      <Icon fas icon="sign-in-alt" />
+    <>
       <a
         href="#"
         onClick={e => {
@@ -50,6 +47,7 @@ export const LoginLink = ({ children, className, isStatic }) => {
           setModalShown(false)
         }}
       >
+        <Icon fas icon="sign-in-alt" />
         Login
       </a>
       <Portal id="login-form-modal">
@@ -123,7 +121,7 @@ export const LoginLink = ({ children, className, isStatic }) => {
           </ModalCardFoot>
         </Modal>
       </Portal>
-    </div>
+    </>
   )
 }
 
