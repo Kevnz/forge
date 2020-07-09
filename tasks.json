@@ -2,6 +2,7 @@
   "test": "npx jest --config=jest.config.js --detectOpenHandles --forceExit --watch",
   "lint": "npx eslint ./src",
   "build:test": "cross-env NODE_ENV=test webpack --config ./src/webpack/prod.config.js --mode production",
+  "prebuild": "node ./src/scripts/posts.js",
   "build": "cross-env NODE_ENV=production webpack --config ./src/webpack/prod.config.js --mode production",
   "themes": [
     "npx node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o dist ./src/ui/core/themes/lux.scss",
