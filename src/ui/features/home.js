@@ -19,9 +19,9 @@ import posts from '../posts'
 export default () => {
   console.log('posts', posts)
   const blogPosts = Object.keys(posts).map(p => (
-    <a href="#" key={p}>
-      {p}
-    </a>
+    <MenuListItem key={`posts-${p}`}>
+      <Link to={`/posts/${p}`}>{posts[p].title}</Link>
+    </MenuListItem>
   ))
   return (
     <Section>
@@ -77,6 +77,12 @@ export default () => {
               <Link to="/animations">All Animations</Link>
             </MenuListItem>
           </MenuList>
+        </Menu>
+        <Menu>
+          <MenuLabel>
+            <SubTitle as="span">Blog Posts</SubTitle>
+          </MenuLabel>
+          <MenuList className="menu-list">{blogPosts}</MenuList>
         </Menu>
       </Container>
     </Section>
