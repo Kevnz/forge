@@ -20,7 +20,7 @@ export default () => {
   console.log('posts', posts)
   const blogPosts = Object.keys(posts).map(p => (
     <MenuListItem key={`posts-${p}`}>
-      <Link to={`/posts/${p}`}>{posts[p].title}</Link>
+      <Link to={`/posts/${p.replace('.md', '')}`}>{posts[p].title}</Link>
     </MenuListItem>
   ))
   return (
