@@ -14,7 +14,11 @@ import { Link } from '@reach/router'
 import { Animated } from '../components/animated'
 import modules from '../data/my-packages'
 
+import posts from '../posts'
+
 export default () => {
+  console.log('posts', posts)
+  const blogPosts = posts.map(p => <a href="">{p}</a>)
   return (
     <Section>
       <Title>Make Things</Title>
