@@ -27,18 +27,19 @@ const prodConfig = {
       title: 'UI Web App',
       template: './src/ui/index.html',
     }),
-    new CopyPlugin([
-      {
-        from: path.join(process.cwd(), '/src/public'),
-        to: path.join(process.cwd(), '/dist'),
-      },
-    ]),
-    new CopyPlugin([
-      {
-        from: path.join(process.cwd(), '/src/ui/workers'),
-        to: path.join(process.cwd(), '/dist/workers'),
-      },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(process.cwd(), '/src/public'),
+          to: path.join(process.cwd(), '/dist'),
+        },
+
+        {
+          from: path.join(process.cwd(), '/src/ui/workers'),
+          to: path.join(process.cwd(), '/dist/workers'),
+        },
+      ],
+    }),
   ],
   output: {
     path: path.join(process.cwd(), '/dist'),

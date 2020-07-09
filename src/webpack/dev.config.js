@@ -27,12 +27,14 @@ const devConfig = {
       title: 'Web App',
       template: './src/ui/index.html',
     }),
-    new CopyPlugin([
-      {
-        from: path.join(process.cwd(), '/src/ui/workers'),
-        to: path.join(process.cwd(), '/src/public/workers'),
-      },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(process.cwd(), '/src/ui/workers'),
+          to: path.join(process.cwd(), '/src/public/workers'),
+        },
+      ],
+    }),
   ],
   devServer: {
     historyApiFallback: true,
