@@ -18,7 +18,11 @@ import posts from '../posts'
 
 export default () => {
   console.log('posts', posts)
-  const blogPosts = posts.map(p => <a href="">{p}</a>)
+  const blogPosts = Object.keys(posts).map(p => (
+    <a href="#" key={p}>
+      {p}
+    </a>
+  ))
   return (
     <Section>
       <Title>Make Things</Title>
