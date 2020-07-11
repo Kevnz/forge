@@ -157,6 +157,7 @@ export default class App extends Component {
 
             <NavBar isPrimary isFixedTop>
               <NavBarBrand
+                className="flame"
                 src="/flames-small.png"
                 href="/"
                 target="navbarBasicExample"

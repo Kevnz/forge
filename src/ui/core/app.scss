@@ -18,3 +18,8 @@ $navbar-burger-color: #7f888f;
 .navigation-view .navbar-burger {
   color: $navbar-burger-color;
 }
+
+.navbar-item img {
+  max-height: 1.75rem;
+  max-width: 1.75rem;
+}
