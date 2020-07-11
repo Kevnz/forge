@@ -22,6 +22,7 @@ import createHashSource from 'hash-source'
 import { IdentityContextProvider } from 'react-netlify-identity'
 import modules from '../data/my-packages'
 import LoginLink from '../components/login-link'
+import AdminMenuItem from '../components/admin-menu-item'
 import Routes from './router'
 import './app.scss'
 
@@ -110,6 +111,7 @@ export default class App extends Component {
                   <MenuListItem>
                     <LoginLink />
                   </MenuListItem>
+                  <AdminMenuItem />
                 </MenuList>
                 <br />
                 <MenuLabel>
