@@ -103,7 +103,7 @@ export default class App extends Component {
                   </MenuListItem>
                   {FEATURES && FEATURES.FeatureFlags && (
                     <MenuListItem>
-                      <UpLink to="/">
+                      <UpLink to="/feature-flags">
                         <Icon fas icon="gem" /> Feature Flags
                       </UpLink>
                     </MenuListItem>
