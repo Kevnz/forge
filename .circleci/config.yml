@@ -126,6 +126,11 @@ workflows:
     triggers:
       - schedule:
           cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - "master"
+                - "update"
     jobs:
       - test
       - build:
@@ -142,6 +147,11 @@ workflows:
     triggers:
       - schedule:
           cron: "0 * * * 1,2,3,4,5"
+          filters:
+            branches:
+              only:
+                - "master"
+                - "update"
     jobs:
       - test
       - build:
@@ -151,6 +161,11 @@ workflows:
     triggers:
       - schedule:
           cron: "30 * * * 1,3,5"
+          filters:
+            branches:
+              only:
+                - "master"
+                - "update"
     jobs:
       - test
       - build:
@@ -167,6 +182,11 @@ workflows:
     triggers:
       - schedule:
           cron: "54 * * * 1,3,4,5"
+          filters:
+            branches:
+              only:
+                - "master"
+                - "update"
     jobs:
       - test
       - build:
