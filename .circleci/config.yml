@@ -130,7 +130,7 @@ workflows:
             branches:
               only:
                 - "master"
-                - "update"
+                - "updates"
     jobs:
       - test
       - build:
@@ -151,7 +151,7 @@ workflows:
             branches:
               only:
                 - "master"
-                - "update"
+                - "updates"
     jobs:
       - test
       - build:
@@ -165,7 +165,7 @@ workflows:
             branches:
               only:
                 - "master"
-                - "update"
+                - "updates"
     jobs:
       - test
       - build:
@@ -186,7 +186,7 @@ workflows:
             branches:
               only:
                 - "master"
-                - "update"
+                - "updates"
     jobs:
       - test
       - build:
