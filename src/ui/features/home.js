@@ -11,13 +11,11 @@ import {
 } from '@brightleaf/elements'
 import { Link } from '@reach/router'
 
-import { Animated } from '../components/animated'
 import modules from '../data/my-packages'
 
 import posts from '../posts'
 
 export default () => {
-  console.log('posts', posts)
   const blogPosts = Object.keys(posts).map(p => (
     <MenuListItem key={`posts-${p}`}>
       <Link to={`/posts/${p.replace('.md', '')}`}>{posts[p].title}</Link>

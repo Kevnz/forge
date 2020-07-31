@@ -51,7 +51,7 @@ export default class App extends Component {
         <Working path="/workers" />
         <BackOff path="/backoff" />
         <Dates path="/dates" />
-        <Flags path="/flags" />
+        <Flags path="/feature-flags" />
         <NetworkInfo path="/network-info" />
         <EventPage path="/events" />
         <BlogPost path="/posts/:slug" />

@@ -8,3 +8,4 @@ cucumber_report.json
 src/tests/screenshots/test/*.png
 src/tests/screenshots/diff/*.png
 
+reports/cucumber_report.*

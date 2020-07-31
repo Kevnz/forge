@@ -4,7 +4,7 @@ const pages = {
   stats: '/#/stats',
   tracking: '/#/tracking',
   dates: '/#/dates',
-  flags: '/#/flags',
+  flags: '/#/feature-flags',
   'animation-demo': '/#/demo-animations',
   'animation-chain': '/#/chained-animations',
   animations: '/#/animations',

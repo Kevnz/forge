@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Mode = require('frontmatter-markdown-loader/mode')
 
 const featureFlags = new webpack.DefinePlugin({
-  FEATURES: features,
+  FEATURES: JSON.stringify(features),
 })
 const cssLoader = 'css-loader'
 module.exports = {
