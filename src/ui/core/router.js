@@ -27,7 +27,7 @@ const NetworkInfo = React.lazy(() => import('../features/network-info'))
 const EventPage = React.lazy(() => import('../features/events'))
 const BlogPost = React.lazy(() => import('../features/post'))
 const Missing = React.lazy(() => import('../features/missing'))
-
+const Diagram = React.lazy(() => import('../features/diagram'))
 export default class App extends Component {
   render() {
     return (
@@ -55,6 +55,7 @@ export default class App extends Component {
         <NetworkInfo path="/network-info" />
         <EventPage path="/events" />
         <BlogPost path="/posts/:slug" />
+        <Diagram path="/diagram" />
         <Missing default />
       </Router>
     )
