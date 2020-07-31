@@ -46,10 +46,6 @@ const clickLink = async text => {
 
 const fillOutForm = async () => {
   const page = scope.context.currentPage
-  const world = this
-
-  await delay(200)
-  takeScreenshot('confirm-form-wait', world)
 
   await scope.expect(page).toFillForm('form[name="contact"]', {
     userName: 'user',
