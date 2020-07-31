@@ -2,6 +2,7 @@
 const assert = require('assert')
 const readlineSync = require('readline-sync')
 const fs = require('fs-extra')
+const { delay } = require('@kev_nz/async-tools')
 const equal = require('image-equal')
 const pixels = require('image-pixels')
 const output = require('image-output')
@@ -45,7 +46,12 @@ const clickLink = async text => {
 
 const fillOutForm = async () => {
   const page = scope.context.currentPage
-  await scope.expect(page).toFillForm('form', {
+  const world = this
+
+  await delay(200)
+  takeScreenshot('confirm-form-wait', world)
+
+  await scope.expect(page).toFillForm('form[name="contact"]', {
     userName: 'user',
     userEmail: 'user@example.net',
     message: 'hi there dude',
@@ -79,7 +85,7 @@ const matchScreenshot = async function(name, world) {
   world.attach(testshot, 'image/png')
   let shot = await pixels(screenShotName)
   const testShot = await pixels(testImageName)
-  const areEqual = equal(shot, testShot, diffImageName, { threshold: 0.85 })
+  const areEqual = equal(shot, testShot, diffImageName, { threshold: 1.85 })
   // return true
 
   if (!areEqual) {
@@ -102,6 +108,17 @@ const matchScreenshot = async function(name, world) {
   return assert(equal(shot, testShot, diffImageName2, { threshold: 0.85 }))
 }
 
+const takeScreenshot = async function(name, world) {
+  const testImageName = `./src/tests/screenshots/test/${name}.png`
+
+  const page = scope.context.currentPage
+
+  const testshot = await page.screenshot()
+  await page.screenshot({ path: testImageName })
+  world.attach(testshot, 'image/png')
+
+  return true
+}
 module.exports = {
   clickButton,
   clickLink,
