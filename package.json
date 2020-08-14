@@ -42,6 +42,7 @@
     "qs": "^6.9.4",
     "query-string": "^6.13.1",
     "react": "^16.13.1",
+    "react-archer": "^2.0.2",
     "react-dom": "^16.13.1",
     "react-form-elements": "^4.14.0",
     "react-netlify-identity": "^0.2.5",

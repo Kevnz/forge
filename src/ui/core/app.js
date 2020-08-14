@@ -100,6 +100,17 @@ export default function App() {
                     <Icon fas icon="bacon" /> Animation
                   </UpLink>
                 </MenuListItem>
+
+                <MenuListItem>
+                  <UpLink to="/create-diagram">
+                    <Icon fas icon="bacon" /> Create Diagram
+                  </UpLink>
+                </MenuListItem>
+                <MenuListItem>
+                  <UpLink to="/diagram">
+                    <Icon fas icon="bacon" /> Diagram
+                  </UpLink>
+                </MenuListItem>
                 {FEATURES && FEATURES.FeatureFlags && (
                   <MenuListItem>
                     <UpLink to="/feature-flags">

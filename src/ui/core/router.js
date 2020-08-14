@@ -28,6 +28,7 @@ const EventPage = React.lazy(() => import('../features/events'))
 const BlogPost = React.lazy(() => import('../features/post'))
 const Missing = React.lazy(() => import('../features/missing'))
 const Diagram = React.lazy(() => import('../features/diagram'))
+const CreateDiagram = React.lazy(() => import('../features/create-diagram'))
 export default class App extends Component {
   render() {
     return (
@@ -56,6 +57,7 @@ export default class App extends Component {
         <EventPage path="/events" />
         <BlogPost path="/posts/:slug" />
         <Diagram path="/diagram" />
+        <CreateDiagram path="/create-diagram" />
         <Missing default />
       </Router>
     )
