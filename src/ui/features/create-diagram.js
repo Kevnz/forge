@@ -32,7 +32,7 @@ const useDragAndDrop = (draggable, target) => {
         console.info('outs')
       })
     }
-  } [draggable.current])
+  }, [draggable.current])
 }
 
 export default () => {
