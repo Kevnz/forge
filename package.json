@@ -27,6 +27,7 @@
     "date-arithmetic": "^4.1.0",
     "days-in-a-row": "^3.0.0",
     "flowpoints": "^1.0.18",
+    "globby": "^14.0.1",
     "gotrue-js": "^0.9.26",
     "hash-source": "^1.0.5",
     "isom": "^1.0.0",
