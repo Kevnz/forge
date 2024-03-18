@@ -66,7 +66,7 @@ const HEADING = {
 
 const usePkgDetails = pkg => {
   const { data, loading, getUrl } = useGet(
-    `${process.env.API}/api/package/details?pkg=${pkg}`
+    `${process.env.API}/.netlify/functions/details?pkg=${pkg}`
   )
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const usePkgDetails = pkg => {
 }
 const usePkgDownloads = (pkg, duration, color) => {
   const { data, loading, getUrl } = useGet(
-    `${process.env.API}/api/package/yearly?pkg=${pkg}`
+    `${process.env.API}/.netlify/functions/yearly?pkg=${pkg}`
   )
   useEffect(() => {
     getUrl()

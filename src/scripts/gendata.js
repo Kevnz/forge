@@ -4,7 +4,7 @@ const { each } = require('@kev_nz/async-tools')
 const fetch = require('node-fetch')
 const myModules = require('./data')
 
-const url = 'https://kev-pi.herokuapp.com/api/package/'
+const url = 'https://forge.kevnz.xyz/.netlify/functions/'
 
 console.info('gonna get')
 ;(async () => {
