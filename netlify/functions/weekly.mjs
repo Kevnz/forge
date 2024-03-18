@@ -45,6 +45,16 @@ export default async req => {
   })
 
   return new Response(
-    JSON.stringify({ breakdown: weeklyResults, totals: result })
+    JSON.stringify(
+      { breakdown: weeklyResults, totals: result },
+      {
+        headers: {
+          'Content-Type': 'text/html',
+          'Cache-Control': 'public, max-age=600, must-revalidate', // Tell browsers to cache 10 minutes
+          'Netlify-CDN-Cache-Control': 'public, max-age=86400, must-revalidate', // Tell Edge to cache asset for up to a day,
+          'Cache-Tag': `${pkg},package-weekly-api-response`,
+        },
+      }
+    )
   )
 }

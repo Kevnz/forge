@@ -20,5 +20,12 @@ export default async (req, context) => {
   console.info('date-range', dateRange)
   const result = await pkgDownloads(pkg, dateRange)
   console.info('result', result)
-  return new Response(JSON.stringify(result))
+  return new Response(JSON.stringify(result), {
+    headers: {
+      'Content-Type': 'text/html',
+      'Cache-Control': 'public, max-age=600, must-revalidate', // Tell browsers to cache 10 minutes
+      'Netlify-CDN-Cache-Control': 'public, max-age=86400, must-revalidate', // Tell Edge to cache asset for up to a day,
+      'Cache-Tag': `${pkg},package-today-api-response`,
+    },
+  })
 }

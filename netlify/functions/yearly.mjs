@@ -24,15 +24,25 @@ export default async (req, context) => {
   }, 0)
 
   return new Response(
-    JSON.stringify({
-      breakdown,
-      totals: {
-        downloads: reduced,
-        start: results.downloads[0].day,
-        end: results.downloads[results.downloads.length - 1].day,
-        package: pkg,
+    JSON.stringify(
+      {
+        breakdown,
+        totals: {
+          downloads: reduced,
+          start: results.downloads[0].day,
+          end: results.downloads[results.downloads.length - 1].day,
+          package: pkg,
+        },
+        addedUp: reduced,
       },
-      addedUp: reduced,
-    })
+      {
+        headers: {
+          'Content-Type': 'text/html',
+          'Cache-Control': 'public, max-age=600, must-revalidate', // Tell browsers to cache 10 minutes
+          'Netlify-CDN-Cache-Control': 'public, max-age=86400, must-revalidate', // Tell Edge to cache asset for up to a day,
+          'Cache-Tag': `${pkg},package-yearly-api-response`,
+        },
+      }
+    )
   )
 }
