@@ -98,7 +98,7 @@ const StatsPage = () => {
   const [duration, setDuration] = useState('monthly')
   const useStatsGet = (pkg, color) => {
     const { data, loading, getUrl } = useGet(
-      `${process.env.API}/api/package/${duration}?pkg=${pkg}`
+      `${process.env.API}/.netlify/functions/${duration}?pkg=${pkg}`
     )
     useEffect(() => {
       getUrl()

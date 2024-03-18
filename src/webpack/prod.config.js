@@ -19,7 +19,7 @@ const prodConfig = {
       process: {
         env: {
           NODE_ENV: '"production"',
-          API: `"${process.env.API || 'https://kev-pi.herokuapp.com'}"`,
+          API: `"${process.env.API || 'https://forge.kevnz.xyz'}"`,
         },
       },
     }),

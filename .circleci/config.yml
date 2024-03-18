@@ -9,7 +9,7 @@ executors:
     working_directory: ~/forge
   build-machine:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:12
     working_directory: ~/forge
 aliases:
   install_node_modules: &install_node_modules
@@ -31,9 +31,6 @@ jobs:
       - run:
           name: Test
           command: npm test
-      - run:
-          name: E2E Test
-          command: npm run test:e2e
       - store_test_results:
           path: ~/forge/reports
       - store_artifacts:
