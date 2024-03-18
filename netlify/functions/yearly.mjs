@@ -23,14 +23,16 @@ export default async (req, context) => {
     return accumulator + current.downloads
   }, 0)
 
-  return new Response({
-    breakdown,
-    totals: {
-      downloads: reduced,
-      start: results.downloads[0].day,
-      end: results.downloads[results.downloads.length - 1].day,
-      package: pkg,
-    },
-    addedUp: reduced,
-  })
+  return new Response(
+    JSON.stringify({
+      breakdown,
+      totals: {
+        downloads: reduced,
+        start: results.downloads[0].day,
+        end: results.downloads[results.downloads.length - 1].day,
+        package: pkg,
+      },
+      addedUp: reduced,
+    })
+  )
 }
