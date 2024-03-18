@@ -11,6 +11,8 @@ const pkgDownloads = async (pkgName, range) => {
 }
 
 export default async req => {
+  const params = new URL(req.url).searchParams
+  const pkg = params.get('pkg')
   const today = dateMath.subtract(new Date(), 1, 'day')
   const holder = new Array(8).fill(0)
   const ranges = holder.map((v, index) => {
@@ -29,18 +31,20 @@ export default async req => {
   const start = ymd(lastWeek)
   const end = ymd(today)
   const dateRange = `${start.year}-${start.month}-${start.day}:${end.year}-${end.month}-${end.day}`
-  const result = await pkgDownloads(r.query.pkg, dateRange)
+  const result = await pkgDownloads(pkg, dateRange)
 
   const weeklyResults = await mapper(mappedRanges.reverse(), async range => {
-    const result = await pkgDownloads(r.query.pkg, range)
+    const result = await pkgDownloads(pkg, range)
     await delay(100)
     return {
       downloads: result.downloads[0].downloads,
       start: result.downloads[0].day,
       end: result.downloads[0].day,
-      package: req.query.pkg,
+      package: pkg,
     }
   })
 
-  return new Response({ breakdown: weeklyResults, totals: result })
+  return new Response(
+    JSON.stringify({ breakdown: weeklyResults, totals: result })
+  )
 }

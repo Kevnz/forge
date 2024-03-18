@@ -10,12 +10,14 @@ const pkgDownloads = async (pkgName, range) => {
 }
 
 export default async (req, context) => {
+  const params = new URL(req.url).searchParams
+  const pkg = params.get('pkg')
   const today = dateMath.subtract(new Date(), 1, 'day')
   const lastWeek = dateMath.subtract(today, 1, 'week')
   const start = ymd(lastWeek)
   const end = ymd(today)
   const dateRange = `${start.year}-${start.month}-${start.day}:${end.year}-${end.month}-${end.day}`
-  const result = await pkgDownloads(req.query.pkg, dateRange)
+  const result = await pkgDownloads(pkg, dateRange)
   console.info('result', result)
-  return new Response(result)
+  return new Response(JSON.stringify(result))
 }
