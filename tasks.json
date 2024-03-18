@@ -2,7 +2,7 @@
   "test": "npx jest --config=jest.config.js --detectOpenHandles --forceExit --watch",
   "lint": "npx eslint ./src",
   "build:test": "cross-env NODE_ENV=test webpack --config ./src/webpack/prod.config.js --mode production",
-  "prebuild": ["node ./src/scripts/posts.js", "node ./src/scripts/installer.js"],
+  "prebuild": ["node ./src/scripts/posts.js"],
   "build": "cross-env NODE_ENV=production webpack --config ./src/webpack/prod.config.js --mode production",
   "static": "cross-env NODE_ENV=production webpack --config ./src/webpack/gen.config.js --mode production",
   "themes": [

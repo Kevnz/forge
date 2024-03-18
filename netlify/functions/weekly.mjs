@@ -1,6 +1,7 @@
-const dateMath = require('date-arithmetic')
-const ymd = require('year-month-day')
-const { delay, mapper } = require('@kev_nz/async-tools')
+import dateMath from 'date-arithmetic'
+import ymd from 'year-month-day'
+import { delay, mapper } from '@kev_nz/async-tools'
+
 const pkgDownloads = async (pkgName, range) => {
   const api = 'https://api.npmjs.org/downloads'
   const down = await fetch(`${api}/range/${range}/${pkgName}`)

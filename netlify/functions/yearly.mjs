@@ -1,4 +1,4 @@
-const r2 = require('r2')
+import r2 from 'r2'
 // const { delay, mapper } = require('@kev_nz/async-tools')
 // const dateMath = require('date-arithmetic')
 // const ymd = require('year-month-day')
