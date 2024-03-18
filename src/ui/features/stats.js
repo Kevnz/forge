@@ -18,8 +18,9 @@ import modules from '../data/my-packages'
 import SparkLine from '../components/spark-line'
 
 const useStatsGet = pkg => {
+  // https://forge.kevnz.xyz/.netlify/functions/hello
   const { data, getUrl } = useGet(
-    `${process.env.API}/api/package/yearly?pkg=${pkg}`
+    `${process.env.API}/.netlify/functions/yearly?pkg=${pkg}`
   )
   useEffect(() => {
     getUrl()
