@@ -1,7 +1,13 @@
 const dateMath = require('date-arithmetic')
 const ymd = require('year-month-day')
 const { delay, mapper } = require('@kev_nz/async-tools')
-const pkgDownloads = require('../../src/utils/package')
+const pkgDownloads = async (pkgName, range) => {
+  const api = 'https://api.npmjs.org/downloads'
+  const down = await fetch(`${api}/range/${range}/${pkgName}`)
+  const data = await down.json()
+  console.log('the download', data)
+  return data
+}
 
 export default async req => {
   const today = dateMath.subtract(new Date(), 1, 'day')
