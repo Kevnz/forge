@@ -4,7 +4,8 @@ import r2 from 'r2'
 // const ymd = require('year-month-day')
 
 export default async (req, context) => {
-  const { pkg } = req.query
+  const params = new URL(req.url).searchParams
+  const pkg = params.get('pkg')
   const results = await r2.get(
     `https://api.npmjs.org/downloads/range/last-year/${pkg}`
   ).json
