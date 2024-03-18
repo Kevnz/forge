@@ -14,11 +14,6 @@
     "test:e2e:commit": "isom test:e2e:commit",
     "test:e2e:dev": "isom test:e2e:dev"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
-  },
   "dependencies": {
     "1stand15th": "^2.0.0",
     "@brightleaf/animate.scss": "^3.7.1",
