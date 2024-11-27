@@ -192,3 +192,23 @@ workflows:
           requires:
             - build
             - buildOld
+  pump:
+    triggers:
+      - schedule:
+          cron: "34 * * * 1,3,4,5"
+          filters:
+            branches:
+              only:
+                - "master"
+    jobs:
+      - test
+      - build:
+          requires:
+            - test
+      - buildOld:
+          requires:
+            - test
+      - buildFinal:
+          requires:
+            - build
+            - buildOld
